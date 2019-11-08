@@ -57,8 +57,8 @@ int main(void)
     printf( "\n\tContinuar: \n");
     getchar();
     system("clear");
-	printf("############################################################################\n");    
-	printf("##                                                                        ##\n");    
+	printf("############################################################################\n");
+	printf("##                                                                        ##\n");
 	printf("##           CODIGO  SIGNIFICADO  ASCII(decimal) ASCII(hexadecimal)       ##\n");
 	printf("##       '\\n' 	nueva línea          10                 0x0A              ##\n");
 	printf("##       '\\r' 	retorno de carro     13                 0x0D              ##\n");
@@ -70,9 +70,43 @@ int main(void)
 	printf("##       '\\ '  barra                92                 0x5C               ##\n");
 	printf("##       '\\? ' interrogación        63                 0x3F               ##\n");
 	printf("##       '\\nnn' cualquier caracter (nnn es  ASCII expresado en octal)     ##\n");
-	printf("##       '\\xnn' cualquier caracter (nn es  ASCII expresado en hexadecimal)##\n");
+	printf("##       '\\xnn' cualquier caracter (nn es ASCII expresado en hexadecimal) ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
+	printf("##  Carácter                       Significado                            ##\n");
+	printf("##     c   Escribe un carácter simple                                     ##\n");
+	printf("##     d   Escribe un entero decimal con signo                            ##\n");
+	printf("##     i   Escribe un entero decimal, octal o hexadecimal con signo       ##\n");
+	printf("##     e   Escribe un número en punto flotante con exponente              ##\n");
+	printf("##     f   Escribe un número en punto flotante sin exponente              ##\n");
+	printf("##     o   Escribe un entero octal, sin el cero inicial                   ##\n");
+	printf("##     s   Escribe una cadena de caracteres                               ##\n");
+	printf("##     u   Escribe un entero decimal sin signo                            ##\n");
+	printf("##     p   Direccion de un puntero u dato.                                ##\n");
+	printf("##     lld Especifica un entero largo (long long). [no estandar]          ##\n");
+	printf("##     llu Entero largo sin signo (unsigned long long) [no estandar]      ##\n");
+	printf("##     x   Escribe un entero hexadecimal sin el prefijo 0x.               ##\n");
+	printf("############################################################################\n");
+	getchar();
+	system("clear");
+
+	putchar('H');
+	putchar('o');
+	putchar('l');
+	putchar('a');
+
+	putchar(32);
+
+	putchar('m');
+	putchar('u');
+	putchar('n');
+	putchar('d');
+	putchar('o');
+
+	putchar('\n');
+	puts("Bienvenido a la programación");
+	puts(" en lenguaje C");
+
 // Ej 001_1
 	printf ("Inicio ej001_1\n");
 	printf ("linea 1\n");
@@ -106,9 +140,37 @@ int main(void)
 	char cadena [] = "es hora de trabajar grupo 2019";
 	printf ("\nLa Cadena original es : %s", cadena);
 	int largo_cadena =  sizeof cadena ;
-	printf( "\nTamaño de la cadena: %i bytes\n\n\n", largo_cadena );	
+	printf( "\nTamaño de la cadena: %i bytes\n\n\n", largo_cadena );
+
+    char letra = 'A';
+    char cadena_[20] = "seguimos con variables";
+    int numero_int = 22;
+    long numero_long = 333;
+    long long numero_longlong = 444444;
+    float numero_float = 12.123;
+    double numero_double = 12.123456;
+
+    printf("La letra es %c \n", letra);
+    printf("La cadena es %s \n", cadena_);
+    printf("El numero int es %d\n", numero_int);
+    printf("El numero long es %ld\n", numero_long);
+    printf("El numero long long es %lld\n", numero_longlong);
+    printf("El numero float es %0.3f \n", numero_float); //0.3 = 3 decimales
+    printf("El numero double es %0.6lf \n", numero_double); //0.6 = 6 decimales
+
+
+
+
+
+
+
+
+
+
+
+
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio ej001_2 \n\t\t¿Continuar?\n");	
+	printf( "\n\n\tFin del ejercicio ej001_2 \n\t\t¿Continuar?\n");
 	getchar();
 	system("clear");
 // Ej 001_3
@@ -119,61 +181,43 @@ int main(void)
 	printf( "\n\t|%-25.8s|" , cadena_2 );      /* imprime 25 caracteres: |Lenguaje       |  */
 	printf( "\n\t|%.6s|" , cadena_2 );         /* imprime 25 caracteres: |Lengua|           */
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio ej001_3 \n\t\t¿Continuar?\n");	
+	printf( "%%07i            justificado a la derecha, 7 dígitos de largo, sin relleno\n");
+	printf( "%%.7i            largo mínimo de 7 dígitos, justificado a la derecha, rellena con ceros\n");
+	printf( "%%8.2f           tamaño total de 8 dígitos, con dos decimales\n");
+	printf( "%%.*f”',x,d)     tamaño predeterminado,x numeros decimales\n");
+	printf( "%%*.*f”,x,y,d)   tamaño igual a x, y numeros decimales\n");
+	printf( "%%s              cadena terminada en null\n");
+	printf( "%%5s             primeros cinco caracteres o delimitador\n");
+	printf( "%%.5s            primeros cinco caracteres, sin tener en cuenta el delimitador\n");
+	printf( "%%20.5s          primeros cinco caracteres, justificados a la derecha, con 20 caracteres de largo\n");
+	printf( "%%-20.5s         primeros cinco caracteres, justificados a la izquierda, con 20 caracteres de largo\n");
+
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio ej001_3 \n\t\t¿Continuar?\n");
 	getchar();
 	system("clear");
+
 // Ej 001_4
+    int numEntero=56;
+    long numLong =44322155;
+    float numFloat=2.36;
+    double numDouble=2.545466;
+    char miChar='c';
+    char miCadena []= "Esto es un Array";
+    printf ("\nnumEntero vale %d\n", numEntero);
+    printf ("\nnumLong vale %ld\n", numLong);
+    printf ("\nnumFloat vale %f\n", numFloat);
+    printf ("\nnumDouble vale %lf\n", numDouble);
+    printf ("\nChar caracter %c\n", miChar);
+    printf ("\nArray  %s\n", miCadena);
 
-	/*Otras 
-Funciones útiles para operar cadenas de caracteres.
-
-No sólo string.h contiene funciones útiles para el tratamiento de cadenas. En ctype.h se encuentran unas funciones que permiten hacer cómodamente preguntas acerca de los caracteres, como si son mayúsculas, minúsculas, dígitos, etc:
-
-isalnum(caracter): devuelve cierto (un entero cualquiera distinto de cero) si caracter es una letra o dígito, y falso (el valor entero 0) en caso contrario.
-
-isalpha(caracter): devuelve cierto si caracter es una letra, y falso en caso contrario.
-
-isblank(caracter): devuelve cierto si caracter es un espacio en blanco o un tabulador.
-
-isdigit(caracter) devuelve cierto si caracter es un digito, y falso en caso contrario.
-
-isspace(caracter): devuelve cierto si caracter es un espacio en blanco, un salto de línea, un retorno de carro, un tabulador, etc., y falso en caso contrario.
-
-islower(caracter): devuelve cierto si caracter es una letra minúscula, y falso en caso contrario.
-
-isupper(caracter): devuelve cierto si caracter es una letra mayúscula, y falso en caso contrario.
-
-toupper(caracter): devuelve la mayúscula asociada a caracter, si la tiene; si no, devuelve el mismo caracter.
-tolower(caracter): devuelve la minúscula asociada a caracter, si la tiene; si no, devuelve el mismo caracter.
-*/
-
-	int contador = 0;
-
-	//   char c;
-	char cadena_org[20] = "Curso2019 LeNgUaJe C";
-	char cadena_Upper[20] ;
-	char cadena_Lower[20] ;
-//	strcpy(cadena_4, cadena_3); // Copia el contenido de origen en destino
-	printf ("\nLa Cadena original es : %s", cadena_org);
-	contador = 0;
-	printf ("\n");
-
-	while( cadena_org[contador] ) 
-	{
-
-	  cadena_Lower[contador] = tolower(cadena_org[contador]);
-	  cadena_Upper[contador] = toupper(cadena_org[contador]);
-	  contador++;
-	}
-	printf ("\nLa Cadena modificada a toupper es :%s", cadena_Upper);
-	printf ("\nLa Cadena modificada a lower   es :%s", cadena_Lower);
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf ( "\n\n\tFin del ejercicio ej001_3 \n\t\t¿Continuar?\n");	
+	printf ( "\n\n\tFin del ejercicio ej001_4 \n\t\t¿Continuar?\n");
 	getchar();
 	system("clear");
 
 // Ej 001_5
-    char cadena1 [] ="Curso 2019"; 
+    char cadena1 [] ="Curso 2019";
     char cadena2 [sizeof(cadena1)];
     char cadena3[] = "lenguaje C...ok!";
     char cadena4[50];
@@ -185,24 +229,24 @@ tolower(caracter): devuelve la minúscula asociada a caracter, si la tiene; si n
     printf ("Cadena1 tiene longitud %i (uno mas contando \\0) \n", largo_cadena);
     strcpy (cadena4, cadena1) ;
     printf ("Concatenacion %s \n", strcat(cadena4, cadena3));
-    
+
     printf ("\n===================================\n");
-    
+
     resComparacion = strcmp (cadena4, cadena2);
     printf ("Cadena1 vale %s y Cadena2 vale %s \n", cadena1, cadena2);
     printf ("Cadena3 vale %s y Cadena4 vale %s \n", cadena3, cadena4);
-    if (resComparacion ==0) 
+    if (resComparacion ==0)
     {
         puts ("Las cadenas 1 y 2 son iguales");
     }
     resComparacion = strcmp (cadena1, cadena3);
-    if (resComparacion >0) 
+    if (resComparacion >0)
     {
         puts ("La cadena 1 precede alfabeticamente a la cadena 3");
     }
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio ej001_5 \n\t\t¿Continuar?\n");	
+	printf( "\n\n\tFin del ejercicio ej001_5 \n\t\t¿Continuar?\n");
 	getchar();
 	system("clear");
 // Ej 001_6
@@ -215,8 +259,37 @@ tolower(caracter): devuelve la minúscula asociada a caracter, si la tiene; si n
 	strncat(descripcion, grosor, 1024);
 	printf ("\nLa Cadena final es : %s", descripcion);
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio ej001_6 \n\t\t¿Continuar?\n");	
+	printf( "\n\n\tFin del ejercicio ej001_6 \n\t\t¿Continuar?\n");
 	getchar();
 	system("clear");
+// Ej 001_7
+
+	int VALOR_1, VALOR_2;
+	float suma, resta, multi, divi;
+	VALOR_1=21;
+	VALOR_2=3;
+	suma=VALOR_1+VALOR_2;
+	resta=VALOR_1-VALOR_2;
+	multi=VALOR_1*VALOR_2;
+	divi=VALOR_1/VALOR_2;
+
+	printf("\nEl valor de la suma es %f", suma);
+	printf("\nEl valor de la resta es %f", resta);
+	printf("\nEl valor de la multicación es %f", multi);
+	printf("\nEl valor de la división es %f", divi);
+
+
+
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio ej001_7 \n\t\t¿Continuar?\n");
+	getchar();
+	system("clear");
+
+
+
+
+
+
+
 	return (0);
 }

@@ -1,8 +1,10 @@
 // Copyright 2019 Ariel H Garcia Traba <cursos.agt@gmail.com>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 #include <math.h>
-int main()
+int main(void)
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
@@ -52,62 +54,53 @@ int main()
 	printf("##            * pull                                                      ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
-    printf( "\n\tContinuamos..\n");
-    getchar();
-// Ej 003_A_01
-	printf("Inicio ej000_V_1\n");
-	printf("############################################################################\n");
-	printf("##                                                                        ##\n");
-	printf("##      Variables, Arrays                                                 ##\n");
-	printf("##                 Arrays lineales                                        ##\n");
-	printf("##                 Arrays matriciales                                     ##\n");
-	printf("##                                                                        ##\n");
-	printf("############################################################################\n");
+    printf( "\n\tContinuar: \n");
 
+// Ej 001_4
 
-//-------> Ej 003_M_01
+	/*Otras
+Funciones útiles para operar cadenas de caracteres.
 
-	printf("\n######################## En Funciones ######################################\n");
-	int mi_Matriz_1[5][5];	// 5*5=25 valores 2d //int mi_array_Matriz_1[5][5][5];// 5*5*5=125 valores 3d
-	void funcion_entrada(int mi_Matriz_1[5][5]);
-	void funcion_salida(int mi_Matriz_1[5][5]);
+No sólo string.h contiene funciones útiles para el tratamiento de cadenas. En ctype.h se encuentran unas funciones que permiten hacer cómodamente preguntas acerca de los caracteres, como si son mayúsculas, minúsculas, dígitos, etc:
 
-	funcion_entrada(mi_Matriz_1);
-	funcion_salida(mi_Matriz_1);
-	printf( "\n\tContinuamos..\n");
-	getchar();
-//	system("clear");
-	return (0);
-}
+isalnum(caracter): devuelve cierto (un entero cualquiera distinto de cero) si caracter es una letra o dígito, y falso (el valor entero 0) en caso contrario.
 
-void funcion_entrada(int mi_Matriz_1[5][5])
-{
-	printf("\n--------------------- Funcion Entrada --------------------------------------\n");
-	int contador_x = 0;
-	int contador_y = 0;
-//	srand(time(NULL));
-	for (contador_x = 0; contador_x < 5; contador_x++)
+isalpha(caracter): devuelve cierto si caracter es una letra, y falso en caso contrario.
+
+isblank(caracter): devuelve cierto si caracter es un espacio en blanco o un tabulador.
+
+isdigit(caracter) devuelve cierto si caracter es un digito, y falso en caso contrario.
+
+isspace(caracter): devuelve cierto si caracter es un espacio en blanco, un salto de línea, un retorno de carro, un tabulador, etc., y falso en caso contrario.
+
+islower(caracter): devuelve cierto si caracter es una letra minúscula, y falso en caso contrario.
+
+isupper(caracter): devuelve cierto si caracter es una letra mayúscula, y falso en caso contrario.
+
+toupper(caracter): devuelve la mayúscula asociada a caracter, si la tiene; si no, devuelve el mismo caracter.
+tolower(caracter): devuelve la minúscula asociada a caracter, si la tiene; si no, devuelve el mismo caracter.
+*/
+
+	int contador = 0;
+
+	//   char c;
+	char cadena_org[20] = "Curso2019 LeNgUaJe C";
+	char cadena_Upper[20] ;
+	char cadena_Lower[20] ;
+//	strcpy(cadena_4, cadena_3); // Copia el contenido de origen en destino
+	printf ("\nLa Cadena original es : %s", cadena_org);
+	contador = 0;
+	printf ("\n");
+
+	while( cadena_org[contador] )
 	{
-		for (contador_y = 0; contador_y < 5; contador_y++)
-		{
-			mi_Matriz_1[contador_x][contador_y]=(contador_x+1)*(contador_y+1);//rand()%10;
-		}
-	}
-}
-void funcion_salida(int mi_Matriz_1[5][5])
-{
-	printf("\n--------------------- Funcion Salida ---------------------------------------\n");
-	int contador_x = 0;
-	int contador_y = 0;
-	for (contador_x = 0; contador_x < 5; contador_x++)
-	{
-		for (contador_y = 0; contador_y < 5; contador_y++)
-		{
-			printf ("\n\tPosicion %i -  %i \tvalor dado %i " ,(contador_x+1),(contador_y+1), (mi_Matriz_1[contador_x][contador_y]));
-		}
-		printf("\n--------------");
-	//	",*(mi_array_5+contador), (contador+1));
-	}
-}
 
+	  cadena_Lower[contador] = tolower(cadena_org[contador]);
+	  cadena_Upper[contador] = toupper(cadena_org[contador]);
+	  contador++;
+	}
+	printf ("\nLa Cadena modificada a toupper es :%s", cadena_Upper);
+	printf ("\nLa Cadena modificada a lower   es :%s", cadena_Lower);
+
+}
 

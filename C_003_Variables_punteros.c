@@ -28,9 +28,9 @@ int main()
 	char *caracter_2[] ={"U","T","N"," ","2","0","1","9"};
 	printf ("\n%s",*caracter_2);
 	printf("\n-----------------------------------------------------------------------\n");
-    printf( "\n\tContinuar: (S/N)\n");
+    printf( "\n\tContinuamos..\n");
     getchar();
-	printf("\n############################################################################\n");	
+	printf("\n############################################################################\n");
 // Ej 003_P_02
 	char *mi_Array_1[5]= {"Primero","segundo","terecero","cuarto", "quinto"};//Esta matriz tiene 4 cadenas almacenadas, para leer o escribir una cadena usa el indice, si quieres coger una letra tratala como bidimensional [indice][indice_letra]
 	float mi_Array_2[5] ={3.1459,6.6742,299792458,6,6260693};
@@ -43,11 +43,11 @@ int main()
 		printf ("\n\tValor de la constante: %f.2",mi_Array_2[contador]);
 	}
 
-    printf( "\n\tContinuar: (S/N)\n");
+    printf( "\n\tContinuamos..\n");
     getchar();
 	printf("\n############################################################################\n");
 // Ej 003_P_04
-	printf( "\n\tContinuar: (S/N)\n");
+	printf( "\n\tContinuamos..\n");
 	getchar();
 	int variable_valor_1 = 1973;
 	printf ("\nAntes de accion variable_valor_1 : %i", variable_valor_1);
@@ -55,9 +55,9 @@ int main()
 	*posicion_mem_variable_valor_1 = 45;
 	printf ("\nLuego de accion variable_valor_1 : %i", variable_valor_1);
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	
+
 // Ej 003_P_03
-	printf( "\n\tContinuar: (S/N)\n");
+	printf( "\n\tContinuamos..\n");
 	getchar();
     int valor_1 = 1973;
     int valor_2 = 9;
@@ -65,7 +65,7 @@ int main()
 	printf ("\nvalor_1 : %i ", valor_1 );
 	printf ("\nvalor_2 : %i ", valor_2 );
 	printf ("\nvalor_3 : %i ", valor_3);
-	
+
 	int array_valores [3]={1973,9,22};
 	int *posicion_array_valores = array_valores;
 	printf ("\narray_valores = 0 -> 0: %i ", *posicion_array_valores);
@@ -73,13 +73,13 @@ int main()
 	printf ("\narray_valores desplazo de 0 + 2 a 2: %i ", *posicion_array_valores);
 	posicion_array_valores-=1;
 	printf ("\narray_valores desplazo de 2 - 1 a 1 : %i ", *posicion_array_valores);
-	
+
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	
+
 // Ej 003_P_05
-	printf( "\n\tContinuar: (S/N)\n");
+	printf( "\n\tContinuamos..\n");
 	getchar();
-	
+
 /*
 Definiciones de arrays como punteros. La propiedad anterior da lugar a que en
 numerosos libros de texto, se definan por ejemplo cadenas de caracteres como punteros
@@ -96,12 +96,12 @@ la variable s son “aparentemente” equivalentes:
 		En el cuerpo de la función los argumentos formales que son parámetros de E/S se usan con un * delante.
 		Los & sólo se usan en el programa principal.
 		Los * sólo se usarian en las funciones.(solo que se trabaje los arrays en estas, si tambien se trabajan en main se usan en ambos lados)
-		* 
+		*
 */
 	printf("\n######################## Uso en Funciones ######################################\n");
 	printf("\n+------------------------+");
 	printf("\n|  DENTRO DE LA FUNCION  |");
-	printf("\n|           main         |");	
+	printf("\n|           main         |");
 	printf("\n+------------------------+");
 //	int valor_1,valor_2;
 	printf("\nIngrese el 1er valor a intercambiar  ");
@@ -110,18 +110,18 @@ la variable s son “aparentemente” equivalentes:
 	scanf("%i",&valor_2);
 	printf("\nValores originales 1º %i y 2º %i",valor_1,valor_2);
 	intercambia (valor_1,valor_2);
-	printf("\nValores cambiados 1º %i y 2º %i",valor_1,valor_2);	
+	printf("\nValores cambiados 1º %i y 2º %i",valor_1,valor_2);
 
 	printf("\n-----------------------------------------------------------------------\n");
 
 	printf("\nValores originales 1º %i y 2º %i",valor_1,valor_2);
 	intercambia2 (&valor_1,&valor_2);//<-------------------el & permite asignar desde la funcion un valor al puntero
-	printf("\nValores cambiados 1º %i y 2º %i",valor_1,valor_2);	
-	
+	printf("\nValores cambiados 1º %i y 2º %i",valor_1,valor_2);
+
 	printf("\n############################################################################\n");
 
 
-printf( "\n\tContinuar: (S/N)\n");
+printf( "\n\tContinuamos..\n");
 	getchar();
 //	system("clear");
 	return (0);
@@ -130,8 +130,8 @@ void intercambia (int valor_a,int valor_b)//<---------------------las variables 
 {
 	printf("\n+------------------------+");
 	printf("\n|  DENTRO DE LA FUNCION  |");
-	printf("\n| intercambia  variables |");	
-	printf("\n+------------------------+");	
+	printf("\n| intercambia  variables |");
+	printf("\n+------------------------+");
 	int auxiliar ;
 	auxiliar = valor_a;
 	valor_a = valor_b;
@@ -144,7 +144,7 @@ void intercambia2 (int  *valor_a,int *valor_b)//<---------------------las variab
 	int auxiliar ;
 	printf("\n+------------------------+");
 	printf("\n|  DENTRO DE LA FUNCION  |");
-	printf("\n| intercambia2 v.punteros|");	
+	printf("\n| intercambia2 v.punteros|");
 	printf("\n+------------------------+");
 	auxiliar = *valor_a;//<---------------------las variables comun entera se le asigna el valor del puntero entero
 	*valor_a = *valor_b;//<---------------------las variables puntera entera se le asigna el valor del puntero entero

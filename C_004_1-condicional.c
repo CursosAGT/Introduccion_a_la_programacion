@@ -61,25 +61,34 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("##               if  else else if //  switch case break default//         ##\n");
 	printf("##  proximamente >>>>    while  //  do while >>> en su cartelera de cines ##\n");
-	printf("##                                                                        ##\n");	
+	printf("##                                                                        ##\n");
 	printf("##    ==              Igual                                               ##\n");
 	printf("##    !=              distinto                                            ##\n");
 	printf("##    >               Mayor                                               ##\n");
 	printf("##    <               Menor                                               ##\n");
 	printf("##    ==              Menor igual                                         ##\n");
 	printf("##    ==              Mayor igual                                         ##\n");
-	printf("##                                                                        ##\n");	
-	printf("##    &&              y -- and                                            ##\n");			
-	printf("##    ||              o -- or                                             ##\n");				
-	printf("##                                                                        ##\n");	
+	printf("##                                                                        ##\n");
+	printf("##    &&              y -- and                                            ##\n");
+	printf("##    ||              o -- or                                             ##\n");
+	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
-    printf( "\n\tContinuar: (S/N)\n");
+    printf( "\n\tContinuamos..\n");
     getchar();
     system("pause");
     system("clear");
 	printf("\n");
 
-
+	int numero = 4;
+	if(numero % 2 == 0)
+		printf("El número es par");
+	else
+		printf("El número no es par");
+    printf( "\n\tContinuamos..\n");
+    getchar();
+    system("pause");
+    system("clear");
+	printf("\n");
 // Ej 004_1
 	int    temporaria = 0;
 	int    dato_1_int, dato_2_int =0;
@@ -136,13 +145,13 @@ int main(void)
 		printf ("\n el pimer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
 		printf ("\n el pimer dato %i es menor al segundo %i", dato_1_int , dato_2_int);
 	}
-	
+
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_1 \n\t\t¿Continuar?\n");
 // Ej 004_2
     getchar();
 	getchar();
-	system("clear");  	
+	system("clear");
 	printf("\nIntroduce un numero int : ");
 	scanf("%i", &dato_1_int);
 	temporaria = dato_1_int % 2;
@@ -154,7 +163,7 @@ int main(void)
 	{
 		printf ("\n el dato %i es par", dato_1_int );
 	}
-	else 
+	else
 	{
 		printf ("\n el dato %i es impar", dato_1_int );
 	}
@@ -163,7 +172,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Ej 004_3
     getchar();
 	getchar();
-	system("clear");  	
+	system("clear");
 	printf("\nIntroduce un mes en numero : ");
 	scanf("%i", &dato_1_int);
 	if (dato_1_int <= 1 || dato_1_int >= 12 )
@@ -181,7 +190,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	else if (dato_1_int == 3  )
 	{
 		printf ("\n %i corresponde al mes de Marzo", dato_1_int );
-	}	
+	}
 	else if (dato_1_int == 4  )
 	{
 		printf ("\n %i corresponde al mes de Abril- No esta, se lo robaron a Joaquin", dato_1_int );
@@ -277,13 +286,48 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		}
 	else
 		{
-			
-		strcpy( nombre,'Dia incorrecto' );
+		strcpy( nombre, 'Error' );
 		}
 	printf ("Hoy es : %s", nombre);
 
 	getchar();
-	system("clear");    
-		return (0);
+	system("clear");
+
+	char c;
+
+	printf(" Menu:");
+	printf(" A=Añadir a la lista");
+	printf(" B=Borrar de la lista");
+	printf(" O=Ordenar la lista");
+	printf(" I=Imprimir la lista");
+	printf(" Escriba su selección y luego <enter>");
+	c = getchar();
+	if(c != '')
+	{
+		if(c=='A')
+		{
+			 printf(" Has seleccionado añadir");
+		}
+		else  if(c=='B') printf(" Has seleccionado borrar");
+		else  if(c=='O') printf(" Has seleccionado ordenar");
+		else  if(c=='I') printf(" Has seleccionado imprimir");
+	}
+	else
+	{
+		printf(" No has seleccionado nada");
+	}
+
+
+
+
+		getchar();
+	system("clear");
+
+
+
+
+
+
+	return (0);
 }
 

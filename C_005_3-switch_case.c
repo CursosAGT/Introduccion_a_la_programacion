@@ -1,8 +1,10 @@
 // Copyright 2019 Ariel H Garcia Traba <cursos.agt@gmail.com>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 #include <math.h>
-int main()
+int main(void)
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
@@ -52,62 +54,63 @@ int main()
 	printf("##            * pull                                                      ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
-    printf( "\n\tContinuamos..\n");
-    getchar();
-// Ej 003_A_01
-	printf("Inicio ej000_V_1\n");
-	printf("############################################################################\n");
-	printf("##                                                                        ##\n");
-	printf("##      Variables, Arrays                                                 ##\n");
-	printf("##                 Arrays lineales                                        ##\n");
-	printf("##                 Arrays matriciales                                     ##\n");
-	printf("##                                                                        ##\n");
-	printf("############################################################################\n");
-
-
-//-------> Ej 003_M_01
-
-	printf("\n######################## En Funciones ######################################\n");
-	int mi_Matriz_1[5][5];	// 5*5=25 valores 2d //int mi_array_Matriz_1[5][5][5];// 5*5*5=125 valores 3d
-	void funcion_entrada(int mi_Matriz_1[5][5]);
-	void funcion_salida(int mi_Matriz_1[5][5]);
-
-	funcion_entrada(mi_Matriz_1);
-	funcion_salida(mi_Matriz_1);
-	printf( "\n\tContinuamos..\n");
+    printf( "\n\tContinuar: \n");
 	getchar();
-//	system("clear");
-	return (0);
-}
+	system("clear");
 
-void funcion_entrada(int mi_Matriz_1[5][5])
-{
-	printf("\n--------------------- Funcion Entrada --------------------------------------\n");
-	int contador_x = 0;
-	int contador_y = 0;
-//	srand(time(NULL));
-	for (contador_x = 0; contador_x < 5; contador_x++)
-	{
-		for (contador_y = 0; contador_y < 5; contador_y++)
-		{
-			mi_Matriz_1[contador_x][contador_y]=(contador_x+1)*(contador_y+1);//rand()%10;
-		}
-	}
-}
-void funcion_salida(int mi_Matriz_1[5][5])
-{
-	printf("\n--------------------- Funcion Salida ---------------------------------------\n");
-	int contador_x = 0;
-	int contador_y = 0;
-	for (contador_x = 0; contador_x < 5; contador_x++)
-	{
-		for (contador_y = 0; contador_y < 5; contador_y++)
-		{
-			printf ("\n\tPosicion %i -  %i \tvalor dado %i " ,(contador_x+1),(contador_y+1), (mi_Matriz_1[contador_x][contador_y]));
-		}
-		printf("\n--------------");
-	//	",*(mi_array_5+contador), (contador+1));
-	}
-}
 
+
+
+
+
+
+
+
+
+
+
+	int nota;
+	printf(" Inserte una nota: ");
+	scanf("%d",&nota);
+	switch(nota)
+	{
+		case 0: printf("\nSuspenso");break;
+		case 1: printf("\nSuspenso");break;
+		case 2: printf("\nSuspenso");break;
+		case 3: printf("\nSuspenso");break;
+		case 4: printf("\nSuspenso");break;
+		case 5: printf("\nAprobado");break;
+		case 6: printf("\nBien");break;
+		case 7: printf("\nNotable");break;
+		case 8: printf("\nNotable");break;
+		case 9: printf("\nSobresaliente");break;
+		case 10: printf("\nSobresaliente");break;
+		default: printf("esa nota es incorrecta");
+	}
+    printf( "\n\tContinuar: \n");
+	getchar();	getchar();
+
+
+	float entrada,salida, cambio;
+	int opcion;
+	cambio = 65.50;
+	printf("la cantidad: ");
+	scanf("%f",&entrada);
+	printf("1-pesos a Dolares \n2-Dolares a pesos");
+	scanf("%d",&opcion);
+	switch(opcion)
+	{
+		case 1:salida=entrada/cambio;
+		printf("%f Pesos son %f Dolares",entrada,salida);
+		break;
+		case 2:salida=entrada*cambio;
+		printf("%f Dolares son %f Pesos",entrada,salida);
+		break;
+		default: printf("opción incorrecta");
+	}
+
+    printf( "\n\tContinuar: \n");
+	getchar();	getchar();
+
+}
 

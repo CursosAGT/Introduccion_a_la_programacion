@@ -85,10 +85,17 @@ int main(void)
 	printf("##      http://www.pablin.com.ar/computer/cursos/c2/manc7.htm             ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
-
+	printf("##                                                                        ##\n");
+	printf("##          strlen                                                        ##\n");
+	printf("##          strcpy                                                        ##\n");
+	printf("##          strcat                                                        ##\n");
+	printf("##          sprintf                                                       ##\n");
+	printf("##          strcmp                                                        ##\n");
+	printf("##                                                                        ##\n");
+	printf("############################################################################\n");
 	/*
 	 * Acepta un string de formato y cualquier número de argumentos. Estos argumentos se aplican a cada uno de los especificadores de formato contenidos en format. Un especificador de formato toma la forma %[flags][width][.prec][h|l] type. El tipo puede ser:
-	
+
 	d, i	        entero decimal con signo
 	o		entero octal sin signo
 	u		entero decimal sin signo
@@ -103,24 +110,24 @@ int main(void)
 	s		cadena de caracteres terminada en '\0'
 	%		imprime el carácter %
 	p		puntero
-	
+
 	Los flags pueden ser los caracteres:
 	+		siempre se imprime el signo, tanto + como -
 	-		justifica a la izquierda el resultado, añadiendo espacios al final
 	blank	si es positivo, imprime un espacio en lugar de un signo +
 	#		especifica la forma alternativa
-	
+
 	En el campo width se especifica la anchura mínima de la forma:
 	n		se imprimen al menos n caracteres.
 	0n		se imprimen al menos n caracteres y si la salida es menor, se anteponen ceros
 	*		la lista de parámetros proporciona el valor
-	
+
 	Hay dos modificadores de tamaño, para los tipos enteros:
 	l		imprime un entero long
-	h		imprime un entero short	
-	*/	
-	
-	printf( "\n\tContinuar: (S/N)\n");
+	h		imprime un entero short
+	*/
+
+	printf( "\n\tContinuamos..\n");
 	getchar();
 	system("pause");
 	system("clear");
@@ -159,8 +166,8 @@ int main(void)
 	printf("%d\t%f\t%lf\t%c\t%s\t\n\n", dato_int, dato_float, dato_double,dato_char, cadena_char);
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_1 \n\t\t¿Continuar?\n");
-// Ej 004_2
+	printf( "\n\n\tFin del ejercicio 002_1 \n\t\t¿Continuar?\n");
+// Ej 002_2
 	getchar();
 	char nombre[20] ; /* Reservamos espacio para cadena de 19 caracteres + el caracter nulo */
 	int longitud_string = 0;
@@ -168,12 +175,12 @@ int main(void)
 	scanf("%s", nombre);
 	longitud_string = strlen(nombre); //strlen cuenta caracteres
 	printf( "\t...Che %s...tu nombre tiene %i caracteres. \n", nombre, longitud_string );
-//	system("clear");  	
+//	system("clear");
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_2 \n\t\t¿Continuar?\n");
-// Ej 004_3
+	printf( "\n\n\tFin del ejercicio 002_2 \n\t\t¿Continuar?\n");
+// Ej 002_3
 	getchar();
-//	system("clear");  	
+//	system("clear");
 //                              operadores matematicos simples
 	float  dato_1_int, dato_2_int;
 	printf("\nIntroduce el primer numero int : ");
@@ -188,19 +195,19 @@ int main(void)
 	printf("\nOK multiplicacion : %f", temporaria);//n
 	temporaria = dato_1_int / dato_2_int; // OJO nunca dividiras por cero reveer la variable como float
 	printf("\nOK divicion : %f", temporaria);//n
-	temporaria = dato_1_int / dato_2_int; // 
+	temporaria = dato_1_int / dato_2_int; //
 	printf("\nOK resto : %f", temporaria);//n
 
 //	temporaria = pow (dato_int,2);
 //	printf("\nSu cuadrado es %f", temporaria);//c
 //	temporaria = sqrt (dato_int);
 //	printf("\nSu raiz cuadrada es %f", temporaria);//c
- 
+
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_3 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 002_3 \n\t\t¿Continuar?\n");
 	getchar();
 //	system("clear");
-//Ej 004_3
+//Ej 002_3
 	float nota_alumno_1 = 0, nota_alumno_2 = 0;
 	printf ("\nIngreso la nota del 1er parcial :");
 	scanf("%f",&nota_alumno_1);
@@ -210,9 +217,9 @@ int main(void)
 	printf ("\n2do parcial : %f",nota_alumno_2);
 	printf ("\npromedio : %f",((nota_alumno_1+nota_alumno_2)/2));
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_4 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 002_4 \n\t\t¿Continuar?\n");
 	getchar();
-// Ej 004_4
+// Ej 002_4
 	float nota1 , nota2 =0 ;
 	printf ("\nIngreso la nota del 1er parcial :");
 	scanf ("%f",&nota1);
@@ -231,9 +238,50 @@ int main(void)
 	printf ("Evaluaciones :\t %f \t|\t%f ",(nota1),(nota2));
 	printf ("\npromedio : %f ", temporaria);
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_4 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 002_4 \n\t\t¿Continuar?\n");
 	getchar();
-/*	
+
+	char variable_cadena[20];
+	int variable_int;
+	long variable_long;
+	long long variable_longlong;
+	float variable_float;
+	double variable_double;
+
+	scanf("variable_cadena %s%*c", variable_cadena); //Para string _ cadena
+	scanf("variable_int %d", &variable_int); //Para entero
+	scanf("variable_long %ld", &variable_long); //Para long
+	scanf("variable_longlong %lld", &variable_longlong); //Para long long
+	scanf("variable_float %f", &variable_float); //Para float
+	scanf("variable_double %lf", &variable_double); //Para double (long float)
+
+	printf("variable_cadena %s\n", variable_cadena); //Para string _ cadena
+	printf("variable_int %d\n", variable_int); //Para entero
+	printf("variable_long %ld\n", variable_long); //Para long
+	printf("variable_longlong %lld\n", variable_longlong); //Para long long
+	printf("variable_float %0.2f\n", variable_float); //Para float
+	printf("variable_double %0.5lf\n", variable_double); //Para double (long float)
+
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_5 \n\t\t¿Continuar?\n");
+	getchar();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 	int num,i,suma=0,cantidad;
 	clrscr();
 	printf("Promedio.n Cuantos numero quieres calcular su promedio: ");
@@ -261,7 +309,7 @@ int main(void)
 	while(_cont<=_cant)
 	{					//Ciclo que cuenta la lectura
 		scanf("%d",&_valor);			//lectura de valores
-		_suma=_suma+_valor;			//suma de valores   
+		_suma=_suma+_valor;			//suma de valores
 		_cont++;//incremente de lectura de valores
 	 }						//END while
 	_prom=_suma/_cant;//promedoi de valores
@@ -287,16 +335,16 @@ int main(void)
 	getchar();
 */
 
-	
-//	system("clear"); 
-// Ej 004_5
+
+//	system("clear");
+// Ej 002_5
 	int edad = 0;
 	printf ("Ingrese su edad : ");
 	scanf("%i",&edad);
 	if (edad<0)
 	{
 		printf ("\nerror");
-	}	
+	}
 	else if(edad<=2)
 	{
 		printf ("\nbebe");
@@ -326,21 +374,21 @@ int main(void)
 		printf ("\nte crece la panza y se cae todo, hasta el pelo");
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_5 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 002_5 \n\t\t¿Continuar?\n");
 	getchar();
 //	system("clear");
-// Ej 004_6
+// Ej 002_6
 /* Funciones de <string.h>:
-	
+
 	strcmp(cadena1, cadena2); //Compara dos cadenas de carácteres
-	strcat(cadena1, cadena2); //Concatena dos cadenas de carácteres 
+	strcat(cadena1, cadena2); //Concatena dos cadenas de carácteres
 	strcpy(cadena1, cadena2); //Copia la primera cadena en la segunda
 	strlen(cadena);  //Retorna la longitud de carácteres que componen a la cadena
 	*/
 	char cadena_org[30] = "Esto Es una CaDeNa De pRuEbA";
 	char cadena_May[30] ;
 	char cadena_Min[30] ;
-	
+
 	int contador, largo, compara =0;
 	strcpy(cadena_May, cadena_org); //Copia la primera cadena en la segunda
 	strcpy(cadena_Min, cadena_org); //Copia la primera cadena en la segunda
@@ -360,9 +408,9 @@ int main(void)
 	return 0;
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_6 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
 	getchar();
-//	system("clear"); 
+//	system("clear");
 	int numero;
 	fputs("Introduzca un numero entero par: ", stdout);
 
@@ -380,11 +428,49 @@ int main(void)
 	}
 
 	printf ("No se puede seguir dividiendo: El numero %d es impar.\n", numero);
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
+	getchar();
+
+
+
+
+	char texto[]="Gandalf";
+	char *p;
+	int longitud=0;
+
+	p = texto;
+	while (*p != '\0') {
+		longitud++;
+		printf( "%c\n", *p );	/* Mostramos la letra actual */
+		p++;			/* Vamos a la siguiente letra */
+	}
+	printf( "La cadena \"%s\" tiene %i caracteres.\n", texto, longitud );
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
+	getchar();
+
+
+	char texto[] = "Éste es un curso de C.";
+	char destino[50];
+
+	strcpy( destino, texto );
+	printf( "Valor final: %s\n", destino );
+
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
+	getchar();
+
+
+
+
+
+
 	return (0);
 }
 /*
  * Funciones de <math.h>:
-	
+
 	double sin(valor);  //Calcula el sinus
 	double cos(valor);  //Calcula el cosinus
 	double tan(valor);  //Calcula la tangente
@@ -400,47 +486,47 @@ int main(void)
 	double pow(valor);
 	double sqrt(valor);  //Calcula raíces cuadradas
 	#include <stdio.h>
-	
+
 	float promedio(int valores[], int cantidad) {
 	int i;
 	float suma = 0.0;
-	
+
 	for (i = 0; i < cantidad; ++i)
 	suma += valores[i];
-	
+
 	return suma / (float) cantidad;
 }
-	
-	
-int main() 
+
+
+int main()
 {
-	
+
 	int notas[10];
 	char nombre[20];
 	char opcion[3];
 	int n, i;
-	
-	do 
+
+	do
 	{
 	printf("Ingrese nombre del alumno: ");
 	scanf("%s", nombre);
-	
+
 	printf("Cuantas notas tiene %s? ", nombre);
 	scanf("%d", &n);
-	
+
 	for (i = 0; i < n; ++i)
 		{
 		    printf("  Nota %d: ", i + 1);
 		    scanf("%d", &notas[i]);
 		}
-	
+
 	printf("El promedio de %s es %.1f\n", nombre, promedio(notas, n));
-	
+
 	printf("Desea calcular mas promedios (si/no)? ");
 	scanf("%s", opcion);
-	
+
 	} while (opcion[0] == 's' || opcion[0] == 'S');
-	
+
 	return 0;
 }
 */

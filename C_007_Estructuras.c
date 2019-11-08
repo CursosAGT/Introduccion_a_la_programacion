@@ -57,19 +57,19 @@
 				printf("##                                                                        ##\n");
 				printf("##      Estructuras de Variables                                          ##\n");
 				printf("##                                                                        ##\n");
-				printf("############################################################################\n");     
+				printf("############################################################################\n");
 */
-				
+
 //Ej 008_01
 typedef struct{
 
 				int ruedas;
 				int asientos;
 				int ejes;
-				int puertas;				
+				int puertas;
 				char tipo[11];
 				char marca[11];
-				char modelo[11];				
+				char modelo[11];
 				}Estructura;
 
 int main()
@@ -81,33 +81,33 @@ int main()
 	AUTOS.asientos = 4;
 	AUTOS.ejes=2;
 	AUTOS.puertas=5;
-	strcpy(AUTOS.tipo,"auto");	
+	strcpy(AUTOS.tipo,"auto");
 	strcpy(AUTOS.marca,"VW");
 	strcpy(AUTOS.modelo,"Suran");
-	
+
 	printf("\nMi %s es un %s %s ",AUTOS.tipo,AUTOS.marca,AUTOS.modelo);
 	printf("\nTiene %i ruedas en sus %i ejes",AUTOS.ruedas,AUTOS.ejes);
 	printf("\nSe ingresa por una de sus %i puertas a uno de sus %i asientos.",AUTOS.puertas,AUTOS.asientos);
 
 	Estructura CAMIONETA;//VER QUE ESTA EN MAYUSCULAS
-	
+
 	CAMIONETA.ruedas = 4;
 	CAMIONETA.asientos = 2;
 	CAMIONETA.ejes=2;
 	CAMIONETA.puertas=2;
-	strcpy(CAMIONETA.tipo,"camioneta");		
+	strcpy(CAMIONETA.tipo,"camioneta");
 	strcpy(CAMIONETA.marca,"FIAT");
 	strcpy(CAMIONETA.modelo,"fiorino");
-	
+
 	printf("\nMi %s es un %s %s ",CAMIONETA.tipo,CAMIONETA.marca,CAMIONETA.modelo);
 	printf("\nTiene %i ruedas en sus %i ejes",CAMIONETA.ruedas,CAMIONETA.ejes);
 	printf("\nSe ingresa por una de sus %i puertas a uno de sus %i asientos.",CAMIONETA.puertas,CAMIONETA.asientos);
 	printf("\n---------------------------------------------------------------------------\n");
-	printf( "\n\tContinuar: (S/N)\n");
+	printf( "\n\tContinuamos..\n");
 	getchar();
-*/	
+*/
 	Estructura moviles[5];
-	
+
 	for (int contador=0; contador < 2 ; contador++)
 	{
 	printf("\nVehiculo nº: %i", contador +1);
@@ -130,7 +130,7 @@ int main()
 	printf("\nIngresa que cantidad de asientos tiene :");
 		scanf("%i",&moviles[contador].asientos );
 	}
-	
+
 	for (int contador = 0; contador < 2; contador++)
 	{
 		int largo_cadena =(strlen(moviles[contador].tipo));
@@ -141,22 +141,22 @@ int main()
 				moviles[contador].tipo[contador2] = '\0';
 			}
 		}
-	}	
-	
-	
+	}
+
+
 	for (int contador=0; contador < 2 ; contador++)
 	{
 		printf("\nEl vehiculo nro %i %s es un %s %s ",contador, moviles[contador].tipo,moviles[contador].marca,moviles[contador].modelo);
 		printf("\nTiene %i ruedas en sus %i ejes",moviles[contador].ruedas,moviles[contador].ejes);
 		printf("\nSe ingresa por una de sus %i puertas a uno de sus %i asientos.",moviles[contador].puertas,moviles[contador].asientos);
 	}
-	
 
 
 
-	
-	
-	printf( "\n\tContinuar: (S/N)\n");
+
+
+
+	printf( "\n\tContinuamos..\n");
 	getchar();
 //	system("clear");
 	return (0);

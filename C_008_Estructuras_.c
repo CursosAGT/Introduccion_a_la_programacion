@@ -10,7 +10,7 @@
 typedef struct{
 				char Nombre[caracteres_max];
 				char Apellido[caracteres_max];
-				char Curso[caracteres_max];				
+				char Curso[caracteres_max];
 				float Lengua;
 				float Matematica;
 				float Fisica;
@@ -29,7 +29,7 @@ int main()
 	printf ("\nBoletines");
 	salida_boletines (notas_examen);
 
-	printf( "\n\tContinuar: (S/N)\n");
+	printf( "\n\tContinuamos..\n");
 	getchar();
 //	system("clear");
 	return (0);
@@ -39,7 +39,7 @@ void ingresar_notas (notas notas_examen[])
 {
 	char Nombre_temporaria[caracteres_max];
 	char Apellido_temporaria[caracteres_max];
-	char Curso_temporaria[caracteres_max];	
+	char Curso_temporaria[caracteres_max];
 	float Lengua_temporaria;
 	float Matematica_temporaria;
 	float Fisica_temporaria;
@@ -47,7 +47,7 @@ void ingresar_notas (notas notas_examen[])
 	float Promedio_temporaria;
 	for (int contador=0; contador < Cant_alumnos ; contador++)
 	{
-		fflush (stdin);		
+		fflush (stdin);
 		printf("\nItem Nº %i : ok?",contador+1);		getchar();
 		printf("\nIngresa el Curso del alumno :");
 		fflush (stdin);
@@ -67,20 +67,20 @@ void ingresar_notas (notas notas_examen[])
 		fgets(Apellido_temporaria,caracteres_max,stdin);
 		retocar_strings (Apellido_temporaria);
 		strcpy(notas_examen[contador].Apellido, Apellido_temporaria);
-		
+
 		printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		printf("\nIngresa la nota de Lengua :");
 		fflush (stdin);
 		scanf("%f",&Lengua_temporaria);
 		notas_examen[contador].Lengua= Lengua_temporaria;
-		
+
 		printf("\nIngresa la nota de Matematica :");
 		fflush (stdin);
 		scanf("%f",&Matematica_temporaria);
 		notas_examen[contador].Matematica= Matematica_temporaria;
 		printf("\nIngresa la nota de Fisica :");
 		fflush (stdin);
-		
+
 		scanf("%f",&Fisica_temporaria);
 		notas_examen[contador].Fisica= Fisica_temporaria;
 		printf("\nIngresa la nota de Quimica :");
@@ -90,7 +90,7 @@ void ingresar_notas (notas notas_examen[])
 		Promedio_temporaria=(Lengua_temporaria+Matematica_temporaria+Fisica_temporaria+Quimica_temporaria)/4;
 		notas_examen[contador].Promedio = Promedio_temporaria;
 		printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		
+
 	}
 }
 void salida_boletines (notas notas_examen[])
@@ -107,7 +107,7 @@ void salida_boletines (notas notas_examen[])
 		printf("\nNota de Quimica :\t%.2f",notas_examen[contador].Quimica);
 		printf("\nPromedio :\t%.2f",notas_examen[contador].Promedio);
 		printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		
+
 	}
 }
 void retocar_strings (char mi_cadena[caracteres_max])

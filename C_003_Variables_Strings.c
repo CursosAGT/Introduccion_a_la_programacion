@@ -64,29 +64,29 @@ int main()
 		printf("##                                                                        ##\n");
 		printf("##      Variables, Strings                                                ##\n");
 		printf("##                                                                        ##\n");
-		printf("############################################################################\n");     
+		printf("############################################################################\n");
 /*
 • strlen(<cadena>):
- Devuelve la longitud de la cadena sin tomar en cuenta el caracter de final de cadena.  
+ Devuelve la longitud de la cadena sin tomar en cuenta el caracter de final de cadena.
 • strcpy(<cadena_destino>,  <cadena_origen>)  :
-    Copia    el    contenido de  <cadena_origen> en <cadena_destino>. 
+    Copia    el    contenido de  <cadena_origen> en <cadena_destino>.
 • strcat(<cadena_destino>,  <cadena_origen>)  :
 	Concatena  el  contenido de  <cadena_origen> al final de <cadena_destino>.
-• strcmp(<cadena1>,  <cadena2>)  :  
-	Compara   las   dos   cadenas   y   devuelve   un   0   si   las   dos   cadenas   son   iguales,   un   número   negativo   si   4 <cadena1>  es  menor  que  (precede  alfabéticamente  a)  <cadena2>  y  un  número positivo (mayor que cero) si <cadena1> es mayor que <cadena2>. 
+• strcmp(<cadena1>,  <cadena2>)  :
+	Compara   las   dos   cadenas   y   devuelve   un   0   si   las   dos   cadenas   son   iguales,   un   número   negativo   si   4 <cadena1>  es  menor  que  (precede  alfabéticamente  a)  <cadena2>  y  un  número positivo (mayor que cero) si <cadena1> es mayor que <cadena2>.
             // devuelve un valor menor, igual o mayor que 0 según si cadena1 es menor,
-            // igual o mayor que cadena2, respectivamente. 
+            // igual o mayor que cadena2, respectivamente.
 • strchr(<cadena1>,  caracter) :
 	Devuelve la posición en memoria de la primer aparición de caracter dentro de cadena
 • strstr(<cadena1>,  <subcadena>):
 	Devuelve la posición en memoria de la primer aparición de subcadena dentro de cadena
 
-*/		
+*/
 //Ej 003_S_01
 
 		char mi_string_1[6] = {"Ariel"};//  cantidad de caracteres mas  "\0" fin de string
 		printf ("\n\tNombre de la constante: %s",mi_string_1);
-		printf( "\nContinuar: (S/N)\n");
+		printf( "\nContinuamos..\n");
 		getchar();
 
 
@@ -100,7 +100,7 @@ int main()
 		printf ("\n---------------------------  Salida scanf----------------------------------\n");
 		printf ("\n\tcon scanf -\tBuenas noches ' %s ', como va el curso",mi_string_2);
 		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-		printf ( "\nContinuar: (S/N)\n");getchar();
+		printf ( "\nContinuamos..\n");getchar();
 		printf ("\n---------------------------  Entrada gets----------------------------------\n");
 		printf ("\n\tIngresa tu nombre con get : ");
 		gets (mi_string_2);			//  ojo con el tamaño del string
@@ -108,7 +108,7 @@ int main()
 		printf ("\n\tcon gets -\tBuenas noches ' %s ', como va el curso",mi_string_2);
 		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 		printf ("\n---------------------------  Entrada fgets---------------------------------\n");
-		printf ( "\nContinuar: (S/N)\n");getchar();
+		printf ( "\nContinuamos..\n");getchar();
 		printf ("\n\tIngresa tu nombre con fget : ");
 		fflush (stdin);
 		fgets (mi_string_2,11,stdin);//  cantidad de caracteres mas  "\n" fin de string
@@ -116,7 +116,7 @@ int main()
 		printf ("\n---------------------------  Salida fgets----------------------------------\n");
 		printf ("\n\tcon fgets -\tBuenas noches ' %s ', como va el curso",mi_string_2);
 		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-		printf( "\nContinuar: (S/N)\n");
+		printf( "\nContinuamos..\n");
 		fflush (stdin);
 		getchar();
 		getchar();
@@ -146,7 +146,7 @@ int main()
 			printf ("\n\tValor de la constante: %f",mi_array_2[contador]);
 			printf ("   %s",mi_array_3[contador]);
 		}
-		printf( "\nContinuar: (S/N)\n");
+		printf( "\nContinuamos..\n");
 		getchar();
 		printf("\n############################################################################\n");
 //Ej 003_S_04
@@ -413,16 +413,16 @@ Caracteres ASCII imprimibles
 */
 		char caracter_1=58;		//
 		char caracter_2=41;		//
-		char caracter_3=65;		//A	
+		char caracter_3=65;		//A
 		char caracter_4=114;	//r
 		char caracter_5=105;	//i
-		char caracter_6=101;	//e	
+		char caracter_6=101;	//e
 		char caracter_7=108;	//l
 		char caracter_8=234;	//
 		char caracter_9=32;		//` `
 		char caracter_10=33;	// !
 		printf ("%c%c%c%c%c%c%c%c%c%c%c%c",caracter_1,caracter_2,caracter_9,caracter_3,caracter_4,caracter_5,caracter_6,caracter_7,caracter_9,caracter_10,caracter_10,caracter_10);
-		printf( "\nContinuar: (S/N)\n");
+		printf( "\nContinuamos..\n");
 		getchar();
 		printf("\n############################################################################\n");
 
@@ -435,7 +435,7 @@ Caracteres ASCII imprimibles
 		char mi_string_4[4] = {"gia"};
 		strcat( mi_string_3, mi_string_4 );
 		printf ("\n\tNombre de la constante: %s",mi_string_3);
-		printf( "\nContinuar: (S/N)\n");
+		printf( "\nContinuamos..\n");
 		getchar();
 		printf("\n############################################################################\n");
 
@@ -460,20 +460,20 @@ Caracteres ASCII imprimibles
 			{
 				printf("\nSon diferentes");
 			}
-		printf( "\nContinuar: (S/N)\n");
+		printf( "\nContinuamos..\n");
 		getchar();
 		printf("\n############################################################################\n");
 
 
-//Ej 003_S_06	
+//Ej 003_S_06
 		int cant_caracteres ;
 		char mi_string_8[]="Este es un texto al azar";//  cantidad de caracteres reservados mas  "\0" fin de string
 		printf("\n---------------------------  Entrada ---------------------------------\n");
-		
+
 		printf ("\n\tIngresa un string con mayusculas y minusculas :");
 		cant_caracteres = strlen(mi_string_8);
 		printf("\n---------------------------  Salida ----------------------------------\n");
-		printf("\nOriginal");	
+		printf("\nOriginal");
 		printf("\n%s",mi_string_8);
 
 		for (int contador = 0; contador < cant_caracteres; contador++)
@@ -487,9 +487,9 @@ Caracteres ASCII imprimibles
 				mi_string_8[contador] = toupper(mi_string_8[contador]);
 			}
 		}
-		printf("\nModificado");	
+		printf("\nModificado");
 		printf("\n%s",mi_string_8);
-		printf( "\nContinuar: (S/N)\n");
+		printf( "\nContinuamos..\n");
 		getchar();
 		printf("\n############################################################################\n");
 //Ej 003_S_07
@@ -508,26 +508,26 @@ Caracteres ASCII imprimibles
 		printf("<~~~~~~fin de linea");
 		printf("\n-----------------");
 		cambiar_mayusc (mi_string_7);
-		printf("\nTodo en mayusculas");	
+		printf("\nTodo en mayusculas");
 		printf("\n%s",mi_string_7);
 		printf("\n-----------------");
 		cambiar_minusc (mi_string_7);
-		printf("\nTodo en minusculas");	
+		printf("\nTodo en minusculas");
 		printf("\n%s",mi_string_7);
 		printf("\n-----------------");
-		printf("\nLongitud de la cadena");	
+		printf("\nLongitud de la cadena");
 		printf("\n%li",(strlen(mi_string_7)));
 		printf("\n-----------------");
-		printf( "\nContinuar: (S/N)\n");
+		printf( "\nContinuamos..\n");
 		getchar();
 		printf("\n############################################################################\n");
 		printf("\n##     Este ejemplo no es el mejor, se deberian usar punteros,            ##\n");
 		printf("\n##     pero para explicar el tema sin profundizar es correcto             ##\n");
-		printf("\n##     proximamente veremos punteros                                      ##\n");		
+		printf("\n##     proximamente veremos punteros                                      ##\n");
 		printf("\n############################################################################\n");
 		return (0);
 
-}	
+}
 
 void cambiar_retorno (char mi_string_7[11])
 {
@@ -547,7 +547,7 @@ void cambiar_mayusc (char mi_string_7[11])
 	{
 	mi_string_7[contador] = toupper(mi_string_7[contador]);
 	}
-}		
+}
 void cambiar_minusc (char mi_string_7[11])
 {
 	int contador = 0;

@@ -61,7 +61,7 @@ int main(void)
 	printf("##    ||              o -- or                                             ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
-    printf( "\n\tContinuar: (S/N)\n");
+    printf( "\n\tContinuamos..\n");
     getchar();
     system("pause");
     system("clear");
@@ -107,7 +107,7 @@ int main(void)
 		}
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-    printf( "\n\tContinuar: (S/N)\n");
+    printf( "\n\tContinuamos..\n");
 	printf("\n\t\t\tUso de WHILE");
 	printf("\n\t\t\t~~~~~~~~~~~~");
     getchar();    getchar();    getchar();
@@ -128,7 +128,7 @@ int main(void)
 	 temporaria++;
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-    printf( "\n\tContinuar: (S/N)\n");
+    printf( "\n\tContinuamos..\n");
 	printf("\n\t\t\tUso de DO....WHILE");
 	printf("\n\t\t\t~~~~~~~~~~~~~~~~~~");
     getchar();    getchar();    getchar();
