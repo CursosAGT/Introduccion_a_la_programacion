@@ -10,10 +10,10 @@ int main()
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
-	printf("##      ¿Qué es C?                                                        ##\n");
-	printf("##            * Instalación y configuración                               ##\n");
-	printf("##            * Errores sintácticos y lógicos                             ##\n");
-	printf("##            * Programación secuencial                                   ##\n");
+	printf("##      ¿Que es C?                                                        ##\n");
+	printf("##            * Instalacion y configuracion                               ##\n");
+	printf("##            * Errores sintacticos y logicos                             ##\n");
+	printf("##            * Programacion secuencial                                   ##\n");
 	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 	printf("##            * Estructuras repetitivas                                   ##\n");
 	printf("##                                                                        ##\n");
@@ -42,7 +42,7 @@ int main()
 	printf("##                                                                        ##\n");
 	printf("##      Funciones                                                         ##\n");
 	printf("##            * void                                                      ##\n");
-	printf("##            * Parámetros                                                ##\n");
+	printf("##            * Parametros                                                ##\n");
 	printf("##            * Retorno de datos                                          ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Memoria y punteros                                                ##\n");
@@ -66,7 +66,7 @@ int main()
 	{
 		printf("\n+------------------------+");
 		printf("\n|  DENTRO DE LA FUNCION  |");
-		printf("\n|           main         |");	
+		printf("\n|           main         |");
 		printf("\n+------------------------+");
 		printf("\nIntroduce el 1er numero : ");
 		scanf("%i%*c", &valor_1);
@@ -80,7 +80,7 @@ int main()
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 006_1 \n\t\t¿Continuar?\n");
-	
+
 	getchar();
 	system("clear");
 	return (0);
@@ -90,7 +90,7 @@ int sumemos (int valor_a, int valor_b)
 	int resulta2 = 0;
 	printf("\n+------------------------+");
 	printf("\n|  DENTRO DE LA FUNCION  |");
-	printf("\n|         SUMEMOS        |");	
+	printf("\n|         SUMEMOS        |");
 	printf("\n+------------------------+");
 	printf("\n sumemos %i + %i\n",valor_a, valor_b);//c
 	resulta2 =  valor_a + valor_b;

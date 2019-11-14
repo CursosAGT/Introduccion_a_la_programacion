@@ -6,10 +6,10 @@ int main(void)
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
-	printf("##      Unidad 1 -¿Qué es C?                                              ##\n");
-	printf("##            * Instalación y configuración                               ##\n");
-	printf("##            * Errores sintácticos y lógicos                             ##\n");
-	printf("##            * Programación secuencial                                   ##\n");
+	printf("##      Unidad 1 -¿Que es C?                                              ##\n");
+	printf("##            * Instalacion y configuracion                               ##\n");
+	printf("##            * Errores sintacticos y logicos                             ##\n");
+	printf("##            * Programacion secuencial                                   ##\n");
 	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 	printf("##            * Estructuras repetitivas                                   ##\n");
 	printf("##                                                                        ##\n");
@@ -26,20 +26,20 @@ int main(void)
 	printf("##      Bucles                                                            ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Funciones                                                         ##\n");
-	printf("##            * Parámetros                                                ##\n");
+	printf("##            * Parametros                                                ##\n");
 	printf("##            * Retorno de datos                                          ##\n");
 	printf("##            * Return de listas                                          ##\n");
-	printf("##            * Parámetros con valor por defecto                          ##\n");
+	printf("##            * Parametros con valor por defecto                          ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Arrays                                                            ##\n");
 	printf("##                                                                        ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      GIT Colaborativo -Pair Programming                                ##\n");
-	printf("##            * Introducción a CVS y comparativa con SVN                  ##\n");
+	printf("##            * Introduccion a CVS y comparativa con SVN                  ##\n");
 	printf("##            * Creando un repositorio con GIT, clonar, crear branches    ##\n");
 	printf("##            * Borrar, guardar (stash), recuperar (pop)                  ##\n");
-	printf("##            * Configuración de remote                                   ##\n");
-	printf("##            * Configuración de Git avanzada                             ##\n");
+	printf("##            * Configuracion de remote                                   ##\n");
+	printf("##            * Configuracion de Git avanzada                             ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
@@ -110,6 +110,7 @@ int main(void)
     printf( "\n\tContinuamos..\n");
 	printf("\n\t\t\tUso de WHILE");
 	printf("\n\t\t\t~~~~~~~~~~~~");
+
     getchar();    getchar();    getchar();
  //   system("pause");
  //   system("clear");
@@ -132,7 +133,7 @@ int main(void)
 	printf("\n\t\t\tUso de DO....WHILE");
 	printf("\n\t\t\t~~~~~~~~~~~~~~~~~~");
     getchar();    getchar();    getchar();
-    system("clear");
+    //system("clear");
 	printf("\n");
 	temporaria = dato_1_int;
 	do

@@ -8,10 +8,10 @@ int main(void)
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
-	printf("##      ¿Qué es C?                                                        ##\n");
-	printf("##            * Instalación y configuración                               ##\n");
-	printf("##            * Errores sintácticos y lógicos                             ##\n");
-	printf("##            * Programación secuencial                                   ##\n");
+	printf("##      ¿Que es C?                                                        ##\n");
+	printf("##            * Instalacion y configuracion                               ##\n");
+	printf("##            * Errores sintacticos y logicos                             ##\n");
+	printf("##            * Programacion secuencial                                   ##\n");
 	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 	printf("##            * Estructuras repetitivas                                   ##\n");
 	printf("##                                                                        ##\n");
@@ -40,7 +40,7 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("##      Funciones                                                         ##\n");
 	printf("##            * void                                                      ##\n");
-	printf("##            * Parámetros                                                ##\n");
+	printf("##            * Parametros                                                ##\n");
 	printf("##            * Retorno de datos                                          ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Memoria y punteros                                                ##\n");
@@ -75,83 +75,27 @@ int main(void)
 	printf("############################################################################\n");
     printf( "\n\tContinuamos..\n");
     getchar();
-    system("pause");
-    system("clear");
-	printf("\n");
-
-	int numero = 4;
-	if(numero % 2 == 0)
-		printf("El número es par");
-	else
-		printf("El número no es par");
-    printf( "\n\tContinuamos..\n");
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin intro \n\t\t¿Continuar?\n");
+// Ej 004_1/1
     getchar();
-    system("pause");
-    system("clear");
-	printf("\n");
-// Ej 004_1
-	int    temporaria = 0;
-	int    dato_1_int, dato_2_int =0;
-	printf("\nIntroduce el primer numero int : ");
-	scanf("%i", &dato_1_int);
-	printf("\nIntroduce el segundo numero int : ");
-	scanf("%i", &dato_2_int);
-	if (dato_1_int == dato_2_int)
-	{
-		printf ("\n el pimer dato %i es igual al segundo %i", dato_1_int , dato_2_int);
-	}
-	if (dato_1_int != dato_2_int)
-	{
-		printf ("\n el pimer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
-	}
-	if (dato_1_int > dato_2_int)
-	{
-		printf ("\n el pimer dato %i es mayor al segundo %i", dato_1_int , dato_2_int);
-	}
-	if (dato_1_int < dato_2_int)
-	{
-		printf ("\n el pimer dato %i es menor al segundo %i", dato_1_int , dato_2_int);
-	}
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	if (dato_1_int == dato_2_int)
-	{
-		printf ("\n el pimer dato %i es igual al segundo %i", dato_1_int , dato_2_int);
-	}
-	else
-	{
-		printf ("\n el pimer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
+	printf("\n ingrese un numero :");
 
-		if (dato_1_int > dato_2_int)
-		{
-			printf ("\n el pimer dato %i es mayor al segundo %i", dato_1_int , dato_2_int);
-		}
-		else
-		{
-			printf ("\n el pimer dato %i es menor al segundo %i", dato_1_int , dato_2_int);
-		}
-	}
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	if (dato_1_int == dato_2_int)
-	{
-		printf ("\n el pimer dato %i es igual al segundo %i", dato_1_int , dato_2_int);
-	}
-	else if (dato_1_int > dato_2_int)
-	{
-		printf ("\n el pimer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
-		printf ("\n el pimer dato %i es mayor al segundo %i", dato_1_int , dato_2_int);
-	}
+	int numero;
+	scanf("%d",&numero);
+	if(numero % 2 == 0)
+		{printf("El numero es par");}
 	else
-	{
-		printf ("\n el pimer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
-		printf ("\n el pimer dato %i es menor al segundo %i", dato_1_int , dato_2_int);
-	}
-
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_1 \n\t\t¿Continuar?\n");
-// Ej 004_2
+		{printf("El numero es impar");}
+    printf( "\n\n\tContinuamos..\n");
     getchar();
 	getchar();
-	system("clear");
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_1/1 \n\t\t¿Continuar?\n");
+// Ej 004_1/2
+    getchar();
+	int    temporaria = 0;
+	int    dato_1_int, dato_2_int =0;
 	printf("\nIntroduce un numero int : ");
 	scanf("%i", &dato_1_int);
 	temporaria = dato_1_int % 2;
@@ -167,12 +111,88 @@ int main(void)
 	{
 		printf ("\n el dato %i es impar", dato_1_int );
 	}
-printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_2 \n\t\t¿Continuar?\n");
-// Ej 004_3
+
+	printf("\n");
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_1/2 \n\t\t¿Continuar?\n");
+// Ej 004_2/1
     getchar();
+
+	printf("\nIntroduce el primer numero int : ");
+	scanf("%i", &dato_1_int);
+	printf("\nIntroduce el segundo numero int : ");
+	scanf("%i", &dato_2_int);
+	if (dato_1_int == dato_2_int)
+	{
+		printf ("\n el primer dato %i es igual al segundo %i", dato_1_int , dato_2_int);
+	}
+	if (dato_1_int != dato_2_int)
+	{
+		printf ("\n el primer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
+	}
+	if (dato_1_int > dato_2_int)
+	{
+		printf ("\n el primer dato %i es mayor al segundo %i", dato_1_int , dato_2_int);
+	}
+	if (dato_1_int < dato_2_int)
+	{
+		printf ("\n el primer dato %i es menor al segundo %i", dato_1_int , dato_2_int);
+	}
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_2/1 \n\t\t¿Continuar?\n");
+// Ej 004_2/2
+    getchar();
+	printf("\nIntroduce el primer numero int : ");
+	scanf("%i", &dato_1_int);
+	printf("\nIntroduce el segundo numero int : ");
+	scanf("%i", &dato_2_int);
+	if (dato_1_int == dato_2_int)
+	{
+		printf ("\n el primer dato %i es igual al segundo %i", dato_1_int , dato_2_int);
+	}
+	else
+	{
+		printf ("\n el primer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
+
+		if (dato_1_int > dato_2_int)
+		{
+			printf ("\n el primer dato %i es mayor al segundo %i", dato_1_int , dato_2_int);
+		}
+		else
+		{
+			printf ("\n el primer dato %i es menor al segundo %i", dato_1_int , dato_2_int);
+		}
+	}
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_2/2 \n\t\t¿Continuar?\n");
+// Ej 004_2/3
+    getchar();
+	printf("\nIntroduce el primer numero int : ");
+	scanf("%i", &dato_1_int);
+	printf("\nIntroduce el segundo numero int : ");
+	scanf("%i", &dato_2_int);
+	if (dato_1_int == dato_2_int)
+	{
+		printf ("\n el primer dato %i es igual al segundo %i", dato_1_int , dato_2_int);
+	}
+	else if (dato_1_int > dato_2_int)
+	{
+		printf ("\n el primer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
+		printf ("\n el primer dato %i es mayor al segundo %i", dato_1_int , dato_2_int);
+	}
+	else
+	{
+		printf ("\n el primer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
+		printf ("\n el primer dato %i es menor al segundo %i", dato_1_int , dato_2_int);
+	}
+
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_2/3 \n\t\t¿Continuar?\n");
+// Ej 004_3/1
+    getchar();
+
 	getchar();
-	system("clear");
+	//system("clear");
 	printf("\nIntroduce un mes en numero : ");
 	scanf("%i", &dato_1_int);
 	if (dato_1_int <= 1 || dato_1_int >= 12 )
@@ -228,10 +248,11 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		printf ("\n %i corresponde al mes de Diciembre", dato_1_int );
 	}
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Otra manera ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_3/2 \n\t\t¿Continuar?\n");
-// Ej 004_3_2
+	printf( "\n\n\tFin del ejercicio 004_3/1 \n\t\t¿Continuar?\n");
+// Ej 004_3/2
 	getchar();
-    getchar();
+	printf("\nIntroduce un mes en numero : ");
+	scanf("%i", &dato_1_int);
 	switch (dato_1_int )
 	{
 		case  1  : printf ("\n %i corresponde al mes de Enero", dato_1_int ); break;
@@ -249,7 +270,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Otra manera ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		default: printf ("\n Error %i no corresponde a los 12 meses", dato_1_int ); break;
 	}
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_3 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 004_3/2 \n\t\t¿Continuar?\n");
     getchar();
 	getchar();
 // Ej 004_4
@@ -291,18 +312,22 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	printf ("Hoy es : %s", nombre);
 
 	getchar();
-	system("clear");
+	//system("clear");
 
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_5 \n\t\t¿Continuar?\n");
+    getchar();
+	getchar();
+// Ej 004_6
 	char c;
-
 	printf(" Menu:");
 	printf(" A=Añadir a la lista");
 	printf(" B=Borrar de la lista");
 	printf(" O=Ordenar la lista");
 	printf(" I=Imprimir la lista");
-	printf(" Escriba su selección y luego <enter>");
+	printf(" Escriba su seleccion y luego <enter>");
 	c = getchar();
-	if(c != '')
+	if(c != "")
 	{
 		if(c=='A')
 		{
@@ -316,18 +341,9 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	{
 		printf(" No has seleccionado nada");
 	}
-
-
-
-
-		getchar();
-	system("clear");
-
-
-
-
-
-
+	getchar();
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_6 \n\t\t¿Continuar?\n");
 	return (0);
 }
 

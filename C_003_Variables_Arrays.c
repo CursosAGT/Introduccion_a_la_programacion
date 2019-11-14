@@ -6,10 +6,10 @@ int main()
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
-	printf("##      ¿Qué es C?                                                        ##\n");
-	printf("##            * Instalación y configuración                               ##\n");
-	printf("##            * Errores sintácticos y lógicos                             ##\n");
-	printf("##            * Programación secuencial                                   ##\n");
+	printf("##      ¿Que es C?                                                        ##\n");
+	printf("##            * Instalacion y configuracion                               ##\n");
+	printf("##            * Errores sintacticos y logicos                             ##\n");
+	printf("##            * Programacion secuencial                                   ##\n");
 	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 	printf("##            * Estructuras repetitivas                                   ##\n");
 	printf("##                                                                        ##\n");
@@ -38,7 +38,7 @@ int main()
 	printf("##                                                                        ##\n");
 	printf("##      Funciones                                                         ##\n");
 	printf("##            * void                                                      ##\n");
-	printf("##            * Parámetros                                                ##\n");
+	printf("##            * Parametros                                                ##\n");
 	printf("##            * Retorno de datos                                          ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Memoria y punteros                                                ##\n");
@@ -148,19 +148,19 @@ void funcion_salida(int *mi_array_5)
 }
 /*
 	char resultado[80] = “otorrino”;
-	strcat( resultado, “laringólogo” );
+	strcat( resultado, “laringologo” );
 	printf( “%s\n”, resultado );
 
-	La sintaxis de C puede, a veces, provocar confusión. Se debe distinguir lo que es un prototipo de una función de lo que es una declaración de una variable. Así mismo, un puntero a un vector de punteros, etc...
+	La sintaxis de C puede, a veces, provocar confusion. Se debe distinguir lo que es un prototipo de una funcion de lo que es una declaracion de una variable. Asi mismo, un puntero a un vector de punteros, etc...
 
-	int f1(); función que devuelve un entero
+	int f1(); funcion que devuelve un entero
 	int *p1; puntero a entero
-	int *f2(); función que devuelve un puntero a entero
-	int (*pf)(int); puntero a función que toma y devuelve un entero
-	int (*pf2)(int *pi); puntero a función que toma un puntero a entero y devuelve un entero
+	int *f2(); funcion que devuelve un puntero a entero
+	int (*pf)(int); puntero a funcion que toma y devuelve un entero
+	int (*pf2)(int *pi); puntero a funcion que toma un puntero a entero y devuelve un entero
 	int a[3]; vector de tres enteros
 	int *ap[3]; vector de tres punteros a entero
 	int *(ap[3]); vector de tres punteros a entero
 	int (*pa)[3]; puntero a vector de tres enteros
-	int (*apf[5])(int *pi); vector de 5 punteros a función que toman un puntero a entero y devuelven un entero
+	int (*apf[5])(int *pi); vector de 5 punteros a funcion que toman un puntero a entero y devuelven un entero
 	*/

@@ -4,7 +4,7 @@
 /*                                                                                                 --+
     No se porque a todos los que enseñan se les ocurre este maldito esquema                          |
         Hola Mundo....  <------ Esto es un cliche .chau , adios.                                                                           |
-                    Quiero la paz en el mundo.                                                       |--> Esto es un comentario de múltiples lineas abro / + * y cierro  * + /
+                    Quiero la paz en el mundo.                                                       |--> Esto es un comentario de multiples lineas abro / + * y cierro  * + /
                     No al petroleo                                                                   |
                     liberen a Willy                                                                  |
                                                                                                    --+

@@ -8,10 +8,10 @@ int main(void)
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
-	printf("##      ¿Qué es C?                                                        ##\n");
-	printf("##            * Instalación y configuración                               ##\n");
-	printf("##            * Errores sintácticos y lógicos                             ##\n");
-	printf("##            * Programación secuencial                                   ##\n");
+	printf("##      ¿Que es C?                                                        ##\n");
+	printf("##            * Instalacion y configuracion                               ##\n");
+	printf("##            * Errores sintacticos y logicos                             ##\n");
+	printf("##            * Programacion secuencial                                   ##\n");
 	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 	printf("##            * Estructuras repetitivas                                   ##\n");
 	printf("##                                                                        ##\n");
@@ -40,7 +40,7 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("##      Funciones                                                         ##\n");
 	printf("##            * void                                                      ##\n");
-	printf("##            * Parámetros                                                ##\n");
+	printf("##            * Parametros                                                ##\n");
 	printf("##            * Retorno de datos                                          ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Memoria y punteros                                                ##\n");
@@ -59,8 +59,8 @@ int main(void)
 	printf("##               Entradas (teclado) y Salidas (Pantalla)                  ##\n");
 	printf("##              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                 ##\n");
 	printf("##                                                                        ##\n");
-	printf("##    char              Carácter                 (1 byte)                 ##\n");
-	printf("##    char              Carácter                 (1 byte)                 ##\n");
+	printf("##    char              Caracter                 (1 byte)                 ##\n");
+	printf("##    char              Caracter                 (1 byte)                 ##\n");
 	printf("##    short             Entero corto con signo   (2 bytes)                ##\n");
 	printf("##    int               Entero con signo         (2 bytes) 32768 a 32767  ##\n");
 	printf("##    long int          Entero largo con signo   (4 bytes)                ##\n");
@@ -75,7 +75,7 @@ int main(void)
 	printf("##    caracter                      char          c                       ##\n");
 	printf("##    cadena de caracteres          string        s                       ##\n");
 	printf("##    entero                        int           i/d                     ##\n");
-	printf("##    número c/punto flotante       float         f                       ##\n");
+	printf("##    numero c/punto flotante       float         f                       ##\n");
 	printf("##    numero extendido              double        f                       ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      https://elrincondelc.com/foros/viewtopic.php?t=18819              ##\n");
@@ -94,21 +94,21 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
 	/*
-	 * Acepta un string de formato y cualquier número de argumentos. Estos argumentos se aplican a cada uno de los especificadores de formato contenidos en format. Un especificador de formato toma la forma %[flags][width][.prec][h|l] type. El tipo puede ser:
+	 * Acepta un string de formato y cualquier numero de argumentos. Estos argumentos se aplican a cada uno de los especificadores de formato contenidos en format. Un especificador de formato toma la forma %[flags][width][.prec][h|l] type. El tipo puede ser:
 
 	d, i	        entero decimal con signo
 	o		entero octal sin signo
 	u		entero decimal sin signo
-	x		entero hexadecimal sin signo (en minúsculas)
-	X		entero hexadecimal sin signo (en mayúsculas)
+	x		entero hexadecimal sin signo (en minusculas)
+	X		entero hexadecimal sin signo (en mayusculas)
 	f		coma flotante en la forma [-]dddd.dddd
 	e		coma flotante en la forma [-]d.dddd e[+/-]ddd
-	g		coma flotante según el valor
-	E		como e pero en mayúsculas
-	G		como g pero en mayúsculas
-	c		un carácter
+	g		coma flotante segun el valor
+	E		como e pero en mayusculas
+	G		como g pero en mayusculas
+	c		un caracter
 	s		cadena de caracteres terminada en '\0'
-	%		imprime el carácter %
+	%		imprime el caracter %
 	p		puntero
 
 	Los flags pueden ser los caracteres:
@@ -117,10 +117,10 @@ int main(void)
 	blank	si es positivo, imprime un espacio en lugar de un signo +
 	#		especifica la forma alternativa
 
-	En el campo width se especifica la anchura mínima de la forma:
+	En el campo width se especifica la anchura minima de la forma:
 	n		se imprimen al menos n caracteres.
 	0n		se imprimen al menos n caracteres y si la salida es menor, se anteponen ceros
-	*		la lista de parámetros proporciona el valor
+	*		la lista de parametros proporciona el valor
 
 	Hay dos modificadores de tamaño, para los tipos enteros:
 	l		imprime un entero long
@@ -129,10 +129,9 @@ int main(void)
 
 	printf( "\n\tContinuamos..\n");
 	getchar();
-	system("pause");
-	system("clear");
+	//system("pause");
+	//system("clear");
 	printf("\n");
-
 
 	int    dato_int;
 	float  dato_float;
@@ -154,7 +153,7 @@ int main(void)
 
 	printf("\nIngrese un caracter : ");
 	fflush (stdin);
-	scanf("%c%*c", &dato_char);//    scanf("%*[^\n]"); /* Lee cualquier carácter mientras no sea nueva línea */
+	scanf("%c%*c", &dato_char);//    scanf("%*[^\n]"); // Lee cualquier caracter mientras no sea nueva linea
 	printf("\nOK un caracter : %c\n", dato_char);//c
 
 	printf("\nIntroduce una cadena de caracteres - String: ");
@@ -169,7 +168,7 @@ int main(void)
 	printf( "\n\n\tFin del ejercicio 002_1 \n\t\t¿Continuar?\n");
 // Ej 002_2
 	getchar();
-	char nombre[20] ; /* Reservamos espacio para cadena de 19 caracteres + el caracter nulo */
+	char nombre[20] ; // Reservamos espacio para cadena de 19 caracteres + el caracter nulo /
 	int longitud_string = 0;
 	printf ("\nPor favor ingrese su nombre :");
 	scanf("%s", nombre);
@@ -237,10 +236,12 @@ int main(void)
 	temporaria = ((nota1+nota2)/2);
 	printf ("Evaluaciones :\t %f \t|\t%f ",(nota1),(nota2));
 	printf ("\npromedio : %f ", temporaria);
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_4 \n\t\t¿Continuar?\n");
-	getchar();
 
+
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_5 \n\t\t¿Continuar?\n");
+	getchar();
+	char variable_caracter;
 	char variable_cadena[20];
 	int variable_int;
 	long variable_long;
@@ -248,94 +249,62 @@ int main(void)
 	float variable_float;
 	double variable_double;
 
-	scanf("variable_cadena %s%*c", variable_cadena); //Para string _ cadena
-	scanf("variable_int %d", &variable_int); //Para entero
-	scanf("variable_long %ld", &variable_long); //Para long
-	scanf("variable_longlong %lld", &variable_longlong); //Para long long
-	scanf("variable_float %f", &variable_float); //Para float
-	scanf("variable_double %lf", &variable_double); //Para double (long float)
+	printf("\nIngrese la variable_caracter - inicial de tu nombre :" ); //Para string _ cadena
+	scanf(" %c", &variable_caracter); //Para string _ cadena
 
-	printf("variable_cadena %s\n", variable_cadena); //Para string _ cadena
-	printf("variable_int %d\n", variable_int); //Para entero
-	printf("variable_long %ld\n", variable_long); //Para long
-	printf("variable_longlong %lld\n", variable_longlong); //Para long long
-	printf("variable_float %0.2f\n", variable_float); //Para float
-	printf("variable_double %0.5lf\n", variable_double); //Para double (long float)
+	printf("\nIngrese la variable_cadena - Apellido :" ); //Para string _ cadena
+	scanf(" %s%*c", variable_cadena); //Para string _ cadena
+
+	printf("\nIngrese la variable_int - edad :" ); //Para entero
+	scanf(" %d", &variable_int); //Para entero
+
+	printf("\nIngrese la variable_long - cantidad de dias de vida(perdon mi imaginacion es desastrosa):" ); //Para long
+	scanf(" %ld", &variable_long); //Para long
+
+	printf("\nIngrese la variable_longlong - cantidad de segundos de vida:"); //Para long long
+	scanf(" %lld", &variable_longlong); //Para long long
+
+	printf("\nIngrese la variable_float - pesa en kg:"); //Para float
+	scanf(" %f", &variable_float); //Para float
+
+	printf("Ingrese la variable_double : mide en metros" ); //Para double (long float)
+	scanf(" %lf", &variable_double); //Para double (long float)
+
+	printf("ud. ingreso variable_caracter %c\n", variable_caracter); //Para string _ cadena
+	printf("ud. ingreso variable_cadena %s\n", variable_cadena); //Para string _ cadena
+	printf("ud. ingreso variable_int %d\n", variable_int); //Para entero
+	printf("ud. ingreso variable_long %ld\n", variable_long); //Para long
+	printf("ud. ingreso variable_longlong %lld\n", variable_longlong); //Para long long
+	printf("ud. ingreso variable_float %0.2f\n", variable_float); //Para float
+	printf("ud. ingreso variable_double %0.5lf\n", variable_double); //Para double (long float)
+
+	printf("\n Ahora inventamos algo\n\t El Sr.%c %s con una altura de %lf y un peso de %f pretende ganar la competencia, pero lleva %ld dias desde que nacio que equivalen a %lld segundos desde que dio su primer respiro que fue en el año %d.",variable_caracter,variable_cadena,variable_float,variable_double,variable_long,variable_longlong,variable_int);
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_5 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
 	getchar();
 
 
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf ("         dejamos aqui y vamos a condicionales y bucles, luego vovemos");
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
 
 
+	char texto[]="Gandalf";
+	char *character_indicado;
+	int longitud=0;
 
-
-
-
-
-
-
-
-
-
-
-/*
-	int num,i,suma=0,cantidad;
-	clrscr();
-	printf("Promedio.n Cuantos numero quieres calcular su promedio: ");
-	scanf("%d",&num);
-	for(i=1;i<=num;i++)
-	{
-	 printf("Numero: ");
-	 scanf("%d",&cantidad);
-	 suma=suma+cantidad;
+	character_indicado = texto;
+	while (*character_indicado != '\0') {
+		longitud++;
+		printf( "%c\n", *character_indicado );	// Mostramos la letra actual
+		character_indicado++;					// Vamos a la siguiente letra
 	}
-	suma=suma/num;
-	printf("Su promedio es: %d",suma);
-*/
-
-/*
-	clrscr();				//limpiar pantalla
-	int _cant;				//cantidad de valores
-	int _cont;				//contador int _valor;//para leer valores
-	int _suma;				//suma de los valores
-	float _prom;				//promedio de la suma entre la cantidad
-	_cont=1;				//Inicializo
-	_suma=0;				//variables
-	printf("Numeros: ");
-	scanf("%d",&_cant);			//Lectura de las variables
-	while(_cont<=_cant)
-	{					//Ciclo que cuenta la lectura
-		scanf("%d",&_valor);			//lectura de valores
-		_suma=_suma+_valor;			//suma de valores
-		_cont++;//incremente de lectura de valores
-	 }						//END while
-	_prom=_suma/_cant;//promedoi de valores
-	printf("Promedio: %.2e",_prom);//impresion de valores getch();//esperar a que presiona una tecla el usuario
-
-*/
-/*
-	float registro;
-	int contador;
-	float memoria;
-	float suma = 0;
-	float promedio;
-	printf("Cuantas calificaciones deseas introducir: " );
-	scanf("%f", &registro);
-	for(contador = 1; contador <= registro; contador ++)
-		{
-		printf("Introduce la calificacion %d: ", contador);
-		scanf("%f", &memoria);
-		suma = suma + memoria;
-		promedio = ((suma/registro));
-		}
-	printf("El promedio es igual a: %f", promedio);
+	printf( "La cadena \"%s\" tiene %i caracteres.\n", texto, longitud );
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_7 \n\t\t¿Continuar?\n");
 	getchar();
-*/
-
-
 //	system("clear");
 // Ej 002_5
 	int edad = 0;
@@ -374,18 +343,20 @@ int main(void)
 		printf ("\nte crece la panza y se cae todo, hasta el pelo");
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_5 \n\t\t¿Continuar?\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio 002_8 \n\t\t¿Continuar?\n");
+	getchar();	getchar();
+
 //	system("clear");
-// Ej 002_6
+// Ej 002_6*/
 /* Funciones de <string.h>:
 
-	strcmp(cadena1, cadena2); //Compara dos cadenas de carácteres
-	strcat(cadena1, cadena2); //Concatena dos cadenas de carácteres
+	strcmp(cadena1, cadena2); //Compara dos cadenas de caracteres
+	strcat(cadena1, cadena2); //Concatena dos cadenas de caracteres
 	strcpy(cadena1, cadena2); //Copia la primera cadena en la segunda
-	strlen(cadena);  //Retorna la longitud de carácteres que componen a la cadena
+	strlen(cadena);  //Retorna la longitud de caracteres que componen a la cadena
 	*/
-	char cadena_org[30] = "Esto Es una CaDeNa De pRuEbA";
+
+	char cadena_org[30] = " Esto Es una CaDeNa De pRuEbA ";
 	char cadena_May[30] ;
 	char cadena_Min[30] ;
 
@@ -405,10 +376,11 @@ int main(void)
 	printf("\n Esta es la union de ambas cadenas %s ", cadena_May);
 	compara = strcmp(cadena_May, cadena_Min);
 	printf("\n Esta es la union de ambas cadenas %i ", compara);
-	return 0;
+	printf("\n si es diferente a 0 (cero) es que no es la misma cadena ");
+
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 002_9 \n\t\t¿Continuar?\n");
 	getchar();
 //	system("clear");
 	int numero;
@@ -428,106 +400,80 @@ int main(void)
 	}
 
 	printf ("No se puede seguir dividiendo: El numero %d es impar.\n", numero);
+
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio 002_10 \n\t\t¿Continuar?\n");
+	getchar();	getchar();
 
 
-
-
-	char texto[]="Gandalf";
-	char *p;
-	int longitud=0;
-
-	p = texto;
-	while (*p != '\0') {
-		longitud++;
-		printf( "%c\n", *p );	/* Mostramos la letra actual */
-		p++;			/* Vamos a la siguiente letra */
-	}
-	printf( "La cadena \"%s\" tiene %i caracteres.\n", texto, longitud );
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
-	getchar();
-
-
-	char texto[] = "Éste es un curso de C.";
+	char texto2[] = "este es un curso de intro a la programacion.";
 	char destino[50];
 
-	strcpy( destino, texto );
+	strcpy( destino, texto2 );
 	printf( "Valor final: %s\n", destino );
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
-	getchar();
 
+	printf( "\n\n\tFin del ejercicio 002_11 \n\t\t¿Continuar?\n");
+	getchar();	getchar();
 
+	int num,bucle,suma=0,cantidad;
 
-
-
-
-	return (0);
-}
-/*
- * Funciones de <math.h>:
-
-	double sin(valor);  //Calcula el sinus
-	double cos(valor);  //Calcula el cosinus
-	double tan(valor);  //Calcula la tangente
-	double asin(valor);
-	double atan(valor);
-	double acos(valor);
-	double sinh(valor);
-	double cosh(valor);
-	double tanh(valor);
-	double log10(valor);
-	double log(valor);
-	double ldexp(valor1,valor2);
-	double pow(valor);
-	double sqrt(valor);  //Calcula raíces cuadradas
-	#include <stdio.h>
-
-	float promedio(int valores[], int cantidad) {
-	int i;
-	float suma = 0.0;
-
-	for (i = 0; i < cantidad; ++i)
-	suma += valores[i];
-
-	return suma / (float) cantidad;
-}
-
-
-int main()
-{
-
-	int notas[10];
-	char nombre[20];
-	char opcion[3];
-	int n, i;
-
-	do
+	printf("Promedio.n Cuantos numero quieres calcular su promedio: ");
+	scanf("%d",&num);
+	for(bucle=1;bucle<=num;bucle++)
 	{
-	printf("Ingrese nombre del alumno: ");
-	scanf("%s", nombre);
+	 printf("Numero: ");
+	 scanf("%d",&cantidad);
+	 suma=suma+cantidad;
+	}
+	suma=(suma/num);
+	printf("Su promedio es: %i",suma);
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
-	printf("Cuantas notas tiene %s? ", nombre);
-	scanf("%d", &n);
+	printf( "\n\n\tFin del ejercicio 002_12 \n\t\t¿Continuar?\n");
+	getchar();	getchar();
 
-	for (i = 0; i < n; ++i)
+	int cant;				//cantidad de valores
+	int valor_nuevo;				//contador int _valor;
+
+	int cont;
+	int sumas;				//sumas de los valores
+	float prom;				//promedio de la sumas entre la cantidad
+	cont=1;				//Inicializo
+	sumas=0;				//variables
+	printf("cantidad de valores a introducir: ");
+	scanf("%d",&cant);			//Lectura de las variables
+	while(cont<=cant)
+	{					//Ciclo que cuenta la lectura
+		printf("\nValor: ");
+		scanf("%d",&valor_nuevo);			//lectura de valores
+		sumas=sumas+valor_nuevo;			//sumas de valores
+		cont++;//incremente de lectura de valores
+	 }						//END while
+	prom=sumas/cant;//promedio de valores
+	printf("Promedio: %.2f",prom);//impresion de valores getch();//esperar a que presiona una tecla el usuario
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+	printf( "\n\n\tFin del ejercicio 002_12 \n\t\t¿Continuar?\n");
+	getchar();	getchar();
+
+
+	float registro;
+	int contador2;
+	float memoria;
+	float sumar = 0;
+	float promedio;
+	printf("Cuantas calificaciones deseas introducir: " );
+	scanf("%f", &registro);
+	for(contador2 = 1; contador2 <= registro; contador2 ++)
 		{
-		    printf("  Nota %d: ", i + 1);
-		    scanf("%d", &notas[i]);
+		printf("Introduce la calificacion %d: ", contador2);
+		scanf("%f", &memoria);
+		sumar = sumar + memoria;
+		promedio = ((sumar/registro));
 		}
-
-	printf("El promedio de %s es %.1f\n", nombre, promedio(notas, n));
-
-	printf("Desea calcular mas promedios (si/no)? ");
-	scanf("%s", opcion);
-
-	} while (opcion[0] == 's' || opcion[0] == 'S');
-
-	return 0;
+	printf("El promedio es igual a: %f", promedio);
+	getchar();
+return 0;
 }
-*/
-

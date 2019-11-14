@@ -14,10 +14,10 @@ int main()
 
 		printf("############################################################################\n");
 		printf("##                                                                        ##\n");
-		printf("##      ¿Qué es C?                                                        ##\n");
-		printf("##            * Instalación y configuración                               ##\n");
-		printf("##            * Errores sintácticos y lógicos                             ##\n");
-		printf("##            * Programación secuencial                                   ##\n");
+		printf("##      ¿Que es C?                                                        ##\n");
+		printf("##            * Instalacion y configuracion                               ##\n");
+		printf("##            * Errores sintacticos y logicos                             ##\n");
+		printf("##            * Programacion secuencial                                   ##\n");
 		printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 		printf("##            * Estructuras repetitivas                                   ##\n");
 		printf("##                                                                        ##\n");
@@ -46,7 +46,7 @@ int main()
 		printf("##                                                                        ##\n");
 		printf("##      Funciones                                                         ##\n");
 		printf("##            * void                                                      ##\n");
-		printf("##            * Parámetros                                                ##\n");
+		printf("##            * Parametros                                                ##\n");
 		printf("##            * Retorno de datos                                          ##\n");
 		printf("##                                                                        ##\n");
 		printf("##      Memoria y punteros                                                ##\n");
@@ -73,13 +73,13 @@ int main()
 • strcat(<cadena_destino>,  <cadena_origen>)  :
 	Concatena  el  contenido de  <cadena_origen> al final de <cadena_destino>.
 • strcmp(<cadena1>,  <cadena2>)  :
-	Compara   las   dos   cadenas   y   devuelve   un   0   si   las   dos   cadenas   son   iguales,   un   número   negativo   si   4 <cadena1>  es  menor  que  (precede  alfabéticamente  a)  <cadena2>  y  un  número positivo (mayor que cero) si <cadena1> es mayor que <cadena2>.
-            // devuelve un valor menor, igual o mayor que 0 según si cadena1 es menor,
+	Compara   las   dos   cadenas   y   devuelve   un   0   si   las   dos   cadenas   son   iguales,   un   numero   negativo   si   4 <cadena1>  es  menor  que  (precede  alfabeticamente  a)  <cadena2>  y  un  numero positivo (mayor que cero) si <cadena1> es mayor que <cadena2>.
+            // devuelve un valor menor, igual o mayor que 0 segun si cadena1 es menor,
             // igual o mayor que cadena2, respectivamente.
 • strchr(<cadena1>,  caracter) :
-	Devuelve la posición en memoria de la primer aparición de caracter dentro de cadena
+	Devuelve la posicion en memoria de la primer aparicion de caracter dentro de cadena
 • strstr(<cadena1>,  <subcadena>):
-	Devuelve la posición en memoria de la primer aparición de subcadena dentro de cadena
+	Devuelve la posicion en memoria de la primer aparicion de subcadena dentro de cadena
 
 */
 //Ej 003_S_01
@@ -120,17 +120,15 @@ int main()
 		fflush (stdin);
 		getchar();
 		getchar();
-		getchar();
-		getchar();
 		printf("\n############################################################################\n");
-		printf("Vean que seria incorrecto leer este string mediante un puntero declarado , pero al que no se le ha reservado memoria:")
-		char *puntero_nuevo_1 ;
-		scanf("%s" , puntero_nuevo_1 )      /* Incorrecto */
-		printf("ya que la dirección contenida por puntero_nuevo_1 no ha sido inicializada aún con ningun valor válido.");
-		printf("y no tiene maximo, Lo correcto en éste caso seria");
+		printf("Vean que seria incorrecto leer este string mediante un puntero declarado , pero al que no se le ha reservado memoria:");
+		char *puntero_nuevo_1;
+		scanf("%s" , puntero_nuevo_1 );      /* Incorrecto */
+		printf("ya que la direccion contenida por puntero_nuevo_1 no ha sido inicializada aun con ningun valor valido.");
+		printf("y no tiene maximo, Lo correcto en este caso seria");
 		char *puntero_nuevo_2 ;
 		puntero_nuevo_2 = (char *)malloc(128 * sizeof(char)) ;//<-----------------aqui asigno 128 bytes reservando memoria previamente a cargar el string.
-		scanf("%s" , puntero_nuevo_2 )                           /* Correcto */
+		scanf("%s" , puntero_nuevo_2 );                           /* Correcto */
 
 //Ej 003_S_03                    del ejercicio arrays 003_A_01
 		int mi_array_1[] = {1,2,3,4};
@@ -153,33 +151,33 @@ int main()
 /*
 
 Caracteres ASCII de control
-00NULL(carácter nulo)
+00NULL(caracter nulo)
 01SOH(inicio encabezado)
 02STX(inicio texto)
 03ETX(fin de texto)
-04EOT(fin transmisión)
+04EOT(fin transmision)
 05ENQ(consulta)
 06ACK(reconocimiento)
 07BEL(timbre)
 08BS(retroceso)
 09HT(tab horizontal)
-10LF(nueva línea)
+10LF(nueva linea)
 11VT(tab vertical)
-12FF(nueva página)
+12FF(nueva pagina)
 13CR(retorno de carro)
 14SO(desplaza afuera)
 15SI(desplaza adentro)
-16DLE(esc.vínculo datos)
+16DLE(esc.vinculo datos)
 17DC1(control disp. 1)
 18DC2(control disp. 2)
 19DC3(control disp. 3)
 20DC4(control disp. 4)
 21NAK(conf. negativa)
-22SYN(inactividad sínc)
+22SYN(inactividad sinc)
 23ETB(fin bloque trans)
 24CAN(cancelar)
 25EM(fin del medio)
-26SUB(sustitución)
+26SUB(sustitucion)
 27ESC(escape)
 28FS(sep. archivos)
 29GS(sep. grupos)
@@ -284,7 +282,7 @@ Caracteres ASCII imprimibles
 126~
 128Ç
 129ü
-130é
+130e
 131â
 132ä
 133à
@@ -298,7 +296,7 @@ Caracteres ASCII imprimibles
 141ì
 142Ä
 143Å
-144É
+144e
 145æ
 146Æ
 147ô
@@ -314,10 +312,10 @@ Caracteres ASCII imprimibles
 157Ø
 158×
 159ƒ
-160á
-161í
-162ó
-163ú
+160a
+161i
+162o
+163u
 164ñ
 165Ñ
 166ª
@@ -335,7 +333,7 @@ Caracteres ASCII imprimibles
 178▓
 179│
 180┤
-181Á
+181a
 182Â
 183À
 184©
@@ -368,7 +366,7 @@ Caracteres ASCII imprimibles
 211Ë
 212È
 213ı
-214Í
+214i
 215Î
 216Ï
 217┘
@@ -378,7 +376,7 @@ Caracteres ASCII imprimibles
 221¦
 222Ì
 223▀
-224Ó
+224o
 225ß
 226Ô
 227Ò
@@ -387,7 +385,7 @@ Caracteres ASCII imprimibles
 230µ
 231þ
 232Þ
-233Ú
+233u
 234Û
 235Ù
 236ý
@@ -418,7 +416,7 @@ Caracteres ASCII imprimibles
 		char caracter_5=105;	//i
 		char caracter_6=101;	//e
 		char caracter_7=108;	//l
-		char caracter_8=234;	//
+		char caracter_8=234;	// ojo, no se usa
 		char caracter_9=32;		//` `
 		char caracter_10=33;	// !
 		printf ("%c%c%c%c%c%c%c%c%c%c%c%c",caracter_1,caracter_2,caracter_9,caracter_3,caracter_4,caracter_5,caracter_6,caracter_7,caracter_9,caracter_10,caracter_10,caracter_10);
@@ -429,7 +427,7 @@ Caracteres ASCII imprimibles
 		char mi_string_3[9] = {"otorrino"};
 		printf("\n\tNombre de la constante: %s ",mi_string_3);
 		printf("\n-----------------------------------------------------------------------\n");
-		strcat( mi_string_3, "laringólo" );
+		strcat( mi_string_3, "laringolo" );
 		printf("\n\tNombre de la constante: %sgo ",mi_string_3);
 		printf("\n-----------------------------------------------------------------------\n");
 		char mi_string_4[4] = {"gia"};

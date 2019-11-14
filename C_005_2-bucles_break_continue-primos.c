@@ -8,10 +8,10 @@ int main(void)
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
-	printf("##      ¿Qué es C?                                                        ##\n");
-	printf("##            * Instalación y configuración                               ##\n");
-	printf("##            * Errores sintácticos y lógicos                             ##\n");
-	printf("##            * Programación secuencial                                   ##\n");
+	printf("##      ¿Que es C?                                                        ##\n");
+	printf("##            * Instalacion y configuracion                               ##\n");
+	printf("##            * Errores sintacticos y logicos                             ##\n");
+	printf("##            * Programacion secuencial                                   ##\n");
 	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 	printf("##            * Estructuras repetitivas                                   ##\n");
 	printf("##                                                                        ##\n");
@@ -40,7 +40,7 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("##      Funciones                                                         ##\n");
 	printf("##            * void                                                      ##\n");
-	printf("##            * Parámetros                                                ##\n");
+	printf("##            * Parametros                                                ##\n");
 	printf("##            * Retorno de datos                                          ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Memoria y punteros                                                ##\n");
@@ -59,11 +59,53 @@ int valor = 0;
 int contador = 2;// (porque todo numero es divisible por uno(1) (sin resto)
 int valor_resto =0;
 
+int dato_1;
+
+printf("INGRESE EL NUMERO A INTERRUMPIR >1 < 10  :");
+scanf("%i",&dato_1);
+//Clase_break/continue/range_Ej_01
+printf("Antes\n");
+for (contador =1 ; contador <= 10 ; contador++)
+	{
+	if (contador ==dato_1)
+		{break;//    <---------------------Break
+		}
+	printf("\tnumero %i \n",contador);//<---------------------print
+	};
+printf("despues\n");
+for (contador =1 ; contador <= 10 ; contador++)
+	{
+	printf("\tnumero %i \n",contador);//<---------------------print
+	if (contador ==dato_1)
+		{break;//    <---------------------Break
+		}
+	};
+//#################################################################
+
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+printf( "\n\tContinuamos..\n");
+getchar();
+for (contador =1 ; contador <= 10 ; contador++)
+	{
+	if (contador ==dato_1)
+		{
+			printf("Salta el bucle, no imprime el valor\n") ;
+			continue;		//    <---------------------continue
+		}
+	printf("\tnumero %i \n",contador);//<---------------------print
+	};
+
+
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+printf( "\n\tContinuamos..\n");
+getchar();
+
 	printf ("mi primita(o) esta muy buena(o). Pero no te metas porque los primos son complicados ");
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\t-Elije un numero\n\t\tIngresa cualquier valor:");
 	scanf("%i",&valor);
 	printf("%i sera primo?\n\t Estos solo se pueden dividir por si mismos y uno (sin tener resto)\n",valor);
+	printf ("\n~~~~~~CON WHILE\n");
 	while (contador < valor)
 	{
 		valor_resto =valor % contador ;
@@ -85,7 +127,9 @@ int valor_resto =0;
 			}
 		}
 	}
-	
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	getchar();
+	printf ("\n~~~~~~CON FOR\n");
 	for (contador =2 ; contador < valor ; contador++)
 	{
 		valor_resto =valor % contador ;
@@ -101,10 +145,10 @@ int valor_resto =0;
 		printf("\nLLegamos al final");
 		printf("\n\t\t  -*-*-*-*-*-  '%i' SI ES PRIMO  -*-*-*-*-*-  " ,valor) ;
 	}
-	
-	
+
+
 	getchar();
-	system("clear");    
+	system("clear");
 	return (0);
 }
 

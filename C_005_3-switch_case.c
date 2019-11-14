@@ -8,10 +8,10 @@ int main(void)
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
-	printf("##      ¿Qué es C?                                                        ##\n");
-	printf("##            * Instalación y configuración                               ##\n");
-	printf("##            * Errores sintácticos y lógicos                             ##\n");
-	printf("##            * Programación secuencial                                   ##\n");
+	printf("##      ¿Que es C?                                                        ##\n");
+	printf("##            * Instalacion y configuracion                               ##\n");
+	printf("##            * Errores sintacticos y logicos                             ##\n");
+	printf("##            * Programacion secuencial                                   ##\n");
 	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 	printf("##            * Estructuras repetitivas                                   ##\n");
 	printf("##                                                                        ##\n");
@@ -40,7 +40,7 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("##      Funciones                                                         ##\n");
 	printf("##            * void                                                      ##\n");
-	printf("##            * Parámetros                                                ##\n");
+	printf("##            * Parametros                                                ##\n");
 	printf("##            * Retorno de datos                                          ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Memoria y punteros                                                ##\n");
@@ -74,16 +74,16 @@ int main(void)
 	scanf("%d",&nota);
 	switch(nota)
 	{
-		case 0: printf("\nSuspenso");break;
-		case 1: printf("\nSuspenso");break;
-		case 2: printf("\nSuspenso");break;
-		case 3: printf("\nSuspenso");break;
-		case 4: printf("\nSuspenso");break;
-		case 5: printf("\nAprobado");break;
-		case 6: printf("\nBien");break;
-		case 7: printf("\nNotable");break;
-		case 8: printf("\nNotable");break;
-		case 9: printf("\nSobresaliente");break;
+		case 0: printf("\nRecursa");break;
+		case 1: printf("\nRecursa");break;
+		case 2: printf("\nRecursa");break;
+		case 3: printf("\nRecursa");break;
+		case 4: printf("\nAplazado");break;
+		case 5: printf("\nAplazado");break;
+		case 6: printf("\nAprobado");break;
+		case 7: printf("\nBien");break;
+		case 8: printf("\nMuy Bien");break;
+		case 9: printf("\Excelente");break;
 		case 10: printf("\nSobresaliente");break;
 		default: printf("esa nota es incorrecta");
 	}
@@ -94,10 +94,11 @@ int main(void)
 	float entrada,salida, cambio;
 	int opcion;
 	cambio = 65.50;
-	printf("la cantidad: ");
-	scanf("%f",&entrada);
-	printf("1-pesos a Dolares \n2-Dolares a pesos");
+	printf("cotizar de moneda extranjera\n");
+	printf("opcion:\n\t1-pesos a Dolares \n\t2-Dolares a pesos\n");
 	scanf("%d",&opcion);
+	printf("monto a cambiar: ");
+	scanf("%f",&entrada);
 	switch(opcion)
 	{
 		case 1:salida=entrada/cambio;
@@ -106,7 +107,7 @@ int main(void)
 		case 2:salida=entrada*cambio;
 		printf("%f Dolares son %f Pesos",entrada,salida);
 		break;
-		default: printf("opción incorrecta");
+		default: printf("opcion incorrecta");
 	}
 
     printf( "\n\tContinuar: \n");

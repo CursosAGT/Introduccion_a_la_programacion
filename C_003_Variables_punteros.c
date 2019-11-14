@@ -6,17 +6,17 @@ void intercambia (int valor_a,int valor_b);
 void intercambia2 (int *valor_a, int *valor_b);
 int main()
 {
-/*	La sintaxis de C puede, a veces, provocar confusión. Se debe distinguir lo que es un prototipo de una función de lo que es una declaración de una variable. Así mismo, un puntero a un vector de punteros, etc...
-	int f1(); función que devuelve un entero
+/*	La sintaxis de C puede, a veces, provocar confusion. Se debe distinguir lo que es un prototipo de una funcion de lo que es una declaracion de una variable. Asi mismo, un puntero a un vector de punteros, etc...
+	int f1(); funcion que devuelve un entero
 	int *p1; puntero a entero
-	int *f2(); función que devuelve un puntero a entero
-	int (*pf)(int); puntero a función que toma y devuelve un entero
-	int (*pf2)(int *pi); puntero a función que toma un puntero a entero y devuelve un entero
+	int *f2(); funcion que devuelve un puntero a entero
+	int (*pf)(int); puntero a funcion que toma y devuelve un entero
+	int (*pf2)(int *pi); puntero a funcion que toma un puntero a entero y devuelve un entero
 	int a[3]; vector de tres enteros
 	int *ap[3]; vector de tres punteros a entero
 	int *(ap[3]); vector de tres punteros a entero
 	int (*pa)[3]; puntero a vector de tres enteros
-	int (*apf[5])(int *pi); vector de 5 punteros a función que toman un puntero a entero y devuelven un entero
+	int (*apf[5])(int *pi); vector de 5 punteros a funcion que toman un puntero a entero y devuelven un entero
 	*/
 
 // Ej 003_P_01
@@ -83,19 +83,19 @@ int main()
 /*
 Definiciones de arrays como punteros. La propiedad anterior da lugar a que en
 numerosos libros de texto, se definan por ejemplo cadenas de caracteres como punteros
-a char, que según hemos visto son equivalentes. Esto es, las siguientes declaraciones de
+a char, que segun hemos visto son equivalentes. Esto es, las siguientes declaraciones de
 la variable s son “aparentemente” equivalentes:
 	char s[10];	<--reservando una cantidad de memoria concreta,
 	char *s;	<--NO reservando una cantidad de memoria concreta,
 	char s[];	<--NO reservando una cantidad de memoria concreta,
-		El símbolo * se usa para DEFINIR una variable de tipo puntero.
-		El símbolo & se usa para indicar la dirección de una variable “normal”. NO un vector. Un vector NO necesita & para pasas referencias
-		El símbolo * se usa para ACCEDER al valor que guarda un puntero.
-		El símbolo & se usa sólo en la invocación de funciones, de forma que se pone delante de los parámetro reales de E/S.
-		Cuando un parámetro formal es de E/S en el prototipo y cabecera se indica con un tipo puntero, esto es, poniendo un * entre el tipo y el nombre del parámetro.
-		En el cuerpo de la función los argumentos formales que son parámetros de E/S se usan con un * delante.
-		Los & sólo se usan en el programa principal.
-		Los * sólo se usarian en las funciones.(solo que se trabaje los arrays en estas, si tambien se trabajan en main se usan en ambos lados)
+		El simbolo * se usa para DEFINIR una variable de tipo puntero.
+		El simbolo & se usa para indicar la direccion de una variable “normal”. NO un vector. Un vector NO necesita & para pasas referencias
+		El simbolo * se usa para ACCEDER al valor que guarda un puntero.
+		El simbolo & se usa solo en la invocacion de funciones, de forma que se pone delante de los parametro reales de E/S.
+		Cuando un parametro formal es de E/S en el prototipo y cabecera se indica con un tipo puntero, esto es, poniendo un * entre el tipo y el nombre del parametro.
+		En el cuerpo de la funcion los argumentos formales que son parametros de E/S se usan con un * delante.
+		Los & solo se usan en el programa principal.
+		Los * solo se usarian en las funciones.(solo que se trabaje los arrays en estas, si tambien se trabajan en main se usan en ambos lados)
 		*
 */
 	printf("\n######################## Uso en Funciones ######################################\n");

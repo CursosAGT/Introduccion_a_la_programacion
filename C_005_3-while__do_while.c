@@ -4,8 +4,6 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-//Ej 006_1
-void sumemos ();
 int main(void)
 {
 	printf("############################################################################\n");
@@ -56,40 +54,92 @@ int main(void)
 	printf("##            * pull                                                      ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
-	char   dato_char;
+    printf( "\n\tContinuar: \n");
+
+// Ej 001_4
+
+	/*Otras
+Funciones utiles para operar cadenas de caracteres.
+
+No solo string.h contiene funciones utiles para el tratamiento de cadenas. En ctype.h se encuentran unas funciones que permiten hacer comodamente preguntas acerca de los caracteres, como si son mayusculas, minusculas, digitos, etc:
+
+isalnum(caracter): devuelve cierto (un entero cualquiera distinto de cero) si caracter es una letra o digito, y falso (el valor entero 0) en caso contrario.
+
+isalpha(caracter): devuelve cierto si caracter es una letra, y falso en caso contrario.
+
+isblank(caracter): devuelve cierto si caracter es un espacio en blanco o un tabulador.
+
+isdigit(caracter) devuelve cierto si caracter es un digito, y falso en caso contrario.
+
+isspace(caracter): devuelve cierto si caracter es un espacio en blanco, un salto de linea, un retorno de carro, un tabulador, etc., y falso en caso contrario.
+
+islower(caracter): devuelve cierto si caracter es una letra minuscula, y falso en caso contrario.
+
+isupper(caracter): devuelve cierto si caracter es una letra mayuscula, y falso en caso contrario.
+
+toupper(caracter): devuelve la mayuscula asociada a caracter, si la tiene; si no, devuelve el mismo caracter.
+tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no, devuelve el mismo caracter.
+*/
+//#############################################################################################################
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 005_3_1 \n\t\t¿Continuar?\n");
+	int contador = 0;
+
+	//   char c;
+	char cadena_org[20] = "Curso2019 LeNgUaJe C";
+	char cadena_Upper[20] ;
+	char cadena_Lower[20] ;
+//	strcpy(cadena_4, cadena_3); // Copia el contenido de origen en destino
+	printf ("\nLa Cadena original es : %s", cadena_org);
+	contador = 0;
+	printf ("\n");
+
+	while( cadena_org[contador] )
+	{
+
+	  cadena_Lower[contador] = tolower(cadena_org[contador]);
+	  cadena_Upper[contador] = toupper(cadena_org[contador]);
+	  contador++;
+	}
+	printf ("\nLa Cadena modificada a toupper es :%s", cadena_Upper);
+	printf ("\nLa Cadena modificada a lower   es :%s", cadena_Lower);
+
+//#############################################################################################################
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 005_3_2 \n\t\t¿Continuar?\n");
+	int edad = 0;
+	printf ("\nventa de alcohol en boliches");
+	printf("\ningrese su edad :");
+	scanf("%i",&edad);
+	while (edad<18)
+	{
+	printf ("\nCometió un error al ingresar la edad o es menor y debe retirarse");
+	printf("\ningrese su edad :");
+	scanf("%i",&edad);
+	}
+	printf ("\n Bienvenido, que desea tomar");
+
+
+//#############################################################################################################
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 005_3_3 \n\t\t¿Continuar?\n");
 	do
 	{
-	printf("\n+------------------------+");
-	printf("\n|  DENTRO DE LA FUNCION  |");
-	printf("\n|           main         |");
-	printf("\n+------------------------+");
-		sumemos ();
-
-		printf("\nIngrese 's' para salir cualquier otra tecla para continual ");
-		scanf("%c", &dato_char);//	scanf("%c%*c", &dato_char);
-	} while(dato_char != 's' && dato_char != 'S');
-
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 006_1 \n\t\t¿Continuar?\n");
+	printf ("\nIngresar la edad > a 18 o es menor y debe retirarse");
+	printf("\ningrese su edad :");
+	scanf("%i",&edad);
+	} while (edad<18);
+	printf ("\n Bienvenido, que desea tomar");
 
 
-	getchar();
-	system("clear");
-	return (0);
-}
-void sumemos ()
-{
-	int  valor_1, valor_2, resultado;
-	printf("\n+------------------------+");
-	printf("\n|  DENTRO DE LA FUNCION  |");
-	printf("\n|         SUMEMOS        |");
-	printf("\n+------------------------+");
-	printf("\nIntroduce el 1er numero : ");
-	scanf("%i%*c", &valor_1);
-	printf("\nIntroduce el 2do numero : ");
-	scanf("%i%*c", &valor_2);
-	printf("\n sumemos %i + %i\n",valor_1, valor_2);//c
-	resultado =  valor_1 + valor_2;
-	printf("\n RESULTADO = %i  \n",resultado);//c
+
+
+
+
+
+
+
+
 
 }
+

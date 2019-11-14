@@ -8,10 +8,10 @@ int main(void)
 {
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
-	printf("##      ¿Qué es C?                                                        ##\n");
-	printf("##            * Instalación y configuración                               ##\n");
-	printf("##            * Errores sintácticos y lógicos                             ##\n");
-	printf("##            * Programación secuencial                                   ##\n");
+	printf("##      ¿Que es C?                                                        ##\n");
+	printf("##            * Instalacion y configuracion                               ##\n");
+	printf("##            * Errores sintacticos y logicos                             ##\n");
+	printf("##            * Programacion secuencial                                   ##\n");
 	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 	printf("##            * Estructuras repetitivas                                   ##\n");
 	printf("##                                                                        ##\n");
@@ -40,7 +40,7 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("##      Funciones                                                         ##\n");
 	printf("##            * void                                                      ##\n");
-	printf("##            * Parámetros                                                ##\n");
+	printf("##            * Parametros                                                ##\n");
 	printf("##            * Retorno de datos                                          ##\n");
 	printf("##                                                                        ##\n");
 	printf("##      Memoria y punteros                                                ##\n");
@@ -60,25 +60,25 @@ int main(void)
 	printf("############################################################################\n");
 	printf("##                                                                        ##\n");
 	printf("##           CODIGO  SIGNIFICADO  ASCII(decimal) ASCII(hexadecimal)       ##\n");
-	printf("##       '\\n' 	nueva línea          10                 0x0A              ##\n");
+	printf("##       '\\n' 	nueva linea          10                 0x0A              ##\n");
 	printf("##       '\\r' 	retorno de carro     13                 0x0D              ##\n");
-	printf("##       '\\f' 	nueva página          2                  x0C              ##\n");
+	printf("##       '\\f' 	nueva pagina          2                  x0C              ##\n");
 	printf("##       '\\t' 	tabulador horizontal  9                 0x09              ##\n");
 	printf("##       '\\b' 	retroceso (backspace) 8                 0x08              ##\n");
 	printf("##       '\\'' 	comilla simple       39                 0x27              ##\n");
 	printf("##       '\"' 	comillas              4                 0x22              ##\n");
 	printf("##       '\\ '  barra                92                 0x5C               ##\n");
-	printf("##       '\\? ' interrogación        63                 0x3F               ##\n");
+	printf("##       '\\? ' interrogacion        63                 0x3F               ##\n");
 	printf("##       '\\nnn' cualquier caracter (nnn es  ASCII expresado en octal)     ##\n");
 	printf("##       '\\xnn' cualquier caracter (nn es ASCII expresado en hexadecimal) ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
-	printf("##  Carácter                       Significado                            ##\n");
-	printf("##     c   Escribe un carácter simple                                     ##\n");
+	printf("##  Caracter                       Significado                            ##\n");
+	printf("##     c   Escribe un caracter simple                                     ##\n");
 	printf("##     d   Escribe un entero decimal con signo                            ##\n");
 	printf("##     i   Escribe un entero decimal, octal o hexadecimal con signo       ##\n");
-	printf("##     e   Escribe un número en punto flotante con exponente              ##\n");
-	printf("##     f   Escribe un número en punto flotante sin exponente              ##\n");
+	printf("##     e   Escribe un numero en punto flotante con exponente              ##\n");
+	printf("##     f   Escribe un numero en punto flotante sin exponente              ##\n");
 	printf("##     o   Escribe un entero octal, sin el cero inicial                   ##\n");
 	printf("##     s   Escribe una cadena de caracteres                               ##\n");
 	printf("##     u   Escribe un entero decimal sin signo                            ##\n");
@@ -104,7 +104,7 @@ int main(void)
 	putchar('o');
 
 	putchar('\n');
-	puts("Bienvenido a la programación");
+	puts("Bienvenido a la programacion");
 	puts(" en lenguaje C");
 
 // Ej 001_1
@@ -159,16 +159,6 @@ int main(void)
     printf("El numero double es %0.6lf \n", numero_double); //0.6 = 6 decimales
 
 
-
-
-
-
-
-
-
-
-
-
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio ej001_2 \n\t\t¿Continuar?\n");
 	getchar();
@@ -181,9 +171,9 @@ int main(void)
 	printf( "\n\t|%-25.8s|" , cadena_2 );      /* imprime 25 caracteres: |Lenguaje       |  */
 	printf( "\n\t|%.6s|" , cadena_2 );         /* imprime 25 caracteres: |Lengua|           */
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "%%07i            justificado a la derecha, 7 dígitos de largo, sin relleno\n");
-	printf( "%%.7i            largo mínimo de 7 dígitos, justificado a la derecha, rellena con ceros\n");
-	printf( "%%8.2f           tamaño total de 8 dígitos, con dos decimales\n");
+	printf( "%%07i            justificado a la derecha, 7 digitos de largo, sin relleno\n");
+	printf( "%%.7i            largo minimo de 7 digitos, justificado a la derecha, rellena con ceros\n");
+	printf( "%%8.2f           tamaño total de 8 digitos, con dos decimales\n");
 	printf( "%%.*f”',x,d)     tamaño predeterminado,x numeros decimales\n");
 	printf( "%%*.*f”,x,y,d)   tamaño igual a x, y numeros decimales\n");
 	printf( "%%s              cadena terminada en null\n");
@@ -275,8 +265,8 @@ int main(void)
 
 	printf("\nEl valor de la suma es %f", suma);
 	printf("\nEl valor de la resta es %f", resta);
-	printf("\nEl valor de la multicación es %f", multi);
-	printf("\nEl valor de la división es %f", divi);
+	printf("\nEl valor de la multicacion es %f", multi);
+	printf("\nEl valor de la division es %f", divi);
 
 
 

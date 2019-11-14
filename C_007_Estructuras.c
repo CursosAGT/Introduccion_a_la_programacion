@@ -7,10 +7,10 @@
 /*
 				printf("############################################################################\n");
 				printf("##                                                                        ##\n");
-				printf("##      ¿Qué es C?                                                        ##\n");
-				printf("##            * Instalación y configuración                               ##\n");
-				printf("##            * Errores sintácticos y lógicos                             ##\n");
-				printf("##            * Programación secuencial                                   ##\n");
+				printf("##      ¿Que es C?                                                        ##\n");
+				printf("##            * Instalacion y configuracion                               ##\n");
+				printf("##            * Errores sintacticos y logicos                             ##\n");
+				printf("##            * Programacion secuencial                                   ##\n");
 				printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
 				printf("##            * Estructuras repetitivas                                   ##\n");
 				printf("##                                                                        ##\n");
@@ -39,7 +39,7 @@
 				printf("##                                                                        ##\n");
 				printf("##      Funciones                                                         ##\n");
 				printf("##            * void                                                      ##\n");
-				printf("##            * Parámetros                                                ##\n");
+				printf("##            * Parametros                                                ##\n");
 				printf("##            * Retorno de datos                                          ##\n");
 				printf("##                                                                        ##\n");
 				printf("##      Memoria y punteros                                                ##\n");
