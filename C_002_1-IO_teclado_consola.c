@@ -60,7 +60,6 @@ int main(void)
 	printf("##              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                 ##\n");
 	printf("##                                                                        ##\n");
 	printf("##    char              Caracter                 (1 byte)                 ##\n");
-	printf("##    char              Caracter                 (1 byte)                 ##\n");
 	printf("##    short             Entero corto con signo   (2 bytes)                ##\n");
 	printf("##    int               Entero con signo         (2 bytes) 32768 a 32767  ##\n");
 	printf("##    long int          Entero largo con signo   (4 bytes)                ##\n");
@@ -78,10 +77,34 @@ int main(void)
 	printf("##    numero c/punto flotante       float         f                       ##\n");
 	printf("##    numero extendido              double        f                       ##\n");
 	printf("##                                                                        ##\n");
+	printf("############################################################################\n");
+	printf("##                                                                        ##\n");
+	printf("##                                                                        ##\n");
+	printf("##    C ofrece un conjunto de funciones para realizar operaciones de      ##\n");
+	printf("##    entrada y salida (E/S) con las cuales puedes leer y escribir        ##\n");
+	printf("##    cualquier tipo de dispositivo concreto con el que puedes            ##\n");
+	printf("##    intercambiar información. C trata a cualquier tipo de fichero       ##\n");
+	printf("##    como una serie o conjunto de bytes denominado flujo o stream.       ##\n");
+	printf("##                                                                        ##\n");
+	printf("##     En C cuentas con 3 flujos de ficheros que ya están abiertos,       ##\n");
+	printf("##     Todas las operaciones que vamos a ver necesitan la librería        ##\n");
+	printf("##            stdio.h para funcionar.                                     ##\n");
+	printf("##                                                                        ##\n");
+	printf("##                                                                        ##\n");
+	printf("##    stdin: La entrada estándar de lectura.                              ##\n");
+	printf("##            Generalmente va asociado al teclado.                        ##\n");
+	printf("##                                                                        ##\n");
+	printf("##    stdout: La salida estándar de escritura.                            ##\n");
+	printf("##            Generalmente va asociado a la pantalla del terminal.        ##\n");
+	printf("##                                                                        ##\n");
+	printf("##    stderr: La salida estándar de escritura para mensajes de error.     ##\n");
+	printf("##            Generalmente también va asociado a la pantalla del terminal.##\n");
+	printf("##                                                                        ##\n");
+	printf("##                                                                        ##\n");
+	printf("############################################################################\n");
+	printf("##  Para buscar mas info                                                  ##\n");
 	printf("##      https://elrincondelc.com/foros/viewtopic.php?t=18819              ##\n");
-	printf("##                                                                        ##\n");
 	printf("##      https://www.monografias.com/trabajos4/lenguajec/lenguajec.shtml	  ##\n");
-	printf("##                                                                        ##\n");
 	printf("##      http://www.pablin.com.ar/computer/cursos/c2/manc7.htm             ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
@@ -126,13 +149,43 @@ int main(void)
 	l		imprime un entero long
 	h		imprime un entero short
 	*/
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\tContinuamos..\n");
+// Ej 002_01
+	getchar();	fflush (stdin);
+	int caracter1;
+	char caracter2;
+
+	printf("getc(stdin)\ngetchar()\n\tPor favor, teclea dos caracteres seguidos luego enter:\n");
+	caracter1 = getc(stdin);
+	caracter2 = getchar();
+	printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+	printf("\n con printf el primer caracter es: %c",caracter1);
+	printf("\n con putc _");
+	putc(caracter1,stdout);
+
+	printf("\n con printf el segundo caracter es: %c",caracter2);
+	printf("\n con putchar :");
+	putchar(caracter2);
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_1 \n\t\t¿Continuar?\n");
+// Ej 002_2
+	getchar(); fflush (stdin);
+	int tamano_cadena = 10;
+	char cadena[tamano_cadena];
+
+	printf("\nPor favor, escribe una línea de SI supere los %i caracteres previstos:\n", tamano_cadena);
+	gets(cadena);
+	printf("Ve que no corto la linea y supera el espacio en memoria reservado:\n");
+	puts(cadena);
 
 	printf( "\n\tContinuamos..\n");
-	getchar();
-	//system("pause");
-	//system("clear");
-	printf("\n");
+	getchar();	fflush (stdin);
 
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_2 \n\t\t¿Continuar?\n");
+// Ej 002_3
 	int    dato_int;
 	float  dato_float;
 	double dato_double;
@@ -162,24 +215,25 @@ int main(void)
 
 
 	printf("\n\nLos datos que ud. ingreso fueron :\n");
-	printf("%d\t%f\t%lf\t%c\t%s\t\n\n", dato_int, dato_float, dato_double,dato_char, cadena_char);
+	printf("dato_int = %d\tdato_float = %f\tdato_double = %lf\tdato_char = %c\tcadena_char = %s\n", dato_int, dato_float, dato_double,dato_char, cadena_char);
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_1 \n\t\t¿Continuar?\n");
-// Ej 002_2
-	getchar();
+	printf( "\n\n\tFin del ejercicio 002_3 \n\t\t¿Continuar?\n");
+// Ej 002_4
+	getchar();	fflush (stdin);
+	getchar();	fflush (stdin);
 	char nombre[20] ; // Reservamos espacio para cadena de 19 caracteres + el caracter nulo /
 	int longitud_string = 0;
 	printf ("\nPor favor ingrese su nombre :");
 	scanf("%s", nombre);
 	longitud_string = strlen(nombre); //strlen cuenta caracteres
 	printf( "\t...Che %s...tu nombre tiene %i caracteres. \n", nombre, longitud_string );
-//	system("clear");
+
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_2 \n\t\t¿Continuar?\n");
-// Ej 002_3
-	getchar();
-//	system("clear");
+	printf( "\n\n\tFin del ejercicio 002_4 \n\t\t¿Continuar?\n");
+// Ej 002_5
+	getchar();	fflush (stdin);
+	getchar();	fflush (stdin);
 //                              operadores matematicos simples
 	float  dato_1_int, dato_2_int;
 	printf("\nIntroduce el primer numero int : ");
@@ -203,10 +257,10 @@ int main(void)
 //	printf("\nSu raiz cuadrada es %f", temporaria);//c
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_3 \n\t\t¿Continuar?\n");
-	getchar();
-//	system("clear");
-//Ej 002_3
+	printf( "\n\n\tFin del ejercicio 002_5 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+	getchar();	fflush (stdin);
+//Ej 002_6
 	float nota_alumno_1 = 0, nota_alumno_2 = 0;
 	printf ("\nIngreso la nota del 1er parcial :");
 	scanf("%f",&nota_alumno_1);
@@ -216,9 +270,9 @@ int main(void)
 	printf ("\n2do parcial : %f",nota_alumno_2);
 	printf ("\npromedio : %f",((nota_alumno_1+nota_alumno_2)/2));
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_4 \n\t\t¿Continuar?\n");
-	getchar();
-// Ej 002_4
+	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+// Ej 002_7
 	float nota1 , nota2 =0 ;
 	printf ("\nIngreso la nota del 1er parcial :");
 	scanf ("%f",&nota1);
@@ -236,11 +290,10 @@ int main(void)
 	temporaria = ((nota1+nota2)/2);
 	printf ("Evaluaciones :\t %f \t|\t%f ",(nota1),(nota2));
 	printf ("\npromedio : %f ", temporaria);
-
-
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_5 \n\t\t¿Continuar?\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio 002_7 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+// Ej 002_8
 	char variable_caracter;
 	char variable_cadena[20];
 	int variable_int;
@@ -281,16 +334,62 @@ int main(void)
 	printf("\n Ahora inventamos algo\n\t El Sr.%c %s con una altura de %lf y un peso de %f pretende ganar la competencia, pero lleva %ld dias desde que nacio que equivalen a %lld segundos desde que dio su primer respiro que fue en el año %d.",variable_caracter,variable_cadena,variable_float,variable_double,variable_long,variable_longlong,variable_int);
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_6 \n\t\t¿Continuar?\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio 002_8 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 
+	printf("\nEn resumen");
+	printf("\n\t Hay varias formas de ingresar datos. ");
+	printf("\n\t Para toman de a un caracter ");
+	printf("\n\t var =getc(stdin) o var = getchar() ");
+	printf("\n\t Para toman string o cadenas de  caracter ");
+	printf("\n\t\t gets(cadena)									No tiene limites de reserva de memoria y el array no lleva &");
+	printf("\n\t\t scanf('%s',cadena)							No acepta espacios y el array no lleva &");
+	printf("\n\t\t fgets(cadena,numero_bytes,stdin);()			Si acepta espacios, el array no lleva & y el final de linea no es \0 sino \n");
+
+
+	char mi_string_2[11] ;//  cantidad de caracteres reservados mas  "\0" fin de string
+	printf ("\n---------------------------  Entrada scanf---------------------------------\n");
+	printf ("\n\tIngresa tu nombre con scanf :");
+	scanf ("%s",mi_string_2);	//  ojo con los espacios en el string
+	printf ("\n---------------------------  Salida scanf----------------------------------\n");
+	printf ("\n\tcon scanf -\tBuenas noches ' %s ', como va el curso",mi_string_2);
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf ( "\nContinuamos..\n");getchar();
+	printf ("\n---------------------------  Entrada gets----------------------------------\n");
+	printf ("\n\tIngresa tu nombre con get : ");
+	gets (mi_string_2);			//  ojo con el tamaño del string
+	printf ("\n---------------------------  Salida gets-----------------------------------\n");
+	printf ("\n\tcon gets -\tBuenas noches ' %s ', como va el curso",mi_string_2);
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf ("\n---------------------------  Entrada fgets---------------------------------\n");
+	printf ( "\nContinuamos..\n");getchar();
+	printf ("\n\tIngresa tu nombre con fget : ");
+	fflush (stdin);
+	fgets (mi_string_2,11,stdin);//  cantidad de caracteres mas  "\n" fin de string
+	printf ("Observar que bajo una linea");
+	printf ("\n---------------------------  Salida fgets----------------------------------\n");
+	printf ("\n\tcon fgets -\tBuenas noches ' %s ', como va el curso",mi_string_2);
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\nContinuamos..\n");
+
+	fflush (stdin);
+
+
+
+
+
+
+
+
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_9 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf ("         dejamos aqui y vamos a condicionales y bucles, luego vovemos");
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
-
-
+// Ej 002_10
 	char texto[]="Gandalf";
 	char *character_indicado;
 	int longitud=0;
@@ -303,10 +402,9 @@ int main(void)
 	}
 	printf( "La cadena \"%s\" tiene %i caracteres.\n", texto, longitud );
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_7 \n\t\t¿Continuar?\n");
-	getchar();
-//	system("clear");
-// Ej 002_5
+	printf( "\n\n\tFin del ejercicio 002_10 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+// Ej 002_11
 	int edad = 0;
 	printf ("Ingrese su edad : ");
 	scanf("%i",&edad);
@@ -343,18 +441,17 @@ int main(void)
 		printf ("\nte crece la panza y se cae todo, hasta el pelo");
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_8 \n\t\t¿Continuar?\n");
-	getchar();	getchar();
+	printf( "\n\n\tFin del ejercicio 002_11 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 
 //	system("clear");
-// Ej 002_6*/
-/* Funciones de <string.h>:
+//Ej 002_12
+// Funciones de <string.h>:
 
-	strcmp(cadena1, cadena2); //Compara dos cadenas de caracteres
-	strcat(cadena1, cadena2); //Concatena dos cadenas de caracteres
-	strcpy(cadena1, cadena2); //Copia la primera cadena en la segunda
-	strlen(cadena);  //Retorna la longitud de caracteres que componen a la cadena
-	*/
+//	strcmp(cadena1, cadena2); //Compara dos cadenas de caracteres
+//	strcat(cadena1, cadena2); //Concatena dos cadenas de caracteres
+//	strcpy(cadena1, cadena2); //Copia la primera cadena en la segunda
+//	strlen(cadena);  //Retorna la longitud de caracteres que componen a la cadena
 
 	char cadena_org[30] = " Esto Es una CaDeNa De pRuEbA ";
 	char cadena_May[30] ;
@@ -380,9 +477,9 @@ int main(void)
 
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_9 \n\t\t¿Continuar?\n");
-	getchar();
-//	system("clear");
+	printf( "\n\n\tFin del ejercicio 002_12 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+//Ej 002_13
 	int numero;
 	fputs("Introduzca un numero entero par: ", stdout);
 
@@ -402,10 +499,10 @@ int main(void)
 	printf ("No se puede seguir dividiendo: El numero %d es impar.\n", numero);
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 002_10 \n\t\t¿Continuar?\n");
-	getchar();	getchar();
+	printf( "\n\n\tFin del ejercicio 002_13 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 
-
+//Ej 002_14
 	char texto2[] = "este es un curso de intro a la programacion.";
 	char destino[50];
 
@@ -413,10 +510,9 @@ int main(void)
 	printf( "Valor final: %s\n", destino );
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-
-	printf( "\n\n\tFin del ejercicio 002_11 \n\t\t¿Continuar?\n");
-	getchar();	getchar();
-
+	printf( "\n\n\tFin del ejercicio 002_14 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+//Ej 002_15
 	int num,bucle,suma=0,cantidad;
 
 	printf("Promedio.n Cuantos numero quieres calcular su promedio: ");
@@ -430,10 +526,9 @@ int main(void)
 	suma=(suma/num);
 	printf("Su promedio es: %i",suma);
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-
-	printf( "\n\n\tFin del ejercicio 002_12 \n\t\t¿Continuar?\n");
-	getchar();	getchar();
-
+	printf( "\n\n\tFin del ejercicio 002_15 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+//Ej 002_16
 	int cant;				//cantidad de valores
 	int valor_nuevo;				//contador int _valor;
 
@@ -447,6 +542,7 @@ int main(void)
 	while(cont<=cant)
 	{					//Ciclo que cuenta la lectura
 		printf("\nValor: ");
+		fflush (stdin);
 		scanf("%d",&valor_nuevo);			//lectura de valores
 		sumas=sumas+valor_nuevo;			//sumas de valores
 		cont++;//incremente de lectura de valores
@@ -454,11 +550,10 @@ int main(void)
 	prom=sumas/cant;//promedio de valores
 	printf("Promedio: %.2f",prom);//impresion de valores getch();//esperar a que presiona una tecla el usuario
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_16 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 
-	printf( "\n\n\tFin del ejercicio 002_12 \n\t\t¿Continuar?\n");
-	getchar();	getchar();
-
-
+//Ej 002_17
 	float registro;
 	int contador2;
 	float memoria;
@@ -474,6 +569,59 @@ int main(void)
 		promedio = ((sumar/registro));
 		}
 	printf("El promedio es igual a: %f", promedio);
-	getchar();
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_17 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+
+//Ej 002_18
+	ssize_t bytes_leidos;
+	size_t numero_bytes;
+	//ssize_t y size_t son sinónimos de unsigned int
+	char *cadena2;
+	printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	puts("Ingrese una cadena:\n");
+	// Puedes pasar a getline los argumentos inicializados:
+	numero_bytes = 10;
+	cadena2 = (char *) malloc (numero_bytes + 1);
+	bytes_leidos = getline(&cadena2, &numero_bytes, stdin);
+	if (bytes_leidos == -1)
+	{
+	puts("Error.");
+	}
+	else
+	{
+	puts("La línea es:");
+	puts(cadena2);
+	}
+	free(cadena2);
+	printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	puts("Ingrese una cadena:\n");
+	//O bien, más sencillo, poner el número a 0 y la cadena2 a NULL, para que él mismo te haga	la reserva necesaria
+	numero_bytes = 0;
+	cadena2 = NULL;
+	bytes_leidos = getline(&cadena2, &numero_bytes, stdin);
+
+	if (bytes_leidos == -1)
+	{
+	puts("Error.");
+	}
+	else
+	{
+	puts("La línea es:");
+	puts(cadena2);
+	}
+	free(cadena2);
+
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 002_18 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+
+//Ej 002_19
+
+
+
+
+
+
 return 0;
 }

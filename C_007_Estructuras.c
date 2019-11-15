@@ -142,20 +142,12 @@ int main()
 			}
 		}
 	}
-
-
 	for (int contador=0; contador < 2 ; contador++)
 	{
 		printf("\nEl vehiculo nro %i %s es un %s %s ",contador, moviles[contador].tipo,moviles[contador].marca,moviles[contador].modelo);
 		printf("\nTiene %i ruedas en sus %i ejes",moviles[contador].ruedas,moviles[contador].ejes);
 		printf("\nSe ingresa por una de sus %i puertas a uno de sus %i asientos.",moviles[contador].puertas,moviles[contador].asientos);
 	}
-
-
-
-
-
-
 	printf( "\n\tContinuamos..\n");
 	getchar();
 //	system("clear");
