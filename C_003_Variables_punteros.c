@@ -20,6 +20,26 @@ int main()
 	*/
 
 // Ej 003_P_01
+//Este código sería erróneo y daría una violacion de segmento:
+/*
+char *a;
+scanf ("%c", a);
+
+*/
+char *a = (char*) malloc (sizeof (char));
+scanf ("%c", a);
+//En este código, al scanf le pasamos el puntero en sí. El puntero es una variable, como bien se ha dicho anteriormente, que contiene una dirección de memoria, por tanto, no es necesario el uso de & para pasarle la dirección de memoria a scanf. Anteriormente hemos tenido que reservar un espacio de memoria con malloc(), que se verá su uso más adelante.
+
+
+
+
+
+
+
+
+
+
+
 //  https://www.youtube.com/watch?v=OgX4vdtkkHQ
 	char *caracter_1;//<--------------------------------------------------------error agregar un * antes del nombre
 	caracter_1 = "UTN 2019";

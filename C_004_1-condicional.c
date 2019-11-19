@@ -77,10 +77,19 @@ int main(void)
     getchar();
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin intro \n\t\t¿Continuar?\n");
-// Ej 004_1/1
-    getchar();
-	printf("\n ingrese un numero :");
+// Ej 004_1
 
+
+
+
+
+
+	getchar();
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_1 \n\t\t¿Continuar?\n");
+// Ej 004_2/1
+
+	printf("\n ingrese un numero :");
 	int numero;
 	scanf("%d",&numero);
 	if(numero % 2 == 0)
@@ -88,11 +97,9 @@ int main(void)
 	else
 		{printf("El numero es impar");}
     printf( "\n\n\tContinuamos..\n");
-    getchar();
-	getchar();
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_1/1 \n\t\t¿Continuar?\n");
-// Ej 004_1/2
+	printf( "\n\n\tFin del ejercicio 004_2/1 \n\t\t¿Continuar?\n");
+// Ej 004_2/2
     getchar();
 	int    temporaria = 0;
 	int    dato_1_int, dato_2_int =0;
@@ -114,8 +121,9 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	printf("\n");
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_1/2 \n\t\t¿Continuar?\n");
-// Ej 004_2/1
+	printf( "\n\n\tFin del ejercicio 004_2/2 \n\t\t¿Continuar?\n");
+
+// Ej 004_3/1
     getchar();
 
 	printf("\nIntroduce el primer numero int : ");
@@ -139,8 +147,8 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		printf ("\n el primer dato %i es menor al segundo %i", dato_1_int , dato_2_int);
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_2/1 \n\t\t¿Continuar?\n");
-// Ej 004_2/2
+	printf( "\n\n\tFin del ejercicio 004_3/1 \n\t\t¿Continuar?\n");
+// Ej 004_3/2
     getchar();
 	printf("\nIntroduce el primer numero int : ");
 	scanf("%i", &dato_1_int);
@@ -164,8 +172,8 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		}
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_2/2 \n\t\t¿Continuar?\n");
-// Ej 004_2/3
+	printf( "\n\n\tFin del ejercicio 004_3/2 \n\t\t¿Continuar?\n");
+// Ej 004_3/3
     getchar();
 	printf("\nIntroduce el primer numero int : ");
 	scanf("%i", &dato_1_int);
@@ -187,12 +195,14 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	}
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_2/3 \n\t\t¿Continuar?\n");
-// Ej 004_3/1
-    getchar();
+	printf( "\n\n\tFin del ejercicio 004_3/3 \n\t\t¿Continuar?\n");
+// Ej 004_4
+	getchar();
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_4 \n\t\t¿Continuar?\n");
+// Ej 004_5/1
 
 	getchar();
-	//system("clear");
 	printf("\nIntroduce un mes en numero : ");
 	scanf("%i", &dato_1_int);
 	if (dato_1_int <= 1 || dato_1_int >= 12 )
@@ -248,8 +258,8 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		printf ("\n %i corresponde al mes de Diciembre", dato_1_int );
 	}
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Otra manera ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_3/1 \n\t\t¿Continuar?\n");
-// Ej 004_3/2
+	printf( "\n\n\tFin del ejercicio 004_5/1 \n\t\t¿Continuar?\n");
+// Ej 004_5/2
 	getchar();
 	printf("\nIntroduce un mes en numero : ");
 	scanf("%i", &dato_1_int);
@@ -270,10 +280,10 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Otra manera ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		default: printf ("\n Error %i no corresponde a los 12 meses", dato_1_int ); break;
 	}
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_3/2 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 004_5/2 \n\t\t¿Continuar?\n");
     getchar();
 	getchar();
-// Ej 004_4
+// Ej 004_6
 
 	printf("\nIntroduce el primer numero > 0 y < 10 int : ");
 	scanf("%i", &dato_1_int);
@@ -291,10 +301,10 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	}
 
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_4 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 004_6 \n\t\t¿Continuar?\n");
     getchar();
 	getchar();
-// Ej 004_5
+// Ej 004_7
 	int dia=0;
 	char nombre[10];
 //	char error[] = 'Dia incorrecto';
@@ -315,10 +325,10 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	//system("clear");
 
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_5 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 004_7 \n\t\t¿Continuar?\n");
     getchar();
 	getchar();
-// Ej 004_6
+// Ej 004_8
 	char c;
 	printf(" Menu:");
 	printf(" A=Añadir a la lista");
@@ -343,7 +353,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	}
 	getchar();
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_6 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
 	return (0);
 }
 
