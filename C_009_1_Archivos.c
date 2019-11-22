@@ -53,7 +53,9 @@ int main()
 	printf("##            * pull                                                      ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
+//	printf("\n	http://www.java2s.com/Code/C/File/CatalogFile.htm");
 	printf( "\n\n\tFin intro \n\t\t¿Continuar?\n");
+
     getchar();
 	printf("\n############################################################################\n");
 // Ej 009_1
@@ -88,6 +90,20 @@ Nombre Función
 
 
 
+fread
+* size_t fread ( void * ptr, size_t size, size_t count, FILE * stream );
+Esta función lee un bloque de una "stream" de datos. Efectúa la lectura de un arreglo de elementos "count", cada uno de los cuales tiene un tamaño definido por "size". Luego los guarda en el bloque de memoria especificado por "ptr". El indicador de posición de la cadena de caracteres avanza hasta leer la totalidad de bytes. Si esto es exitoso la cantidad de bytes leídos es (size*count).
+
+
+PARAMETROS:
+ptr : Puntero a un bloque de memoria con un tamaño mínimo de (size*count) bytes.
+size : Tamaño en bytes de cada elemento (de los que voy a leer).
+count : Número de elementos, los cuales tienen un tamaño "size".
+stream: Puntero a objetos FILE, que especifica la cadena de entrada.
+*
+* fscanf
+La función fscanf funciona igual que scanf en cuanto a parámetros, pero la entrada se toma de un fichero en lugar del teclado.
+El prototipo correspondiente de fscanf es:	int fscanf(FILE *fichero, const char *formato, argumento, ...);
 
 
 
@@ -101,8 +117,6 @@ Esta función sirve para poder cerrar un fichero que se ha abierto.
     */
 
 
-
-int main(){
 	printf("Leemos un archivo");
   /*
    * Para usar un archivo tenemos que asociar una variable puntero
@@ -189,5 +203,6 @@ int main(){
    fprintf(datos_archivo_salida,"%d %s\n",idNum, name); 					// Escribe los datos
    fclose(datos_archivo_entrada2);
    fclose(datos_archivo_salida);           									// Cierra los archivos
+   */
 	return 0;
 }

@@ -80,13 +80,19 @@ int main(void)
 	float    temporaria = 0;
 	int    dato_1_int, dato_2_int =0;
 // Ej 004_1
-
+	printf("\n ingrese 1 para ingresar otro dato para salir  :");
+	int numero;
+	scanf("%d",&numero);
+	if(numero == 1)
+		{printf("\n\t\tIngreso");}
+	else
+		{printf("\n\t\tsalio");}
+    printf( "\n\n\tContinuamos..\n");
 	getchar();
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_1 \n\t\t¿Continuar?\n");
 // Ej 004_2/1
 	printf("\n ingrese un numero :");
-	int numero;
 	scanf("%d",&numero);
 	if(numero % 2 == 0)
 		{printf("El numero es par");}
@@ -212,7 +218,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	printf ("\npromedio : %f ", temporaria);
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_4 \n\t\t¿Continuar?\n");
-// Ej 004_5/1
+// Ej 004_5
 
 	getchar();	fflush (stdin);
 	printf("\nIntroduce un mes en numero : ");
@@ -269,15 +275,9 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	{
 		printf ("\n %i corresponde al mes de Diciembre", dato_1_int );
 	}
-printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Otra manera ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_5/1 \n\t\t¿Continuar?\n");
-// Ej 004_5/2
-	getchar();	fflush (stdin);
-	printf("\nIntroduce un mes en numero : ");
-	scanf("%i", &dato_1_int);
-
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_5/2 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 004_5 \n\t\t¿Continuar?\n");
+
 	getchar();	fflush (stdin);
 
 // Ej 004_6
@@ -317,20 +317,17 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		}
 	printf ("Hoy es : %s", nombre);
 
-	getchar();
-	//system("clear");
-
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_7 \n\t\t¿Continuar?\n");
 	getchar();	fflush (stdin);
 // Ej 004_8
 	char c;
-	printf(" Menu:");
-	printf(" A=Añadir a la lista");
-	printf(" B=Borrar de la lista");
-	printf(" O=Ordenar la lista");
-	printf(" I=Imprimir la lista");
-	printf(" Escriba su seleccion y luego <enter>");
+	printf("\n Menu:");
+	printf("\n\t A=Añadir a la lista");
+	printf("\n\t B=Borrar de la lista");
+	printf("\n\t O=Ordenar la lista");
+	printf("\n\t I=Imprimir la lista");
+	printf("\n Escriba su seleccion y luego <enter>");
 	c = getchar();
 	if(c != "")
 	{
@@ -349,6 +346,17 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
 	getchar();	fflush (stdin);
+
+
+	printf( "\n   Introduzca un a%co: ", 164 );
+	scanf( "%d", &dato_1_int );
+
+	if ( (dato_1_int % 4 == 0 && dato_1_int % 100 != 0) || dato_1_int % 400 == 0 )
+		printf( "\n   ES BISIESTO" );
+	else
+		printf( "\n   NO ES BISIESTO" );
+
+
 	return (0);
 }
 

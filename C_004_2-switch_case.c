@@ -54,101 +54,113 @@ int main(void)
 	printf("##            * pull                                                      ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
+	printf("\n");
+	printf("\n	switch ( variablo )");
+	printf("\n         {");
+	printf("\n             case 0:  bloque de sentencias;break");
+	printf("\n          }");
+
     printf( "\n\tContinuar: \n");
-int valor = 0;
-int contador = 2;// (porque todo numero es divisible por uno(1) (sin resto)
-int valor_resto =0;
-
-int dato_1;
-
-printf("INGRESE EL NUMERO A INTERRUMPIR >1 < 10  :");
-scanf("%i",&dato_1);
-//Clase_break/continue/range_Ej_01
-printf("Antes\n");
-for (contador =1 ; contador <= 10 ; contador++)
+	getchar();	fflush (stdin);
+	int dato_1_int=0;
+	int nota;
+	char nota_alfa ;
+//Ej 004_2_1
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf(" Inserte una nota: ");
+	scanf("%d",&nota);
+	switch(nota)
 	{
-	if (contador ==dato_1)
-		{break;//    <---------------------Break
-		}
-	printf("\tnumero %i \n",contador);//<---------------------print
-	};
-printf("despues\n");
-for (contador =1 ; contador <= 10 ; contador++)
+		case 0: printf("\nRecursa");break;
+		case 1: printf("\nRecursa");break;
+		case 2: printf("\nRecursa");break;
+		case 3: printf("\nRecursa");break;
+		case 4: printf("\nAplazado");break;
+		case 5: printf("\nAplazado");break;
+		case 6: printf("\nAprobado");break;
+		case 7: printf("\nBien");break;
+		case 8: printf("\nMuy Bien");break;
+		case 9: printf("\Excelente");break;
+		case 10: printf("\nSobresaliente");break;
+		default: printf("esa nota es incorrecta");
+	}
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_2_1 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+
+
+//Ej 004_2_2
+	getchar();	fflush (stdin);
+	printf(" Inserte una nota en sistema alfanumerico \n\tSobresaliente\n\tExelente\n\tMuybien\n\tBien\n\tRegular\n\tAplazado: ");
+	nota_alfa = getchar();
+	switch(nota_alfa)
 	{
-	printf("\tnumero %i \n",contador);//<---------------------print
-	if (contador ==dato_1)
-		{break;//    <---------------------Break
-		}
-	};
-//#################################################################
+		case 'A': printf("\nAplazado");break;
+		case 'R': printf("\nRegulara");break;
+		case 'B': printf("\nBien");break;
+		case 'M': printf("\nMuy Bien");break;
+		case 'E': printf("\Excelente");break;
+		case 'S': printf("\nSobresaliente");break;
+		default: printf("esa nota es incorrecta");
+	}
 
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
-	getchar();	fflush (stdin);
-getchar();
-for (contador =1 ; contador <= 10 ; contador++)
-	{
-	if (contador ==dato_1)
-		{
-			printf("Salta el bucle, no imprime el valor\n") ;
-			continue;		//    <---------------------continue
-		}
-	printf("\tnumero %i \n",contador);//<---------------------print
-	};
+	printf( "\n\n\tFin del ejercicio 004_2_2 \n\t\t¿Continuar?\n");
 
+
+
+
+//Ej 004_2_3
+	float entrada,salida, cambio;
+	int opcion;
+	cambio = 65.50;
+	printf("cotizar de moneda extranjera\n");
+	printf("opcion:\n\t1-pesos a Dolares \n\t2-Dolares a pesos\n");
+	scanf("%d",&opcion);
+	printf("monto a cambiar: ");
+	scanf("%f",&entrada);
+	switch(opcion)
+	{
+		case 1:salida=entrada/cambio;
+		printf("%.2f Pesos son %.2f Dolares",entrada,salida);
+		break;
+		case 2:salida=entrada*cambio;
+		printf("%.2f Dolares son %.2f Pesos",entrada,salida);
+		break;
+		default: printf("opcion incorrecta");
+	}
 
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 004_2_3 \n\t\t¿Continuar?\n");
 	getchar();	fflush (stdin);
+// Ej 004_2_4
+	printf("\nIntroduce un mes en numero : ");
+	scanf("%i", &dato_1_int);
+	switch (dato_1_int )
+	{
+		case  1  : printf ("\n %i corresponde al mes de Enero", dato_1_int ); break;
+		case  2  : printf ("\n %i corresponde al mes de Febrero", dato_1_int ); break;
+		case  3  : printf ("\n %i corresponde al mes de Marzo", dato_1_int ); break;
+		case  4  : printf ("\n %i corresponde al mes de Abril- No esta, se lo robaron a Joaquin", dato_1_int ); break;
+		case  5  : printf ("\n %i corresponde al mes de Mayo", dato_1_int ); break;
+		case  6  : printf ("\n %i corresponde al mes de Junio", dato_1_int ); break;
+		case  7  : printf ("\n %i corresponde al mes de Julio", dato_1_int ); break;
+		case  8  : printf ("\n %i corresponde al mes de Agosto", dato_1_int ); break;
+		case  9  : printf ("\n %i corresponde al mes de Septiembre", dato_1_int ); break;
+    	case  10 : printf ("\n %i corresponde al mes de Octubre", dato_1_int ); break;
+		case  11 : printf ("\n %i corresponde al mes de Noviembre", dato_1_int ); break;
+		case  12 : printf ("\n %i corresponde al mes de Diciembre", dato_1_int ); break;
+		default: printf ("\n Error %i no corresponde a los 12 meses", dato_1_int ); break;
+	}
 
-	printf ("mi primita(o) esta muy buena(o). Pero no te metas porque los primos son complicados ");
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\t-Elije un numero\n\t\tIngresa cualquier valor:");
-	scanf("%i",&valor);
-	printf("%i sera primo?\n\t Estos solo se pueden dividir por si mismos y uno (sin tener resto)\n",valor);
-	printf ("\n~~~~~~CON WHILE\n");
-	while (contador < valor)
-	{
-		valor_resto =valor % contador ;
-		if ( valor_resto == 0)
-			{
-				printf ("\n\n\n%i no es primo" ,valor) ;
-				printf ("\n\t\t %i /  %i = %i con Resto %i" ,valor, contador, valor/contador, valor_resto ) ;
-				break;// salgo, no me interesa continuar xq ya encontre un divisor por el cual el resto es 0
-			}
-		else// ( valor_resto != 0)
-		{
-			printf("\n%i por ahora si es primo" ,valor) ;
-			printf ("\n\t\t %i /  %i = %i con Resto %i" ,valor, contador, valor/contador, valor_resto ) ;
-			contador++ ;
-			if  (contador == valor)
-			{
-				printf("\nLLegamos al final");
-				printf("\n\t\t  -*-*-*-*-*-  '%i' SI ES PRIMO  -*-*-*-*-*-  " ,valor) ;
-			}
-		}
-	}
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
-	getchar();	fflush (stdin);
-	printf ("\n~~~~~~CON FOR\n");
-	for (contador =2 ; contador < valor ; contador++)
-	{
-		valor_resto =valor % contador ;
-		if ( valor_resto == 0)
-			{
-				printf ("\n\n\n%i no es primo" ,valor) ;
-				printf ("\n\t\t %i /  %i = %i con Resto %i" ,valor, contador, valor/contador, valor_resto ) ;
-				break;// salgo, no me interesa continuar xq ya encontre un divisor por el cual el resto es 0
-			}
-		printf("\n%i por ahora si es primo" ,valor) ;
-		printf ("\n\t\t %i /  %i = %i con Resto %i" ,valor, contador, valor/contador, valor_resto ) ;
-		if ( contador < (valor-1)){continue;}//seria el ultimo
-		printf("\nLLegamos al final");
-		printf("\n\t\t  -*-*-*-*-*-  '%i' SI ES PRIMO  -*-*-*-*-*-  " ,valor) ;
-	}
-	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
-	getchar();	fflush (stdin);
-	return (0);
+printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 004_2_4 \n\t\t¿Continuar?\n");
+
+
+
+
+
+
+	return 0;
 }
 

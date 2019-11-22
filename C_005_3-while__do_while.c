@@ -54,8 +54,21 @@ int main(void)
 	printf("##            * pull                                                      ##\n");
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
-    printf( "\n\tContinuar: \n");
-
+	printf("\n");
+	printf("\n	while ( condición/expresión_lógica )");
+	printf("\n         {");
+	printf("\n               bloque de sentencias;");
+	printf("\n          }");
+	printf("\n############################################################################\n");
+	printf("\n	do");
+	printf("\n         {");
+	printf("\n               bloque de sentencias;");
+	printf("\n          }");
+	printf("\n	while ( condición/expresión_lógica );");
+	printf("\n");
+	int nota;
+	char nota_alfa ;
+	int edad = 0;
 // Ej 001_4
 
 	/*Otras
@@ -81,10 +94,12 @@ toupper(caracter): devuelve la mayuscula asociada a caracter, si la tiene; si no
 tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no, devuelve el mismo caracter.
 */
 //#############################################################################################################
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 005_3_1 \n\t\t¿Continuar?\n");
-	int contador = 0;
 
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+//Ej 005_3_1
+	int contador = 0;
 	//   char c;
 	char cadena_org[20] = "Curso2019 LeNgUaJe C";
 	char cadena_Upper[20] ;
@@ -106,8 +121,10 @@ tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no
 
 //#############################################################################################################
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 005_3_2 \n\t\t¿Continuar?\n");
-	int edad = 0;
+	printf( "\n\n\tFin del ejercicio 005_3_1 \n\t\t¿Continuar?\n");
+//Ej 005_3_2
+	getchar();	fflush (stdin);
+
 	printf ("\nventa de alcohol en boliches");
 	printf("\ningrese su edad :");
 	scanf("%i",&edad);
@@ -119,10 +136,26 @@ tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no
 	}
 	printf ("\n Bienvenido, que desea tomar");
 
-
+//#############################################################################################################
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 005_3_2 \n\t\t¿Continuar?\n");
+//Ej 005_3_3
+	getchar();	fflush (stdin);
+	printf ("\nventa de alcohol en boliches");
+	printf("\ningrese su edad :");
+	scanf("%i",&edad);
+	while (edad<18)
+	{
+	printf ("\nCometió un error al ingresar la edad o es menor y debe retirarse");
+	printf("\ningrese su edad :");
+	scanf("%i",&edad);
+	}
+	printf ("\n Bienvenido, que desea tomar");
 //#############################################################################################################
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 005_3_3 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+//Ej 005_3_4
 	do
 	{
 	printf ("\nIngresar la edad > a 18 o es menor y debe retirarse");
@@ -130,16 +163,46 @@ tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no
 	scanf("%i",&edad);
 	} while (edad<18);
 	printf ("\n Bienvenido, que desea tomar");
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");////////////probar poner una letra
+	printf( "\n\n\tFin del ejercicio 005_3_4 \n\t\t¿Continuar?\n");
 
-
-
-
-
-
-
-
-
-
-
+	getchar();	fflush (stdin);
+	 do {
+			printf("\n Inserte una nota en sistema numerico \n\t0-10: ");
+			scanf("%i",&nota);
+		} while((nota < 0 )||( nota > 10));
+	switch(nota)
+		{
+			case 0: printf("\nRecursa");break;
+			case 1: printf("\nRecursa");break;
+			case 2: printf("\nRecursa");break;
+			case 3: printf("\nRecursa");break;
+			case 4: printf("\nAplazado");break;
+			case 5: printf("\nAplazado");break;
+			case 6: printf("\nAprobado");break;
+			case 7: printf("\nBien");break;
+			case 8: printf("\nMuy Bien");break;
+			case 9: printf("\Excelente");break;
+			case 10: printf("\nSobresaliente");break;
+			default: printf("\nesa nota es incorrecta\n");
+		}
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 005_3_4 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+	 do {
+			printf("\n Inserte una nota en sistema alfanumerico \n\tSobresaliente\n\tExelente\n\tMuybien\n\tBien\n\tRegular\n\tAplazado: ");
+			nota_alfa = toupper(getchar());
+		} while(nota_alfa!='A' && nota_alfa!='R' && nota_alfa!='B' && nota_alfa!='M'&& nota_alfa!='E' && nota_alfa!='S');
+	switch(nota_alfa)
+		{
+			case 'A': printf("\nAplazado");break;
+			case 'R': printf("\nRegulara");break;
+			case 'B': printf("\nBien");break;
+			case 'M': printf("\nMuy Bien");break;
+			case 'E': printf("\Excelente");break;
+			case 'S': printf("\nSobresaliente");break;
+			default: printf("\nesa nota es incorrecta\n");
+		}
+return 0;
 }
 

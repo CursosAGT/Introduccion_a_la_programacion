@@ -3,61 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 //Ej 006_2
-int sumemos ();
-
+int sumemos (int valor_a, int valor_b);
 int main()
 {
-	printf("############################################################################\n");
-	printf("##                                                                        ##\n");
-	printf("##      ¿Que es C?                                                        ##\n");
-	printf("##            * Instalacion y configuracion                               ##\n");
-	printf("##            * Errores sintacticos y logicos                             ##\n");
-	printf("##            * Programacion secuencial                                   ##\n");
-	printf("##            * Estructuras condicionales simples, compuestas y anidadas  ##\n");
-	printf("##            * Estructuras repetitivas                                   ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      Salida por pantalla                                               ##\n");
-	printf("##            * Printf                                                    ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      Entras por teclado                                                ##\n");
-	printf("##            * scanf                                                     ##\n");
-	printf("##            * gets                                                      ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      Variables y Constantes                                            ##\n");
-	printf("##            * Tipos de variables                                        ##\n");
-	printf("##            * Usos                                                      ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      Condicionales                                                     ##\n");
-	printf("##            * if                                                        ##\n");
-	printf("##            * else                                                      ##\n");
-	printf("##            * else if                                                   ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      Bucles                                                            ##\n");
-	printf("##            * for                                                       ##\n");
-	printf("##            * while                                                     ##\n");
-	printf("##            * do while                                                  ##\n");
-	printf("##            * break                                                     ##\n");
-	printf("##            * continue                                                  ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      Funciones                                                         ##\n");
-	printf("##            * void                                                      ##\n");
-	printf("##            * Parametros                                                ##\n");
-	printf("##            * Retorno de datos                                          ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      Memoria y punteros                                                ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      Arrays                                                            ##\n");
-	printf("##                                                                        ##\n");
-	printf("##                                                                        ##\n");
-	printf("##      GIT Colaborativo -Pair Programming                                ##\n");
-	printf("##            * Creando un repositorio con GIT, clonar, crear branches    ##\n");
-	printf("##            * push                                                      ##\n");
-	printf("##            * pull                                                      ##\n");
-	printf("##                                                                        ##\n");
-	printf("############################################################################\n");
-
-
 	int valor_1 =0;
 	int valor_2 =0 ;
 	int resultado =0;
@@ -79,12 +29,13 @@ int main()
 	} while(dato_char != 's' && dato_char != 'S');
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 006_1 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 006_2 \n\t\t¿Continuar?\n");
 
 	getchar();
 	system("clear");
 	return (0);
 }
+
 int sumemos (int valor_a, int valor_b)
 {
 	int resulta2 = 0;

@@ -96,26 +96,27 @@ int main()
 		char mi_string_2[11] ;//  cantidad de caracteres reservados mas  "\0" fin de string
 		printf ("\n---------------------------  Entrada scanf---------------------------------\n");
 		printf ("\n\tIngresa tu nombre con scanf :");
-		scanf ("%s",&mi_string_2);	//  ojo con los espacios en el string
+		scanf ("%s",mi_string_2);	//  ojo con los espacios en el string
 		printf ("\n---------------------------  Salida scanf----------------------------------\n");
 		printf ("\n\tcon scanf -\tBuenas noches ' %s ', como va el curso",mi_string_2);
 		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-		printf ( "\nContinuamos..\n");getchar();
+		printf ( "\nContinuamos..\n");getchar();fflush (stdin);
 		printf ("\n---------------------------  Entrada gets----------------------------------\n");
 		printf ("\n\tIngresa tu nombre con get : ");
 		gets (mi_string_2);			//  ojo con el tamaño del string
 		printf ("\n---------------------------  Salida gets-----------------------------------\n");
 		printf ("\n\tcon gets -\tBuenas noches ' %s ', como va el curso",mi_string_2);
 		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+		printf ( "\nContinuamos..\n");getchar();fflush (stdin);
 		printf ("\n---------------------------  Entrada fgets---------------------------------\n");
-		printf ( "\nContinuamos..\n");getchar();
 		printf ("\n\tIngresa tu nombre con fget : ");
-		fflush (stdin);
 		fgets (mi_string_2,11,stdin);//  cantidad de caracteres mas  "\n" fin de string
-		printf ("Observar que bajo una linea");
 		printf ("\n---------------------------  Salida fgets----------------------------------\n");
+		printf ("Observar que bajo una linea------------!");
 		printf ("\n\tcon fgets -\tBuenas noches ' %s ', como va el curso",mi_string_2);
 		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+		printf ( "\nContinuamos..\n");getchar();fflush (stdin);
+		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 		printf( "\nContinuamos..\n");
 		fflush (stdin);
 		getchar();
@@ -123,7 +124,7 @@ int main()
 		printf("\n############################################################################\n");
 		printf("Vean que seria incorrecto leer este string mediante un puntero declarado , pero al que no se le ha reservado memoria:");
 		char *puntero_nuevo_1;
-		scanf("%s" , puntero_nuevo_1 );      /* Incorrecto */
+		scanf("%s" , puntero_nuevo_1 );      // Incorrecto donde reservo o limito la cantidad de memoria/
 		printf("ya que la direccion contenida por puntero_nuevo_1 no ha sido inicializada aun con ningun valor valido.");
 		printf("y no tiene maximo, Lo correcto en este caso seria");
 		char *puntero_nuevo_2 ;

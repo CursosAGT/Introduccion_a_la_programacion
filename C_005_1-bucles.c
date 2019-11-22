@@ -94,7 +94,7 @@ int main(void)
         printf ("%i",contador);
 */
 
-
+/*
 
 	{
 		if ((contador % 2) == 0 )
@@ -107,7 +107,8 @@ int main(void)
 		}
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-    printf( "\n\tContinuamos..\n");
+	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 	printf("\n\t\t\tUso de WHILE");
 	printf("\n\t\t\t~~~~~~~~~~~~");
 
@@ -129,7 +130,8 @@ int main(void)
 	 temporaria++;
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-    printf( "\n\tContinuamos..\n");
+	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 	printf("\n\t\t\tUso de DO....WHILE");
 	printf("\n\t\t\t~~~~~~~~~~~~~~~~~~");
     getchar();    getchar();    getchar();
@@ -148,13 +150,12 @@ int main(void)
 		}
 	 temporaria++;
 	} while (temporaria < dato_2_int);
-
+*/
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 005_1 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
+
 // Ej 005_2
- //   getchar();
- //   system("pause");
- //   system("clear");
-	return (0);
+
 }
 
