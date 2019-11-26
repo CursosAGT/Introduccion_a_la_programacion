@@ -76,9 +76,9 @@ int main()
 
 	printf ("\nUna variable es un espacio en la memoria, en el cual el programador asigna un valor determinado por el tipo de dato que el lenguaje de programacion va soportar, para declararla es necesario saber que tipo de dato la contiene.");
 	printf( "\n\n\tFin del ejercicio 003_1 \n\t\t¿Continuar?\n");
-    getchar();
+    getchar();fflush (stdin);
 	printf("\n############################################################################\n");
-// Ej 003_2
+// Ej 003_VP_01
     int numero_ent;
     float numero_dec;
     char letra;
@@ -95,22 +95,23 @@ int main()
 	printf ("\nValor Nº: %i",numero_ent);		//<---error
 	printf ("\nValor Nº: %f",numero_dec);		//<---error
 	printf ("\n\tValor Caracter: %c",letra);	//<---error
-
-	printf( "\n\n\tFin del ejercicio 003_2 \n\t\t¿Continuar?\n");
-    getchar();
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 003_VP_01 \n\t\t¿Continuar?\n");
+    getchar();fflush (stdin);
 	printf("\n############################################################################\n");
-// Ej 003_3
+// Ej 003_VP_02
     numero_ent = 1;
     numero_dec = 1.1;
     float numero_rec ;
-
+	printf("\n numero_ent: %i",numero_ent);
+	printf("\n numero_dec: %f",numero_dec);
 	numero_rec = numero_ent +numero_dec;
 	printf("\n resultado: %f",numero_rec);
-	printf( "\n\n\tFin del ejercicio 003_3 \n\t\t¿Continuar?\n");
-    getchar();
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 003_VP_02 \n\t\t¿Continuar?\n");
+    getchar();fflush (stdin);
 	printf("\n############################################################################\n");
-// Ej 003_4
-
+// Ej 003_VP_03
 	int numero1=1;
 	int numero2=2.1;
 	float numero3=12.23;
@@ -121,13 +122,12 @@ int main()
 	printf("\n El valor de numero2 es: %d", numero2);
 	printf("\n El valor de numero3 es: %f", numero3);
 	printf("\n El valor de letra es: %c", letra_sola);
-	printf("\n El valor de numero1 es: %s", &palabra);	//<---error los arrays no usan '&'
-	printf( "\n\n\tFin del ejercicio 003_4 \n\t\t¿Continuar?\n");
-    getchar();
+	printf("\n El valor de numero1 es: %s", palabra);
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 003_VP_03 \n\t\t¿Continuar?\n");
+    getchar();fflush (stdin);
 	printf("\n############################################################################\n");
-// Ej 003_5
-	//system("clear");
-
+// Ej 003_VP_04
 	int var_entera_1 = 5;
 	int var_entera_2 = 3;
 	int var_entera_3 = 4;
@@ -138,11 +138,10 @@ int main()
 	printf ("\nOperacion Nº 1: %d", var_entera_1);
 	var_entera_1 = -(var_entera_1*var_entera_3+1)/var_entera_2;
 	printf ("\nOperacion Nº 2: %d",var_entera_1);
-	printf( "\n\n\tFin del ejercicio 003_5 \n\t\t¿Continuar?\n");
-    getchar();
+	printf( "\n\n\tFin del ejercicio 003_VP_04 \n\t\t¿Continuar?\n");
+    getchar();fflush (stdin);
 	printf("\n############################################################################\n");
-// Ej 003_6
-
+// Ej 003_VP_05
 	const int cont_entera_1 = 15;
 	const int cont_entera_2 = 32;
 	const int cont_entera_3 = 44;
@@ -155,37 +154,35 @@ int main()
 
 	printf ("\nOperacion Nº 1: %d",aux_entera_1);
 	printf ("\nOperacion Nº 2: %d",aux_entera_2);
-	printf( "\n\n\tFin del ejercicio 003_6 \n\t\t¿Continuar?\n");
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 003_VP_05 \n\t\t¿Continuar?\n");
     getchar();
 	printf("\n############################################################################\n");
-// Ej 003_7
-    printf ("\nSi el primer valor es %i mientras el segundo_valor es %i", primer_valor,segundo_valor);
-	printf ("\nSumamos el primer_valor y segundo_valor dano %d", SUMAMOS(primer_valor,segundo_valor));
+// Ej 003_VP_06
+    printf ("\nSi el primer valor es %i mientras el segundo_valor es %i", primer_valor,segundo_valor);//		VER ARRIBA DE TODO EL EJERCICIO (declaracion de constantes)
+    printf ("\nSumamos el primer_valor y segundo_valor dano %d", SUMAMOS(primer_valor,segundo_valor));
 	printf("\n\n\tPero....\n\t\tPero.....\n1) de donde sacamos primer_valor y segundo_valor????? ");
 	printf("\n\n\t 2)  La operacion de suma ¿donde se hace?");
-
-/*
- * ver con windows
-*/
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 003_7 \n\t\t¿Continuar con strlen?\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio 003_VP_06 \n\t\t¿Continuar ?\n");
+	getchar();fflush (stdin);
+// Ej 003_VP_07
 	printf("Esta funcion devuelve el numero de caracteres que tiene la cadena (sin contar el \0) ");//<----dara error
 	char texto[]="Gandalf";
-	char *p;
+	char *punteros;
 	int longitud=0;
-
-	p = texto;
-	while (*p != '\0') {
+	punteros = texto;
+	while (*punteros != '\0') {
 		longitud++;
-		printf( "%c\n", *p );	/* Mostramos la letra actual */
-		p++;			/* Vamos a la siguiente letra */
+		printf( "\n%c", *punteros );	/* Mostramos la letra actual */
+		punteros++;			/* Vamos a la siguiente letra */
 	}
-	printf( "La cadena \"%s\" tiene %i caracteres.\n", texto, longitud );
+	printf( "\nLa cadena \"%s\" tiene %i caracteres.\n", texto, longitud );
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-// Ej 003_8
-	printf( "\n\n\tFin del ejercicio 003_8 \n\t\t¿Continuar con strcpy?\n");
-	getchar();
+
+	printf( "\n\n\tFin del ejercicio 003_VP_07 \n\t\t¿Continuar con strcpy?\n");
+	getchar();fflush (stdin);
+//Ej e003_VP_08
 	printf("Copia el contenido de cadena2 en cadena1. cadena2 puede ser una variable o una cadena directa ");
 	printf("Debemos tener cuidado de que la cadena destino (cadena1) tenga espacio suficiente para albergar a la cadena origen (cadena2).");
 	char texto3[] = "este es un curso de C.";
@@ -195,8 +192,9 @@ int main()
 	printf( "Valor final: %s\n", destino3 );
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 003_8 \n\t\t¿Continuar con strcat?\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio e003_VP_08 \n\t\t¿Continuar con strcat?\n");
+	getchar();fflush (stdin);
+// Ej 003_VP_09
 	printf("Añade la cadena2 al final de la cadena1 (concatena).");;
 	char nombre_completo2[50];
 	char nombre2[]="Gandalf";
@@ -207,8 +205,9 @@ int main()
 	strcat( nombre_completo2, apellido2 );
 	printf( "El nombre completo es: %s.\n", nombre_completo2 );
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 003_9 \n\t\t¿Continuar con sprintf?\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio 003_VP_09 \n\t\t¿Continuar con sprintf?\n");
+	getchar();fflush (stdin);
+// Ej 003_VP_10
 	printf("Funciona de manera similar a printf pero, en vez de mostrar el texto en la pantalla, lo guarda en una variable (destino). El valor que devuelve (int) es el numero de caracteres guardados en la variable destino.");
 	char nombre_completo3[50];
 	char nombre3[]="Gandalf";
@@ -216,10 +215,10 @@ int main()
 
 	sprintf( nombre_completo3, "%s %s", nombre3, apellido3 );
 	printf( "El nombre completo es: %s.\n", nombre_completo3 );
-
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 003_10 \n\t\t¿Continuar strcmp?\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio 003_VP_10 \n\t\t¿Continuar strcmp?\n");
+	getchar();fflush (stdin);
+// Ej 003_VP_11
 	printf("Compara cadena1 y cadena2. Si son iguales, devuelve 0. Un numero negativo si cadena1 +va+ antes que cadena2, y un numero positivo si es al contrario:");
 	printf("        < 0    si    cadena1 < cadena2");
 	printf("        ==0    si    cadena1 == cadena2");
@@ -229,7 +228,9 @@ int main()
 	char nombre5[]="Frodo";
 
 	printf( "Comparacion con strcmp: %i\n", strcmp(nombre4,nombre5));
-
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 003_VP_11 \n\t\t¿Continuar ?\n");
+	getchar();fflush (stdin);
 
     return 0;
 

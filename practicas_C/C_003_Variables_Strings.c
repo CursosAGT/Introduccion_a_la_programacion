@@ -86,11 +86,10 @@ int main()
 
 		char mi_string_1[6] = {"Ariel"};//  cantidad de caracteres mas  "\0" fin de string
 		printf ("\n\tNombre de la constante: %s",mi_string_1);
-		printf( "\nContinuamos..\n");
-		getchar();
 
-
-
+	printf( "\n\n\tFin del ejercicio 003_S_01 \n\t\t¿Continuar?\n");
+	getchar();fflush (stdin);
+		printf("\n############################################################################\n");
 //Ej 003_S_02
 
 		char mi_string_2[11] ;//  cantidad de caracteres reservados mas  "\0" fin de string
@@ -117,20 +116,20 @@ int main()
 		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 		printf ( "\nContinuamos..\n");getchar();fflush (stdin);
 		printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-		printf( "\nContinuamos..\n");
-		fflush (stdin);
-		getchar();
-		getchar();
+;
+	getchar();fflush (stdin);
 		printf("\n############################################################################\n");
 		printf("Vean que seria incorrecto leer este string mediante un puntero declarado , pero al que no se le ha reservado memoria:");
 		char *puntero_nuevo_1;
-		scanf("%s" , puntero_nuevo_1 );      // Incorrecto donde reservo o limito la cantidad de memoria/
+		scanf("%s" , puntero_nuevo_1 );      // Incorrecto donde reservo o limito la cantidad de memoria????/
 		printf("ya que la direccion contenida por puntero_nuevo_1 no ha sido inicializada aun con ningun valor valido.");
 		printf("y no tiene maximo, Lo correcto en este caso seria");
 		char *puntero_nuevo_2 ;
 		puntero_nuevo_2 = (char *)malloc(128 * sizeof(char)) ;//<-----------------aqui asigno 128 bytes reservando memoria previamente a cargar el string.
 		scanf("%s" , puntero_nuevo_2 );                           /* Correcto */
-
+	printf( "\n\n\tFin del ejercicio 003_S_02 \n\t\t¿Continuar?\n");
+	getchar();fflush (stdin);
+		printf("\n############################################################################\n");
 //Ej 003_S_03                    del ejercicio arrays 003_A_01
 		int mi_array_1[] = {1,2,3,4};
 		float mi_array_2[] ={3.1459,6.6742,299792458,6.6260693};
@@ -145,8 +144,8 @@ int main()
 			printf ("\n\tValor de la constante: %f",mi_array_2[contador]);
 			printf ("   %s",mi_array_3[contador]);
 		}
-		printf( "\nContinuamos..\n");
-		getchar();
+	printf( "\n\n\tFin del ejercicio 003_S_03 \n\t\t¿Continuar?\n");
+	getchar();fflush (stdin);
 		printf("\n############################################################################\n");
 //Ej 003_S_04
 /*
@@ -421,8 +420,8 @@ Caracteres ASCII imprimibles
 		char caracter_9=32;		//` `
 		char caracter_10=33;	// !
 		printf ("%c%c%c%c%c%c%c%c%c%c%c%c",caracter_1,caracter_2,caracter_9,caracter_3,caracter_4,caracter_5,caracter_6,caracter_7,caracter_9,caracter_10,caracter_10,caracter_10);
-		printf( "\nContinuamos..\n");
-		getchar();
+	printf( "\n\n\tFin del ejercicio 003_S_03 \n\t\t¿Continuar?\n");
+	getchar();fflush (stdin);
 		printf("\n############################################################################\n");
 
 		char mi_string_3[9] = {"otorrino"};
@@ -434,8 +433,8 @@ Caracteres ASCII imprimibles
 		char mi_string_4[4] = {"gia"};
 		strcat( mi_string_3, mi_string_4 );
 		printf ("\n\tNombre de la constante: %s",mi_string_3);
-		printf( "\nContinuamos..\n");
-		getchar();
+	printf( "\n\n\tFin del ejercicio 003_S_04 \n\t\t¿Continuar?\n");
+	getchar();fflush (stdin);
 		printf("\n############################################################################\n");
 
 //Ej 003_S_05
@@ -459,8 +458,8 @@ Caracteres ASCII imprimibles
 			{
 				printf("\nSon diferentes");
 			}
-		printf( "\nContinuamos..\n");
-		getchar();
+	printf( "\n\n\tFin del ejercicio 003_S_05 \n\t\t¿Continuar?\n");
+	getchar();fflush (stdin);
 		printf("\n############################################################################\n");
 
 
@@ -475,7 +474,7 @@ Caracteres ASCII imprimibles
 		printf("\nOriginal");
 		printf("\n%s",mi_string_8);
 
-		for (int contador = 0; contador < cant_caracteres; contador++)
+		for (contador = 0; contador < cant_caracteres; contador++)
 		{
 			if ((contador%2) == 0)
 			{
@@ -488,8 +487,8 @@ Caracteres ASCII imprimibles
 		}
 		printf("\nModificado");
 		printf("\n%s",mi_string_8);
-		printf( "\nContinuamos..\n");
-		getchar();
+	printf( "\n\n\tFin del ejercicio 003_S_06 \n\t\t¿Continuar?\n");
+	getchar();fflush (stdin);
 		printf("\n############################################################################\n");
 //Ej 003_S_07
 		char mi_string_7[11];//  cantidad de caracteres reservados mas  "\0" fin de string
@@ -517,8 +516,8 @@ Caracteres ASCII imprimibles
 		printf("\nLongitud de la cadena");
 		printf("\n%li",(strlen(mi_string_7)));
 		printf("\n-----------------");
-		printf( "\nContinuamos..\n");
-		getchar();
+	printf( "\n\n\tFin del ejercicio 003_S_07 \n\t\t¿Continuar?\n");
+	getchar();fflush (stdin);
 		printf("\n############################################################################\n");
 		printf("\n##     Este ejemplo no es el mejor, se deberian usar punteros,            ##\n");
 		printf("\n##     pero para explicar el tema sin profundizar es correcto             ##\n");

@@ -55,15 +55,14 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
     printf( "\n\tContinuar: \n");
+
 int valor = 0;
 int contador = 2;// (porque todo numero es divisible por uno(1) (sin resto)
 int valor_resto =0;
-
 int dato_1;
-
+// Ej 005_2_1
 printf("INGRESE EL NUMERO A INTERRUMPIR >1 < 10  :");
 scanf("%i",&dato_1);
-//Clase_break/continue/range_Ej_01
 printf("Antes\n");
 for (contador =1 ; contador <= 10 ; contador++)
 	{
@@ -83,9 +82,9 @@ for (contador =1 ; contador <= 10 ; contador++)
 //#################################################################
 
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 005_2_1 \n\t\t¿Continuar?\n");
 	getchar();	fflush (stdin);
-getchar();
+// Ej 005_2_2
 for (contador =1 ; contador <= 10 ; contador++)
 	{
 	if (contador ==dato_1)
@@ -98,9 +97,9 @@ for (contador =1 ; contador <= 10 ; contador++)
 
 
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 005_2_2 \n\t\t¿Continuar?\n");
 	getchar();	fflush (stdin);
-
+// Ej 005_2_3
 	printf ("mi primita(o) esta muy buena(o). Pero no te metas porque los primos son complicados ");
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\t-Elije un numero\n\t\tIngresa cualquier valor:");
@@ -129,8 +128,12 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		}
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
+	printf( "\n\n\tFin del ejercicio 005_2_2 \n\t\t¿Continuar?\n");
 	getchar();	fflush (stdin);
+// Ej 005_2_4
+	printf( "\n\n\t-Elije un numero\n\t\tIngresa cualquier valor:");
+	scanf("%i",&valor);
+	printf("%i sera primo?\n\t Estos solo se pueden dividir por si mismos y uno (sin tener resto)\n",valor);
 	printf ("\n~~~~~~CON FOR\n");
 	for (contador =2 ; contador < valor ; contador++)
 	{
@@ -147,8 +150,8 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		printf("\nLLegamos al final");
 		printf("\n\t\t  -*-*-*-*-*-  '%i' SI ES PRIMO  -*-*-*-*-*-  " ,valor) ;
 	}
-	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t¿Continuar?\n");
-	getchar();	fflush (stdin);
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 005_2_3 \n\t\t¿Continuar?\n");
 	return (0);
 }
 

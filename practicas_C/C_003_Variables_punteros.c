@@ -18,7 +18,19 @@ int main()
 	int (*pa)[3]; puntero a vector de tres enteros
 	int (*apf[5])(int *pi); vector de 5 punteros a funcion que toman un puntero a entero y devuelven un entero
 	*/
+	printf("Esta funcion devuelve el numero de caracteres que tiene la cadena (sin contar el \\0) ");//<----dara error
+	char datos[]="Gandalf";
+	int longitud= ((sizeof datos )/4);//int 4 bits por iten de array;
+	for (int contador=0;contador<= longitud;contador++ )
+    {
+        printf("\ndatos %d \ten posicion %d", datos[contador],contador);
+	}
 
+	printf( "\nLa cadena \"%s\" tiene %i caracteres.\n", datos , longitud );
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+	printf( "\n\n\tFin del ejercicio 003_P_00 \n\t\t¿Continuar ?\n");
+	getchar();fflush (stdin);
 // Ej 003_P_01
 //Este código sería erróneo y daría una violacion de segmento:
 /*
@@ -26,18 +38,11 @@ char *puntero;
 scanf ("%c", puntero);
 
 */
-char *puntero = (char*) malloc (sizeof (char));
-scanf ("%c", puntero);
+	char *puntero = (char*) malloc (sizeof (char));
+	printf("Ingrese una palabra :");
+	scanf ("%c", puntero);
 //En este código, al scanf le pasamos el puntero en sí. El puntero es una variable, como bien se ha dicho anteriormente, que contiene una dirección de memoria, por tanto, no es necesario el uso de & para pasarle la dirección de memoria a scanf. Anteriormente hemos tenido que reservar un espacio de memoria con malloc(), que se verá su uso más adelante.
-
-
-
-
-
-
-
-
-
+	fflush (stdin);    getchar();	fflush (stdin);    getchar();
 
 
 //  https://www.youtube.com/watch?v=OgX4vdtkkHQ
@@ -48,8 +53,8 @@ scanf ("%c", puntero);
 	char *caracter_2[] ={"U","T","N"," ","2","0","1","9"};
 	printf ("\n%s",*caracter_2);
 	printf("\n-----------------------------------------------------------------------\n");
-    printf( "\n\tContinuamos..\n");
-    getchar();
+	printf( "\n\n\tFin del ejercicio 003_P_01 \n\t\t¿Continuar?\n");
+	fflush (stdin);    getchar();
 	printf("\n############################################################################\n");
 // Ej 003_P_02
 	char *mi_Array_1[5]= {"Primero","segundo","terecero","cuarto", "quinto"};//Esta matriz tiene 4 cadenas almacenadas, para leer o escribir una cadena usa el indice, si quieres coger una letra tratala como bidimensional [indice][indice_letra]
@@ -59,14 +64,13 @@ scanf ("%c", puntero);
 	for (contador = 0; contador < 5; contador++)
 	{
 		printf ("\nItem Nº: %i",contador+1);//porque somos humanos y el pimer valor natural que tomamos es 1 vs numeros naturales cardinales
-		printf ("\n\tNombre de la constante: %s y esta ubicada en %p ",mi_Array_1[contador],&mi_Array_1[contador]);
+		printf ("\n\tNombre de la constante: %s y esta ubicada en el puntero %p ",mi_Array_1[contador],&mi_Array_1[contador]);
 		printf ("\n\tValor de la constante: %f.2",mi_Array_2[contador]);
 	}
-
-    printf( "\n\tContinuamos..\n");
-    getchar();
+	printf( "\n\n\tFin del ejercicio 003_P_02 \n\t\t¿Continuar?\n");
+    fflush (stdin);    getchar();
 	printf("\n############################################################################\n");
-// Ej 003_P_04
+// Ej 003_P_03
 	printf( "\n\tContinuamos..\n");
 	getchar();
 	int variable_valor_1 = 1973;
@@ -75,10 +79,10 @@ scanf ("%c", puntero);
 	*posicion_mem_variable_valor_1 = 45;
 	printf ("\nLuego de accion variable_valor_1 : %i", variable_valor_1);
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-
-// Ej 003_P_03
-	printf( "\n\tContinuamos..\n");
-	getchar();
+	printf( "\n\n\tFin del ejercicio 003_P_03 \n\t\t¿Continuar?\n");
+    getchar();fflush (stdin);
+	printf("\n############################################################################\n");
+// Ej 003_P_04
     int valor_1 = 1973;
     int valor_2 = 9;
     int valor_3 = 22;
@@ -95,10 +99,10 @@ scanf ("%c", puntero);
 	printf ("\narray_valores desplazo de 2 - 1 a 1 : %i ", *posicion_array_valores);
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-
+	printf( "\n\n\tFin del ejercicio 003_P_04 \n\t\t¿Continuar?\n");
+    getchar();fflush (stdin);
+	printf("\n############################################################################\n");
 // Ej 003_P_05
-	printf( "\n\tContinuamos..\n");
-	getchar();
 
 /*
 Definiciones de arrays como punteros. La propiedad anterior da lugar a que en
@@ -124,9 +128,9 @@ la variable s son “aparentemente” equivalentes:
 	printf("\n|           main         |");
 	printf("\n+------------------------+");
 //	int valor_1,valor_2;
-	printf("\nIngrese el 1er valor a intercambiar  ");
+	printf("\n Ingrese el 1er valor a intercambiar  :");
 	scanf("%i",&valor_1);
-	printf("\nIngrese el 2do valor a intercambias  ");
+	printf("\n Ingrese el 2do valor a intercambias  :");
 	scanf("%i",&valor_2);
 	printf("\nValores originales 1º %i y 2º %i",valor_1,valor_2);
 	intercambia (valor_1,valor_2);
@@ -138,12 +142,10 @@ la variable s son “aparentemente” equivalentes:
 	intercambia2 (&valor_1,&valor_2);//<-------------------el & permite asignar desde la funcion un valor al puntero
 	printf("\nValores cambiados 1º %i y 2º %i",valor_1,valor_2);
 
+	printf( "\n\n\tFin del ejercicio 003_P_05 \n\t\t¿Continuar?\n");
+    getchar();fflush (stdin);
 	printf("\n############################################################################\n");
 
-
-printf( "\n\tContinuamos..\n");
-	getchar();
-//	system("clear");
 	return (0);
 }
 void intercambia (int valor_a,int valor_b)//<---------------------las variables son del tipo entero y nada mas

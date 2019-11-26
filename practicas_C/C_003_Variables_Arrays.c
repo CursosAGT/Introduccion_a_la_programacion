@@ -72,10 +72,7 @@ int main()
 	printf ("\nItem Nº: %.7f",mi_float);
 	printf ("\nItem Nº: %.9f",mi_float);
 	printf ("\nItem Nº: %.15f",mi_float);
-    printf( "\n\tContinuamos..\n");
-    getchar();
-	printf("\n############################################################################\n");
-
+// Ej 003_A_02
 	char *mi_array_1[5]= {"Primero","segundo","terecero","cuarto", "quinto"};//Esta matriz tiene 4 cadenas almacenadas, para leer o escribir una cadena usa el indice, si quieres coger una letra tratala como bidimensional [indice][indice_letra]
 	float mi_array_2[5] ={3.1459,6.6742,299792458,6,6260693};
 	int contador = 0;
@@ -86,9 +83,9 @@ int main()
 		printf ("\n\tNombre de la constante: %s",mi_array_1[contador]);
 		printf ("\n\tValor de la constante: %f.2",mi_array_2[contador]);
 	}
-
-    printf( "\n\tContinuamos..\n");
-    getchar();
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 003_A_01 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 	printf("\n############################################################################\n");
 // Ej 003_A_02
 	float mi_array_3[10] = {0,1,2,3,4,5.5,6.2,7.7,8,9};
@@ -106,11 +103,10 @@ int main()
 		printf ("\tvalor dado %i",mi_array_4[contador]);
 	}
 
-
-
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf( "\n\n\tFin del ejercicio 003_A_02 \n\t\t¿Continuar?\n");
+	getchar();	fflush (stdin);
 // Ej 003_A_03
-	printf( "\n\tContinuamos..\n");
-	getchar();
 	printf("\n######################## En Funciones ######################################\n");
 
 	int mi_array_5[5];
