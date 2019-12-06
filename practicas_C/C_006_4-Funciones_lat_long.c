@@ -32,7 +32,7 @@ int main()
 
 		hipotenusa = calculo ( lat_1,  long_1,  lat_2,  long_2);
 		printf("\n la distancia en un plano entre los dos puntos es de = %f  \n",hipotenusa);//c
-		printf("\nIngrese 's' para salir cualquier otra tecla para continual ");
+		printf("\nIngrese 's' para salir cualquier otra tecla para continuar ");
 		scanf("%c", &dato_char);//	scanf("%c%*c", &dato_char);
 	} while(dato_char != 's' && dato_char != 'S');
 

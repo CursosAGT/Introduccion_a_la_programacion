@@ -24,7 +24,7 @@ int main()
 		scanf("%i%*c", &valor_2);
 		resultado=	sumemos (valor_1,valor_2);
 		printf("\n RESULTADO = %i  \n",resultado);//c
-		printf("\nIngrese 's' para salir cualquier otra tecla para continual ");
+		printf("\nIngrese 's' para salir cualquier otra tecla para continuar ");
 		scanf("%c", &dato_char);//	scanf("%c%*c", &dato_char);
 	} while(dato_char != 's' && dato_char != 'S');
 

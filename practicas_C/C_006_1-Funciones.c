@@ -17,7 +17,7 @@ int main(void)
 	printf("\n+------------------------+");
 		sumemos ();
 
-		printf("\nIngrese 's' para salir cualquier otra tecla para continual ");
+		printf("\nIngrese 's' para salir cualquier otra tecla para continuar ");
 		scanf("%c", &dato_char);//	scanf("%c%*c", &dato_char);
 	} while(dato_char != 's' && dato_char != 'S');
 

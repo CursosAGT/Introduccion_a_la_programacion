@@ -11,6 +11,7 @@ void modificar_punteros(int *valor_a);
 int main()
 {
 	int valor_1 =0;
+	int retorno =0;
 	printf("\n+------------------------+");
 	printf("\n|  DENTRO DE LA FUNCION  |");
 	printf("\n|           main         |");
@@ -20,7 +21,8 @@ int main()
 	printf("\nValor original=%d en main antes de llamar a la función modificar", valor_1);
 	modificar(valor_1);
 	printf("\nvalor=%d en main despues de llamar a la función modificar", valor_1);
-	printf("\nvalor=%d en main despues de llamar a la función modificar_retorno", modificar_retorno(valor_1));
+	retorno=modificar_retorno(valor_1);
+	printf("\nvalor=%d en main despues de llamar a la función modificar_retorno", retorno);
 	modificar_punteros(&valor_1);
 	printf("\nvalor=%d en main despues de llamar a la función modificar_punteros", valor_1);
 
@@ -54,7 +56,7 @@ int modificar_retorno (int valor_b)//variable o dato
 	printf("\nvalor=%d en funcion modificar_retorno despues del scanf", valor_b);
 	return (valor_b);
 }
-void modificar_punteros(int *valor_c)//puntero  o dirección de memori
+void modificar_punteros(int *valor_c)//puntero  o dirección de memoria
 	{
 	printf("\n+------------------------+");
 	printf("\n|  DENTRO DE LA FUNCION  |");

@@ -41,7 +41,7 @@ printf("return expresión:mediante la palabra reservada return, se devuelve el v
 
 void sumar_valor(int numero3,int numero4)
 {
-	numero_out=numero1+ numero2;
+	numero_out=numero3+ numero4;
 
 	printf("\nValor de numero dentro sumar_valor() es: %d\n", numero_out);
 
@@ -49,6 +49,6 @@ void sumar_valor(int numero3,int numero4)
 }
 int sumar_valor_return(int numero3,int numero4)
 {
-	numero_out=numero1+ numero2;
+	numero_out=numero3+ numero4;
 	return (numero_out);
 }
