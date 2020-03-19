@@ -77,6 +77,7 @@ int main(void)
     getchar();
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin intro \n\t\t-Continuar?\n");
+	int    dato_1_int, dato_2_int =0;
 // Ej 004_1
 	int numero=0;
 	printf("\n ingrese un numero entre -100 y 100  :");
@@ -89,23 +90,26 @@ int main(void)
 		{
 		printf("\n\t\tEl valor nuevo %d es negativo",numero);
 		}
-		
+
     printf( "\n\n\tPara pensar.\n\t\tEl 0 - cero es positivo, negativo o que?. Rehacer..\n");
 	getchar();
-		
+
     printf( "\n\n\tContinuamos..\n");
 	getchar();
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_1 \n\t\t-Continuar?\n");
 	float    temporaria = 0;
-	int    dato_1_int, dato_2_int =0;
 	printf("\n ingrese un numero :");
 	scanf("%d",&numero);
 	if(numero % 2 == 0)
 		{printf("El numero es par");}
 	else
 		{printf("El numero es impar");}
+
+	printf( "\n\n\tPara pensar.\n\t\tEl 0 - cero no es par ni impar?. Ver mas adelante..\n");
+	getchar();
     printf( "\n\n\tContinuamos..\n");
+	getchar();
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_2/1 \n\t\t-Continuar?\n");
 // Ej 004_2/2
@@ -169,7 +173,6 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	else
 	{
 		printf ("\n el primer dato %i es diferente al segundo %i", dato_1_int , dato_2_int);
-
 		if (dato_1_int > dato_2_int)
 		{
 			printf ("\n el primer dato %i es mayor al segundo %i", dato_1_int , dato_2_int);
@@ -223,6 +226,10 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	temporaria = ((nota1+nota2)/2);
 	printf ("Evaluaciones :\t %f \t|\t%f ",(nota1),(nota2));
 	printf ("\npromedio : %f ", temporaria);
+
+	printf( "\n\n\tPara pensar.\n\t\tY si las notas son 6 ?. Rehacer..te falta menos de un punto, te tomo oral\n");
+	getchar();
+
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_4 \n\t\t-Continuar?\n");
 // Ej 004_5
@@ -230,7 +237,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	getchar();	fflush (stdin);
 	printf("\nIntroduce un mes en numero : ");
 	scanf("%i", &dato_1_int);
-	if (dato_1_int <= 1 || dato_1_int >= 12 )
+	if (dato_1_int <= 1 || dato_1_int >= 12 )//reveer
 	{
 		printf ("\n Error %i no corresponde a los 12 meses", dato_1_int );
 	}
@@ -289,11 +296,11 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Ej 004_6
 
-	printf("\nIntroduce el primer numero > 0 y < 10 int : ");
+	printf("\nIntroduce el primer numero > 0 y < 10 (Entero) : ");
 	scanf("%i", &dato_1_int);
 	if (dato_1_int < 0 || dato_1_int > 10 )
 	{
-		printf ("\n Error %i no corresponde a los limites >0 <10", dato_1_int );
+		printf ("\n Error %i no corresponde a los limites >0 o <10", dato_1_int );
 	}
 	else if (dato_1_int > 0 && dato_1_int < 10 )
 	{
@@ -317,10 +324,12 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	if (dia >= 1 && dia <= 7)
 		{
 		strcpy( nombre, nombre_dias[dia-1] );
+		//string copy copia una cadena de caracteres a otra
 		}
 	else
 		{
-		strcpy( nombre, 'Error' );
+		//char error[] ="Error";
+		strcpy( nombre, "error" );
 		}
 	printf ("Hoy es : %s", nombre);
 
@@ -330,7 +339,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Ej 004_8
 	char c;
 	printf("\n Menu:");
-	printf("\n\t A=An-iadir a la lista");
+	printf("\n\t A=Agregar a la lista");
 	printf("\n\t B=Borrar de la lista");
 	printf("\n\t O=Ordenar la lista");
 	printf("\n\t I=Imprimir la lista");
@@ -340,30 +349,33 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	{
 		if(c=='A')
 		{
-			 printf(" Has seleccionado an-iadir");
+			 printf(" Has seleccionado Agregar");
+			 //llamo a la funcion agregar
 		}
-		else  if(c=='B') printf(" Has seleccionado borrar");
-		else  if(c=='O') printf(" Has seleccionado ordenar");
-		else  if(c=='I') printf(" Has seleccionado imprimir");
+		else if(c=='B')
+		{
+			printf(" Has seleccionado borrar");//prestar atencion a las llaves
+			printf("llamamos a la funcion borrar");
+		}
+		else if(c=='O') printf(" Has seleccionado ordenar");
+		else if(c=='I') printf(" Has seleccionado imprimir");
+		else printf(" Has seleccionado una opcion no valida");
 	}
 	else
 	{
 		printf(" No has seleccionado nada");
 	}
+
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);
 
-
 	printf( "\n   Introduzca un a%co: ", 164 );
 	scanf( "%d", &dato_1_int );
-
 	if ( (dato_1_int % 4 == 0 && dato_1_int % 100 != 0) || dato_1_int % 400 == 0 )
 		printf( "\n   ES BISIESTO" );
 	else
 		printf( "\n   NO ES BISIESTO" );
-
-
 	return (0);
 }
 

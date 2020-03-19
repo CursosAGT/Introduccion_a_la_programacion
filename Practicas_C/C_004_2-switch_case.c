@@ -55,7 +55,7 @@ int main(void)
 	printf("##                                                                        ##\n");
 	printf("############################################################################\n");
 	printf("\n");
-	printf("\n	switch ( variablo )");
+	printf("\n	switch ( variable )");
 	printf("\n         {");
 	printf("\n             case 0:  bloque de sentencias;break");
 	printf("\n          }");
@@ -71,7 +71,11 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	scanf("%d",&nota);
 	switch(nota)
 	{
-		case 0: printf("\nRecursa");break;
+		case 0:
+			{
+			printf("\nRecursa");
+			break;
+			}
 		case 1: printf("\nRecursa");break;
 		case 2: printf("\nRecursa");break;
 		case 3: printf("\nRecursa");break;
@@ -88,10 +92,9 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	printf( "\n\n\tFin del ejercicio 004_2_1 \n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);
 
-
 //Ej 004_2_2
 	getchar();	fflush (stdin);
-	printf(" Inserte una nota en sistema alfanumerico \n\tSobresaliente\n\tExelente\n\tMuybien\n\tBien\n\tRegular\n\tAplazado: ");
+	printf(" Inserte una nota en sistema alfanumerico (en mayusculas)\n\tS-Sobresaliente\n\tE-Exelente\n\tM-Muybien\n\tB-Bien\n\tR-Regular\n\tA-Aplazado: ");
 	nota_alfa = getchar();
 	switch(nota_alfa)
 	{
@@ -99,21 +102,17 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		case 'R': printf("\nRegulara");break;
 		case 'B': printf("\nBien");break;
 		case 'M': printf("\nMuy Bien");break;
-		case 'E': printf("\Excelente");break;
+		case 'E': printf("\nExcelente");break;
 		case 'S': printf("\nSobresaliente");break;
 		default: printf("esa nota es incorrecta");
 	}
 
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_2_2 \n\t\t-Continuar?\n");
-
-
-
-
 //Ej 004_2_3
 	float entrada,salida, cambio;
 	int opcion;
-	cambio = 65.50;
+	cambio = 85.50;
 	printf("cotizar de moneda extranjera\n");
 	printf("opcion:\n\t1-pesos a Dolares \n\t2-Dolares a pesos\n");
 	scanf("%d",&opcion);
@@ -121,18 +120,26 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	scanf("%f",&entrada);
 	switch(opcion)
 	{
-		case 1:salida=entrada/cambio;
-		printf("%.2f Pesos son %.2f Dolares",entrada,salida);
-		break;
-		case 2:salida=entrada*cambio;
-		printf("%.2f Dolares son %.2f Pesos",entrada,salida);
-		break;
-		default: printf("opcion incorrecta");
+		case 1:
+			{
+			salida=entrada/cambio;
+			printf("%.2f Pesos son %.2f Dolares al tipo de cambio %f",entrada,salida,cambio);
+			break;
+			}
+		case 2:
+			{
+			salida=entrada*cambio;
+			printf("%.2f Dolares son %.2f Pesos al tipo de cambio %f",entrada,salida,cambio);;
+			break;
+			}
+		default:{ printf("opcion incorrecta");}
 	}
-
+	//rehacer 1 preguntando el tipo de cambio
+	//rehacer 2 preguntando los tipos de cambios (compra venta) con 2 variables cambio_compra y cambio_venta
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_2_3 \n\t\t-Continuar?\n");
-	getchar();	fflush (stdin);
+	getchar();	getchar();	fflush (stdin);
+
 // Ej 004_2_4
 	printf("\nIntroduce un mes en numero : ");
 	scanf("%i", &dato_1_int);
@@ -150,16 +157,12 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     	case  10 : printf ("\n %i corresponde al mes de Octubre", dato_1_int ); break;
 		case  11 : printf ("\n %i corresponde al mes de Noviembre", dato_1_int ); break;
 		case  12 : printf ("\n %i corresponde al mes de Diciembre", dato_1_int ); break;
-		default: printf ("\n Error %i no corresponde a los 12 meses", dato_1_int ); break;
+		default: printf ("\n Error %i no corresponde a los 12 meses", dato_1_int );
 	}
-
-printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_2_4 \n\t\t-Continuar?\n");
-	printf( "\n\n\tFin del ejercicio 004_2_3 \n\t\t-Continuar?\n");
-	getchar();	fflush (stdin); system("cls");
+	getchar();	getchar();	fflush (stdin);
 	printf("rehacer los programas de condicionales IF (en caso de que se pueda con switch - case)");
-
 return 0;
-
-	}
+}
 
