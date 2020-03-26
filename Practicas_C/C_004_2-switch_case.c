@@ -71,7 +71,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	scanf("%d",&nota);
 	switch(nota)
 	{
-		case 0:
+		case 0: 
 			{
 			printf("\nRecursa");
 			break;

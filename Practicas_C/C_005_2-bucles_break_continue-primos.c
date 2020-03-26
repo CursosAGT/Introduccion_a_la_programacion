@@ -61,22 +61,25 @@ int contador = 2;// (porque todo numero es divisible por uno(1) (sin resto)
 int valor_resto =0;
 int dato_1;
 // Ej 005_2_1
+/*
 printf("INGRESE EL NUMERO A INTERRUMPIR >1 < 10  :");
 scanf("%i",&dato_1);
-printf("Antes\n");
+printf("if Antes del break\n");
 for (contador =1 ; contador <= 10 ; contador++)
 	{
 	if (contador ==dato_1)
-		{break;//    <---------------------Break
+		{
+			break;//    <---------------------Break
 		}
 	printf("\tnumero %i \n",contador);//<---------------------print
 	};
-printf("despues\n");
+printf("if despues del break\n");
 for (contador =1 ; contador <= 10 ; contador++)
 	{
 	printf("\tnumero %i \n",contador);//<---------------------print
 	if (contador ==dato_1)
-		{break;//    <---------------------Break
+		{
+			break;//    <---------------------Break
 		}
 	};
 //#################################################################
@@ -94,9 +97,8 @@ for (contador =1 ; contador <= 10 ; contador++)
 		}
 	printf("\tnumero %i \n",contador);//<---------------------print
 	};
-
-
-printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+*/
+	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 005_2_2 \n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);
 // Ej 005_2_3
@@ -105,7 +107,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	printf( "\n\n\t-Elije un numero\n\t\tIngresa cualquier valor:");
 	scanf("%i",&valor);
 	printf("%i sera primo?\n\t Estos solo se pueden dividir por si mismos y uno (sin tener resto)\n",valor);
-	printf ("\n~~~~~~CON WHILE\n");
+	printf ("\n~~~~~~verificamos con funcion WHILE\n");
 	while (contador < valor)
 	{
 		valor_resto =valor % contador ;
@@ -127,14 +129,13 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			}
 		}
 	}
-	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 005_2_2 \n\t\t-Continuar?\n");
+	printf ("\\n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);
 // Ej 005_2_4
 	printf( "\n\n\t-Elije un numero\n\t\tIngresa cualquier valor:");
 	scanf("%i",&valor);
 	printf("%i sera primo?\n\t Estos solo se pueden dividir por si mismos y uno (sin tener resto)\n",valor);
-	printf ("\n~~~~~~CON FOR\n");
+	printf ("\n~~~~~~verificamos con funcion FOR\n");
 	for (contador =2 ; contador < valor ; contador++)
 	{
 		valor_resto =valor % contador ;
@@ -151,7 +152,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		printf("\n\t\t  -*-*-*-*-*-  '%i' SI ES PRIMO  -*-*-*-*-*-  " ,valor) ;
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-	printf( "\n\n\tFin del ejercicio 005_2_3 \n\t\t-Continuar?\n");
+	printf( "\n\n\tFin del ejercicio \n\t\t-Continuar?\n");
 	return (0);
 }
 

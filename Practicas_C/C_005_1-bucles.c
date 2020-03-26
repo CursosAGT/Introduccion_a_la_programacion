@@ -64,33 +64,34 @@ int main(void)
     printf( "\n\tContinuamos..\n");
 	getchar();	fflush (stdin);
 	printf("\n");
-
 	int total=0;
 	int anterior=0;
 	int numero=0;
-	printf("\n ingrese 0 para ingresar otro dato para salir  :");
-	scanf("%d",&numero);
-	if(numero == 0)
-		{printf("\n\t\tSalio");}
-	else
-		{
-			anterior=total;
-			total=total+numero;
-			printf("\n\t\tSumamos al valor anterior %d el valor nuevo %d dando un total de %d",anterior,numero,total);
-		}
+	int dato_int, dato_final =0;
+	int contador = 0;
+//--------------------------------------------- inicio seccion a repetir - iterar
+		printf("\n ingrese 0 paran ingresar otro dato para salir  :");
+		scanf("%d",&numero);
+		if(numero == 0)
+			{printf("\n\t\tSalio");}
+		else
+			{
+				anterior=total;
+				total=total+numero;
+				printf("\n\t\tSumamos al valor anterior %d el valor nuevo %d dando un total de %d",anterior,numero,total);
+			}
+//--------------------------------------------- fin de iteraccion
     printf( "\n\n\tContinuamos..\n");
 	getchar();
 // Ej 005_1
-	int    temporaria = 0;
-	int    dato_1_int, dato_2_int =0;
-	int contador = 0;
+
 	printf("\n\t\t\tUso de FOR");
 	printf("\n\t\t\t~~~~~~~~~~~");
 	printf("\nIntroduce el numero base : ");
-	scanf("%i", &dato_1_int);
-	printf("\nIntroduce el numero max mayor : ");
-	scanf("%i", &dato_2_int);
-	for (contador = dato_1_int; contador < dato_2_int; contador++)
+	scanf("%i", &dato_int);
+	printf("\nIntroduce el numero final (mayor) : ");
+	scanf("%i", &dato_final);
+	for (contador = dato_int; contador < dato_final; contador=contador+1)
 	{
 		if ((contador % 2) == 0 )
 		{
@@ -103,64 +104,73 @@ int main(void)
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 005_1 \n\t\t-Continuar?\n");
-	getchar();	fflush (stdin);
 // Ej 005_2
 	printf("\n\t\t\tUso de WHILE");
-	printf("\n\t\t\t~~~~~~~~~~~~");
+	printf("\n\t\t\t~~~~~~~~~~~~(enter para continuar)");
 
 	getchar();	fflush (stdin);
 	printf("\n");
-	temporaria = dato_1_int;//para poder modificar los valores sin que el original cambie
-	while (temporaria < dato_2_int)
+
+	contador = dato_int;//para poder modificar los valores sin que el original cambie
+	while (contador < dato_final )
 	{
-		if ((temporaria % 2) == 0 )
+		printf("tenes ganas de aprender? 0 para salir");
+		if ((contador % 2) == 0 )
 		{
-		printf ("\nValor par	: %i \n" ,temporaria);
+		printf ("\nValor par	: %i \n" ,contador);
 		}
 		else
 		{
-		printf ("\n\t\t\tValor impar	: %i \n" ,temporaria);
+		printf ("\n\t\t\tValor impar	: %i \n" ,contador);
 		}
-	 temporaria++;
+		contador=(contador + 1);
 	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 005_2 \n\t\t-Continuar?\n");
-	getchar();	fflush (stdin);
 // Ej 005_3
 	printf("\n\t\t\tUso de DO....WHILE");
 	printf("\n\t\t\t~~~~~~~~~~~~~~~~~~");
 	getchar();	fflush (stdin);
     //system("cls");
 	printf("\n");
-	temporaria = dato_1_int;//para poder modificar los valores sin que el original cambie
+	contador = dato_int;//para poder modificar los valores sin que el original cambie
 	do
 	{
-		if ((temporaria % 2) == 0 )
+		if ((contador % 2) == 0 )
 		{
-		printf ("\nValor par	: %i " ,temporaria);
+		printf ("\nValor par	: %i " ,contador);
 		}
 		else
 		{
-		printf ("\n\t\t\tValor impar	: %i " ,temporaria);
+		printf ("\n\t\t\tValor impar	: %i " ,contador);
 		}
-	 temporaria++;
-	} while (temporaria < dato_2_int);
+		contador=contador+1;
+	} while (contador < dato_final);
 
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 004_8 \n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);
 // Ej 005_2
 
-	for (contador = dato_1_int; contador < dato_2_int && temporaria >= 20; contador++)
+	printf("\n\t\t\tUso de doble condicion");
+	printf("\n\t\t\t~~~~~~~~~~~");
+	printf("\nIntroduce el numero base : ");
+	scanf("%i", &dato_int);
+	printf("\nIntroduce el numero final (mayor) : ");
+	scanf("%i", &dato_final);
+	int filtro=0;
+	int max =5;
+	for (contador = dato_int; contador < dato_final && filtro <= max; contador++)
 	{
         if (contador >= 10 )
             {
-            temporaria++;
-            printf ("\nsi %i ",contador);
+            printf ("\nsi entro en el condicional %i ",contador);
+            printf ("\tusados del filtos %i quedan %i",filtro,max-filtro);
+            filtro++;// sumo uno cada ves que entra en la condicion
             }
         else
             {
-            printf ("\n\t\tno %i ",contador);
+            printf ("\n\t\tno entro en el condicional %i ",contador);
             }
  	}
 }

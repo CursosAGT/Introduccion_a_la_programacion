@@ -73,7 +73,7 @@ int main(void)
 	int contador = 0;
 	int largo = 0;
 // Ej 005_3_1
-
+/*
 	/*Otras
 Funciones utiles para operar cadenas de caracteres.
 
@@ -89,6 +89,7 @@ toupper(caracter): devuelve la mayuscula asociada a caracter, si la tiene; si no
 tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no, devuelve el mismo caracter.
 */
 //#############################################################################################################
+/*
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\t-Continuar?\n");
 	getchar();	fflush (stdin);
@@ -98,9 +99,9 @@ tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no
 	scanf("%i",&edad);
 	while (edad<18)
 	{
-	printf ("\nCometio un error al ingresar la edad o es menor y debe retirarse");
-	printf("\ningrese su edad :");
-	scanf("%i",&edad);
+		printf ("\nCometio un error al ingresar la edad o es menor y debe retirarse");
+		printf("\ningrese su edad :");
+		scanf("%i",&edad);
 	}
 	printf ("\n Bienvenido, que desea tomar");
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
@@ -109,9 +110,9 @@ tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no
 //Ej 005_3_1-2
 	do
 	{
-	printf ("\nIngresar la edad > a 18 o es menor y debe retirarse");
-	printf("\ningrese su edad :");
-	scanf("%i",&edad);
+		printf ("\nIngresar la edad > a 18 o es menor y debe retirarse");
+		printf("\ningrese su edad :");
+		scanf("%i",&edad);
 	} while (edad<18);
 	printf ("\n Bienvenido, que desea tomar");
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
@@ -124,20 +125,20 @@ tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no
 	scanf("%i",&contador);
 	while ( contador <= 10 )
    {
-      printf( "\n%d su cuadrado es %d", contador,contador*contador );
-      contador++;
+		printf( "\n%d su cuadrado es %d", contador,contador*contador );
+		contador++;
    }
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 005_3_2-1 \n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);
 //Ej 005_3_2-2
 	do
-   {
-	printf( "\n ingrese un lado del cuadrado  " );
-	scanf("%i",&contador);
-	printf( "\n%d su cuadrado es %d", contador,contador*contador );
-    contador++;
-   } while ( contador <= 10 );
+	{
+		printf( "\n ingrese un lado del cuadrado  " );
+		scanf("%i",&contador);
+		printf( "\n%d su cuadrado es %d", contador,contador*contador );
+		contador++;
+	} while ( contador <= 10 );
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 005_3_2-2 \n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);
@@ -237,23 +238,35 @@ tolower(caracter): devuelve la minuscula asociada a caracter, si la tiene; si no
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 005_3_5 \n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);
+*/
 //#############################################################################################################
 //Ej 005_3_6
 	//   char c;
-	char cadena_org[20] = "Curso2020 LeNgUaJe C";//array con contenido char x 21 - 0 a 19 +fin de linea
-	char cadena_Upper[20] ;//array vacio char x 21 - 0 a 19 +fin de linea
-	char cadena_Lower[20] ;//array vacio char x 21 - 0 a 19 +fin de linea
-	printf ("\nLa Cadena original es : %s", cadena_org);
+	char cadena_org[22] = " Curso2020 LeNgUaJe C ";//array con contenido char x 21 - 0 a 19 +fin de linea
+	char cadena_Upper[22] ;//array vacio char x 21 - 0 a 19 +fin de linea
+	char cadena_Lower[22] ;//array vacio char x 21 - 0 a 19 +fin de linea
+	printf ("\nLa Cadena original es : %s ", cadena_org);
 	contador = 0;
 	printf ("\n");
 	while( cadena_org[contador] )
 	{
-	  cadena_Lower[contador] = tolower(cadena_org[contador]);
-	  cadena_Upper[contador] = toupper(cadena_org[contador]);
-	  contador++;
+		cadena_Upper[contador] = toupper(cadena_org[contador]);
+		contador++;
 	}
-	printf ("\nLa Cadena modificada a toupper es :%s", cadena_Upper);
-	printf ("\nLa Cadena modificada a lower   es :%s", cadena_Lower);
+	printf ("\nLa Cadena modificada a toupper es :%s -\n", cadena_Upper);
+	contador = 0;
+	printf ("\n");
+	while( cadena_org[contador] )
+	{
+		cadena_Lower[contador] = tolower(cadena_org[contador]);
+		contador++;
+	}
+	printf ("\nLa Cadena modificada a lower   es :%s -\n", cadena_Lower);
+	printf ("\n");
+	for (contador=0;contador <=21;contador++)
+	{
+		printf ("%c", cadena_Lower[contador]);
+	}
 	printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	printf( "\n\n\tFin del ejercicio 005_3_6 \n\t\t-Continuar?\n");
 	getchar();	fflush (stdin);

@@ -90,10 +90,10 @@ int main(void)
 		{
 		printf("\n\t\tEl valor nuevo %d es negativo",numero);
 		}
-
+		
     printf( "\n\n\tPara pensar.\n\t\tEl 0 - cero es positivo, negativo o que?. Rehacer..\n");
 	getchar();
-
+		
     printf( "\n\n\tContinuamos..\n");
 	getchar();
 printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
@@ -352,7 +352,7 @@ printf ("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			 printf(" Has seleccionado Agregar");
 			 //llamo a la funcion agregar
 		}
-		else if(c=='B')
+		else if(c=='B') 
 		{
 			printf(" Has seleccionado borrar");//prestar atencion a las llaves
 			printf("llamamos a la funcion borrar");
